@@ -331,7 +331,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle10:setParent(obj.flowPart2);
     obj.rectangle10:setWidth(35);
     obj.rectangle10:setLeft(532);
-    obj.rectangle10:setTop(545);
+    obj.rectangle10:setTop(304);
     obj.rectangle10:setHeight(20);
     obj.rectangle10:setColor("#ffffff");
     obj.rectangle10:setXradius(5);
@@ -403,7 +403,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle16:setParent(obj.flowPart2);
     obj.rectangle16:setWidth(35);
     obj.rectangle16:setLeft(420);
-    obj.rectangle16:setTop(545);
+    obj.rectangle16:setTop(304);
     obj.rectangle16:setHeight(20);
     obj.rectangle16:setColor("#363636");
     obj.rectangle16:setXradius(5);
@@ -475,7 +475,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle22:setParent(obj.flowPart2);
     obj.rectangle22:setWidth(35);
     obj.rectangle22:setLeft(313);
-    obj.rectangle22:setTop(545);
+    obj.rectangle22:setTop(304);
     obj.rectangle22:setHeight(20);
     obj.rectangle22:setColor("#363636");
     obj.rectangle22:setXradius(5);
@@ -547,7 +547,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle28:setParent(obj.flowPart2);
     obj.rectangle28:setWidth(35);
     obj.rectangle28:setLeft(203);
-    obj.rectangle28:setTop(545);
+    obj.rectangle28:setTop(304);
     obj.rectangle28:setHeight(20);
     obj.rectangle28:setColor("#363636");
     obj.rectangle28:setXradius(5);
@@ -6670,27 +6670,27 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
             
             				-- calcular MOD INTELIGENCIA			
             				sheet.IntM = math.floor (sheet.IntV + sheet.IntA + sheet.IntB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
+            						sheet.ModProfissao = math.floor (sheet.NvProfissao + sheet.BProfissao + sheet.IntM);
+            						sheet.ModDecifrarCodigo = math.floor (sheet.NvDecifrarCodigo + sheet.BDecifrarCodigo + sheet.IntM);
+            						sheet.ModIdentificarCriatura = math.floor (sheet.NvIdentificarCriatura + sheet.BIdentificarCriatura + sheet.IntM);
+            						sheet.ModLerManuscrito = math.floor (sheet.NvLerManuscrito + sheet.BLerManuscrito + sheet.IntM);
+            						sheet.ModPrepararEstrategia = math.floor (sheet.NvPrepararEstrategia + sheet.BPrepararEstrategia + sheet.IntM);
+            						sheet.ModResistenciaMental = math.floor (sheet.NvResistenciaMental + sheet.BResistenciaMental + sheet.IntM);
+            						sheet.ModHistoria = math.floor (sheet.NvHistoria + sheet.BHistoria + sheet.IntM);
+            						sheet.ModInvestigacao = math.floor (sheet.NvInvestigacao + sheet.BInvestigacao + sheet.IntM);
+            						sheet.ModPerceberMentira = math.floor (sheet.NvPerceberMentira + sheet.BPerceberMentira + sheet.IntM);
             
             				-- calcular SABEDORIA
             				sheet.SabM = math.floor (sheet.SabV + sheet.SabA + sheet.SabB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
+            						sheet.ModPercepcao = math.floor (sheet.NvPercepcao + sheet.BPercepcao + sheet.SabM);
+            						sheet.ModSentirPerigo = math.floor (sheet.NvSentirPerigo + sheet.BSentirPerigo + sheet.SabM);
+            						sheet.ModDetectarMagia = math.floor (sheet.NvDetectarMagia + sheet.BDetectarMagia + sheet.SabM);
+            						sheet.ModAcertoMagico = math.floor (sheet.NvAcertoMagico + sheet.BAcertoMagico + sheet.SabM);
+            						sheet.ModDanoMagico = math.floor (sheet.NvDanoMagico + sheet.BDanoMagico + sheet.SabM);
+            						sheet.ModSobrevivencia = math.floor (sheet.NvSobrevivencia + sheet.BSobrevivencia + sheet.SabM);
+            						sheet.ModMedicina = math.floor (sheet.NvMedicina + sheet.BMedicina + sheet.SabM);
+            						sheet.ModNatureza = math.floor (sheet.NvNatureza + sheet.BNatureza + sheet.SabM);
+            						sheet.ModReligiao = math.floor (sheet.NvReligiao + sheet.BReligiao + sheet.SabM);
             
             				-- calcular MOD CARISMA	
             				sheet.CarM = math.floor (sheet.CarV + sheet.CarA + sheet.CarB);

@@ -21,7 +21,7 @@
 			<event name="onChange">
 
 
-			
+
 			NivelPersonagem = 0;
 			if (NivelPersonagem ~= nil) then
 				local NivelPersonagem = tonumber(sheet.NivelPersonagem);
@@ -230,7 +230,7 @@ button.Tab{
 										<rectangle width="35" left="532" top="425" height="20" color="#ffffff" xradius="5" yradius="5" cornerType="round"/>									
 										<rectangle width="35" left="532" top="465" height="20" color="#ffffff" xradius="5" yradius="5" cornerType="round"/>
 										<rectangle width="35" left="532" top="505" height="20" color="#ffffff" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="35" left="532" top="545" height="20" color="#ffffff" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="35" left="532" top="304" height="20" color="#ffffff" xradius="5" yradius="5" cornerType="round"/>
 
 										<!-- RETANGULOS DO ModC -->
 										<rectangle width="35" left="420" top="345" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>						
@@ -238,7 +238,7 @@ button.Tab{
 										<rectangle width="35" left="420" top="425" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>									
 										<rectangle width="35" left="420" top="465" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
 										<rectangle width="35" left="420" top="505" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="35" left="420" top="545" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="35" left="420" top="304" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
 
 										<!-- RETANGULOS DO ModP -->
 										<rectangle width="35" left="313" top="345" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>						
@@ -246,7 +246,7 @@ button.Tab{
 										<rectangle width="35" left="313" top="425" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>									
 										<rectangle width="35" left="313" top="465" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
 										<rectangle width="35" left="313" top="505" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="35" left="313" top="545" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="35" left="313" top="304" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
 
 
 									    <!-- RETANGULOS DO ModR -->
@@ -255,7 +255,7 @@ button.Tab{
 										<rectangle width="35" left="203" top="425" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>									
 										<rectangle width="35" left="203" top="465" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
 										<rectangle width="35" left="203" top="505" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="35" left="203" top="545" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="35" left="203" top="304" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
 										
 
 									<flowLayout align="top" autoHeight="true">
