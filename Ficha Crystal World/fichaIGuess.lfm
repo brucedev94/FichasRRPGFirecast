@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <form formType="sheetTemplate" dataType="Alem_do_veu_Hiperion" title="Alem_do_veu(Hiperion))" name="frmOurFichaAlemDoVeuHiperion">
-<!-- IMAGENS RANK-->
+
+
+
+
 		
 	<layout align="client" frameStyle="/Frames/frameFundo.xml" />
 			<!-- CALCULOS INICIO-->
@@ -215,10 +218,10 @@ button.Tab{
 								<template name="AsTabs">	
 									<rectangle margins="{left=20, right=10, top=20}" align="top" height="30" xradius="5" yradius="5" cornerType="round" color="#212121">
 										<button class="Tab" text="P E R S O N A G E M" onClick="TrocarAba('F');"/>
-										<button class="Tab" text="I N V E N T a R I O" onClick="TrocarAba('M');"/>
+										<button class="Tab" text="I N V E N T Á R I O" onClick="TrocarAba('M');"/>
 										<button class="Tab" text="S K I L L S" onClick="TrocarAba('S');"/>
-										<button class="Tab" text="D I a R I O" onClick="TrocarAba('H');"/>
-										<button class="Tab" text="A N O T A c Õ E S" onClick="TrocarAba('A');"/>
+										<button class="Tab" text="D I Á R I O" onClick="TrocarAba('H');"/>
+										<button class="Tab" text="A N O T A Ç Õ E S" onClick="TrocarAba('A');"/>
 									</rectangle>
 								</template>
 
@@ -268,12 +271,13 @@ button.Tab{
 													<label align="left" text="$(legenda):" width="$(largura)"/>
 													<edit field="$(campo)" align="client" margins="{right=10}" />
 													<dataLink field="$(campo)" defaultValue="—" />
-												</layout>
+																									</layout>
 											</template>
 
 											<CampoA legenda="Nome" largura="83" campo="nomeChar" />
 											<CampoA legenda="Rank" largura="83" campo="DivindadeChar" />
 											<CampoA legenda="Idade" largura="83" campo="IdadeChar" />
+											
 
 											<!-- RETANGULO NIVEL, HP E MANA-->
 											
@@ -297,13 +301,6 @@ button.Tab{
 											<label field="EstaminaPersonagem" horzTextAlign="center" left="-30" top="-4" /><dataLink field="EstaminaPersonagem"   defaultValue="0" />
 											</rectangle>
 
-											
-
-
-
-
-
-
 
 
 										</flowPart>
@@ -316,16 +313,16 @@ button.Tab{
 										<image align="client" src="imagens atributos" style="proportional"/>
 
 										
-										<label fontSize="16.0" fontColor="#ffffff" text="FORcA" left="0" top="38" />
+										<label fontSize="16.0" fontColor="#ffffff" text="FORÇA" left="0" top="38" />
 										<label fontSize="16.0" fontColor="#ffffff" text="DESTREZA" left="0" top="78" />
-										<label fontSize="16.0" fontColor="#ffffff" text="CONSTITUIcaO" left="0" top="118" />
-										<label fontSize="16.0" fontColor="#ffffff" text="INTELIGENCIA" left="0" top="158" />
+										<label fontSize="16.0" fontColor="#ffffff" text="CONSTITUIÇÃO" left="0" top="118" />
+										<label fontSize="16.0" fontColor="#ffffff" text="INTELIGÊNCIA" left="0" top="158" />
 										<label fontSize="16.0" fontColor="#ffffff" text="SABEDORIA" left="0" top="198" />
 										<label fontSize="16.0" fontColor="#ffffff" text="CARISMA" left="0" top="238" />
 
 										<label fontSize="16.0" text="VALOR" left="180" top="10" />
 										<label fontSize="16.0" text="ADD" left="295" top="10" />
-										<label fontSize="16.0" text="BONUS" left="392" top="10" />
+										<label fontSize="16.0" text="BÔNUS" left="392" top="10" />
 										<label fontSize="16.0" text="MOD" left="511" top="10" />
 															<!-- caixas -->	
 											<layout align="top" height="300" margins="{left=20, right=20}">
@@ -409,38 +406,38 @@ button.Tab{
 										<scrollBox width="630" height="820" left="20" top="0" >
 
 										<!-- GRADES DAS PERICIAS, COR SIM COR NaO -->
-										<rectangle width="600" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round" />
-										<rectangle width="600" top="40" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="80" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="120" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="160" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="200" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="240" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="280" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="320" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="360" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="400" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="440" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="480" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="520" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="560" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="600" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="640" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="680" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="720" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="760" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="800" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="840" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="880" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="920" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="960" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" height="20" color="#363636" xradius="5" yradius="5" cornerType="round" />
+										<rectangle width="600" top="40" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="80" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="120" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="160" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="200" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="240" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="280" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="320" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="360" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="400" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="440" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="480" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="520" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="560" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="600" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="640" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="680" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="720" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="760" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="800" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="840" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="880" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="920" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="960" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
 
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Dano Curto alcance" left="0" top="0" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Dano Longo alcance" left="0" top="20" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Quebrar Objetos" left="0" top="40" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Levantar Peso" left="0" top="60" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Empurrar obstaculo" left="0" top="80" />
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Braco de Ferro" left="0" top="100" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Braço de Ferro" left="0" top="100" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Escalar " left="0" top="120" />
 
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Iniciativa" left="0" top="140" />
@@ -450,39 +447,39 @@ button.Tab{
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Roubo" left="0" top="220" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Arremessar Objetos" left="0" top="240" />
 										<label fontSize="18.0" width="400" fontColor="#ffffff" text="Furtividade" left="0" top="260" />
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Montaria/Direcao" left="0" top="280" />
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Acerto a Distancia" left="0" top="300" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Montaria/Direção" left="0" top="280" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Acerto a Distância" left="0" top="300" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Acerto Curto alcance" left="0" top="320" />
 
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Correr" left="0" top="340" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Resistir a veneno" left="0" top="360" />
-										<label fontSize="18.0" width="400" fontColor="#ffffff" text="Resistencia a cansaco" left="0" top="380" />
+										<label fontSize="18.0" width="400" fontColor="#ffffff" text="Resistência a cansaço" left="0" top="380" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Segurar Folego" left="0" top="400" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Suporte Frio/Calor" left="0" top="420" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Defender" left="0" top="440" />
 
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Profissao" left="0" top="460" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Profissão" left="0" top="460" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Decifrar Codigo" left="0" top="480" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Identificar Criatura" left="0" top="500" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Ler Manuscrito" left="0" top="520" />
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Preparar Estrategia" left="0" top="540" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Preparar Estratégia" left="0" top="540" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Resistencia Mental" left="0" top="560" />
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Historia" left="0" top="580" />
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Investigacao" left="0" top="600" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="História" left="0" top="580" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Investigacão" left="0" top="600" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Perceber Mentira" left="0" top="620" />
 
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Percepcao" left="0" top="640" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Percepção" left="0" top="640" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Sentir Perigo" left="0" top="660" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Detectar Magia" left="0" top="680" />
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Acerto Magico" left="0" top="700" />
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Dano Magico" left="0" top="720" />
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Sobrevivencia" left="0" top="740" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Acerto Mágico" left="0" top="700" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Dano Mágico" left="0" top="720" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Sobrevivência" left="0" top="740" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Medicina" left="0" top="760" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Natureza" left="0" top="780" />
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Religiao" left="0" top="800" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Religião" left="0" top="800" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Discurso" left="0" top="820" />
 
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Seducao" left="0" top="840" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Sedução" left="0" top="840" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Intimidar" left="0" top="860" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Atuar" left="0" top="880" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Persuadir" left="0" top="900" />

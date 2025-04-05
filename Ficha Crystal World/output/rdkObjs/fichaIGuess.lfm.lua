@@ -206,7 +206,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
 
     obj.button2 = GUI.fromHandle(_obj_newObject("button"));
     obj.button2:setParent(obj.rectangle4);
-    obj.button2:setText("I N V E N T a R I O");
+    obj.button2:setText("I N V E N T Á R I O");
     obj.button2:setName("button2");
     obj.button2:setAlign("left");
     obj.button2:setMargins({right=2});
@@ -228,7 +228,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
 
     obj.button4 = GUI.fromHandle(_obj_newObject("button"));
     obj.button4:setParent(obj.rectangle4);
-    obj.button4:setText("D I a R I O");
+    obj.button4:setText("D I Á R I O");
     obj.button4:setName("button4");
     obj.button4:setAlign("left");
     obj.button4:setMargins({right=2});
@@ -239,7 +239,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
 
     obj.button5 = GUI.fromHandle(_obj_newObject("button"));
     obj.button5:setParent(obj.rectangle4);
-    obj.button5:setText("A N O T A c Õ E S");
+    obj.button5:setText("A N O T A Ç Õ E S");
     obj.button5:setName("button5");
     obj.button5:setAlign("left");
     obj.button5:setMargins({right=2});
@@ -878,28 +878,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.image2:setStyle("proportional");
     obj.image2:setName("image2");
 
-    obj.image3 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image3:setParent(obj.layout7);
-    obj.image3:setField("RankE");
-    obj.image3:setStyle("autoFit");
-    obj.image3:setEditable(true);
-    obj.image3:setWidth(80);
-    obj.image3:setHeight(70);
-    obj.image3:setTop(-50);
-    obj.image3:setLeft(548);
-    obj.image3:setName("image3");
-
-    obj.dataLink9 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink9:setParent(obj.layout7);
-    obj.dataLink9:setField("RankE");
-    obj.dataLink9:setDefaultValue("https://blob.firecast.com.br/blobs/WMLUDGMB_3776837/Captura_de_tela_2025-03-23_170213-removebg.png");
-    obj.dataLink9:setName("dataLink9");
-
     obj.label13 = GUI.fromHandle(_obj_newObject("label"));
     obj.label13:setParent(obj.layout7);
     obj.label13:setFontSize(16.0);
     obj.label13:setFontColor("#ffffff");
-    obj.label13:setText("FORcA");
+    obj.label13:setText("FORÇA");
     obj.label13:setLeft(0);
     obj.label13:setTop(38);
     obj.label13:setName("label13");
@@ -921,7 +904,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label15:setParent(obj.layout7);
     obj.label15:setFontSize(16.0);
     obj.label15:setFontColor("#ffffff");
-    obj.label15:setText("CONSTITUIcaO");
+    obj.label15:setText("CONSTITUIÇÃO");
     obj.label15:setLeft(0);
     obj.label15:setTop(118);
     obj.label15:setName("label15");
@@ -932,7 +915,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label16:setParent(obj.layout7);
     obj.label16:setFontSize(16.0);
     obj.label16:setFontColor("#ffffff");
-    obj.label16:setText("INTELIGENCIA");
+    obj.label16:setText("INTELIGÊNCIA");
     obj.label16:setLeft(0);
     obj.label16:setTop(158);
     obj.label16:setName("label16");
@@ -986,7 +969,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label21 = GUI.fromHandle(_obj_newObject("label"));
     obj.label21:setParent(obj.layout7);
     obj.label21:setFontSize(16.0);
-    obj.label21:setText("BONUS");
+    obj.label21:setText("BÔNUS");
     obj.label21:setLeft(392);
     obj.label21:setTop(10);
     obj.label21:setName("label21");
@@ -1012,12 +995,12 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.layout8:setMargins({left=20, right=20});
     obj.layout8:setName("layout8");
 
-    obj.image4 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image4:setParent(obj.layout8);
-    obj.image4:setAlign("client");
-    obj.image4:setSRC("");
-    obj.image4:setStyle("proportional");
-    obj.image4:setName("image4");
+    obj.image3 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image3:setParent(obj.layout8);
+    obj.image3:setAlign("client");
+    obj.image3:setSRC("");
+    obj.image3:setStyle("proportional");
+    obj.image3:setName("image3");
 
     obj.edit5 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit5:setParent(obj.layout8);
@@ -1036,11 +1019,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit5:setFontFamily("Cambria");
     obj.edit5:setTransparent(true);
 
-    obj.dataLink10 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink10:setParent(obj.layout8);
-    obj.dataLink10:setDefaultValue("0");
-    obj.dataLink10:setField("ForV");
-    obj.dataLink10:setName("dataLink10");
+    obj.dataLink9 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink9:setParent(obj.layout8);
+    obj.dataLink9:setDefaultValue("0");
+    obj.dataLink9:setField("ForV");
+    obj.dataLink9:setName("dataLink9");
 
     obj.edit6 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit6:setParent(obj.layout8);
@@ -1059,11 +1042,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit6:setFontFamily("Cambria");
     obj.edit6:setTransparent(true);
 
-    obj.dataLink11 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink11:setParent(obj.layout8);
-    obj.dataLink11:setDefaultValue("0");
-    obj.dataLink11:setField("DesV");
-    obj.dataLink11:setName("dataLink11");
+    obj.dataLink10 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink10:setParent(obj.layout8);
+    obj.dataLink10:setDefaultValue("0");
+    obj.dataLink10:setField("DesV");
+    obj.dataLink10:setName("dataLink10");
 
     obj.edit7 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit7:setParent(obj.layout8);
@@ -1082,11 +1065,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit7:setFontFamily("Cambria");
     obj.edit7:setTransparent(true);
 
-    obj.dataLink12 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink12:setParent(obj.layout8);
-    obj.dataLink12:setDefaultValue("0");
-    obj.dataLink12:setField("ConV");
-    obj.dataLink12:setName("dataLink12");
+    obj.dataLink11 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink11:setParent(obj.layout8);
+    obj.dataLink11:setDefaultValue("0");
+    obj.dataLink11:setField("ConV");
+    obj.dataLink11:setName("dataLink11");
 
     obj.edit8 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit8:setParent(obj.layout8);
@@ -1105,11 +1088,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit8:setFontFamily("Cambria");
     obj.edit8:setTransparent(true);
 
-    obj.dataLink13 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink13:setParent(obj.layout8);
-    obj.dataLink13:setDefaultValue("0");
-    obj.dataLink13:setField("IntV");
-    obj.dataLink13:setName("dataLink13");
+    obj.dataLink12 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink12:setParent(obj.layout8);
+    obj.dataLink12:setDefaultValue("0");
+    obj.dataLink12:setField("IntV");
+    obj.dataLink12:setName("dataLink12");
 
     obj.edit9 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit9:setParent(obj.layout8);
@@ -1128,11 +1111,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit9:setFontFamily("Cambria");
     obj.edit9:setTransparent(true);
 
-    obj.dataLink14 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink14:setParent(obj.layout8);
-    obj.dataLink14:setDefaultValue("0");
-    obj.dataLink14:setField("SabV");
-    obj.dataLink14:setName("dataLink14");
+    obj.dataLink13 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink13:setParent(obj.layout8);
+    obj.dataLink13:setDefaultValue("0");
+    obj.dataLink13:setField("SabV");
+    obj.dataLink13:setName("dataLink13");
 
     obj.edit10 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit10:setParent(obj.layout8);
@@ -1151,11 +1134,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit10:setFontFamily("Cambria");
     obj.edit10:setTransparent(true);
 
-    obj.dataLink15 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink15:setParent(obj.layout8);
-    obj.dataLink15:setDefaultValue("0");
-    obj.dataLink15:setField("CarV");
-    obj.dataLink15:setName("dataLink15");
+    obj.dataLink14 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink14:setParent(obj.layout8);
+    obj.dataLink14:setDefaultValue("0");
+    obj.dataLink14:setField("CarV");
+    obj.dataLink14:setName("dataLink14");
 
     obj.edit11 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit11:setParent(obj.layout8);
@@ -1174,11 +1157,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit11:setFontFamily("Cambria");
     obj.edit11:setTransparent(true);
 
-    obj.dataLink16 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink16:setParent(obj.layout8);
-    obj.dataLink16:setDefaultValue("0");
-    obj.dataLink16:setField("ForA");
-    obj.dataLink16:setName("dataLink16");
+    obj.dataLink15 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink15:setParent(obj.layout8);
+    obj.dataLink15:setDefaultValue("0");
+    obj.dataLink15:setField("ForA");
+    obj.dataLink15:setName("dataLink15");
 
     obj.edit12 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit12:setParent(obj.layout8);
@@ -1197,11 +1180,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit12:setFontFamily("Cambria");
     obj.edit12:setTransparent(true);
 
-    obj.dataLink17 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink17:setParent(obj.layout8);
-    obj.dataLink17:setDefaultValue("0");
-    obj.dataLink17:setField("DesA");
-    obj.dataLink17:setName("dataLink17");
+    obj.dataLink16 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink16:setParent(obj.layout8);
+    obj.dataLink16:setDefaultValue("0");
+    obj.dataLink16:setField("DesA");
+    obj.dataLink16:setName("dataLink16");
 
     obj.edit13 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit13:setParent(obj.layout8);
@@ -1220,11 +1203,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit13:setFontFamily("Cambria");
     obj.edit13:setTransparent(true);
 
-    obj.dataLink18 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink18:setParent(obj.layout8);
-    obj.dataLink18:setDefaultValue("0");
-    obj.dataLink18:setField("ConA");
-    obj.dataLink18:setName("dataLink18");
+    obj.dataLink17 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink17:setParent(obj.layout8);
+    obj.dataLink17:setDefaultValue("0");
+    obj.dataLink17:setField("ConA");
+    obj.dataLink17:setName("dataLink17");
 
     obj.edit14 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit14:setParent(obj.layout8);
@@ -1243,11 +1226,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit14:setFontFamily("Cambria");
     obj.edit14:setTransparent(true);
 
-    obj.dataLink19 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink19:setParent(obj.layout8);
-    obj.dataLink19:setDefaultValue("0");
-    obj.dataLink19:setField("IntA");
-    obj.dataLink19:setName("dataLink19");
+    obj.dataLink18 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink18:setParent(obj.layout8);
+    obj.dataLink18:setDefaultValue("0");
+    obj.dataLink18:setField("IntA");
+    obj.dataLink18:setName("dataLink18");
 
     obj.edit15 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit15:setParent(obj.layout8);
@@ -1266,11 +1249,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit15:setFontFamily("Cambria");
     obj.edit15:setTransparent(true);
 
-    obj.dataLink20 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink20:setParent(obj.layout8);
-    obj.dataLink20:setDefaultValue("0");
-    obj.dataLink20:setField("SabA");
-    obj.dataLink20:setName("dataLink20");
+    obj.dataLink19 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink19:setParent(obj.layout8);
+    obj.dataLink19:setDefaultValue("0");
+    obj.dataLink19:setField("SabA");
+    obj.dataLink19:setName("dataLink19");
 
     obj.edit16 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit16:setParent(obj.layout8);
@@ -1289,11 +1272,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit16:setFontFamily("Cambria");
     obj.edit16:setTransparent(true);
 
-    obj.dataLink21 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink21:setParent(obj.layout8);
-    obj.dataLink21:setDefaultValue("0");
-    obj.dataLink21:setField("CarA");
-    obj.dataLink21:setName("dataLink21");
+    obj.dataLink20 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink20:setParent(obj.layout8);
+    obj.dataLink20:setDefaultValue("0");
+    obj.dataLink20:setField("CarA");
+    obj.dataLink20:setName("dataLink20");
 
     obj.edit17 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit17:setParent(obj.layout8);
@@ -1312,11 +1295,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit17:setFontFamily("Cambria");
     obj.edit17:setTransparent(true);
 
-    obj.dataLink22 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink22:setParent(obj.layout8);
-    obj.dataLink22:setDefaultValue("0");
-    obj.dataLink22:setField("ForB");
-    obj.dataLink22:setName("dataLink22");
+    obj.dataLink21 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink21:setParent(obj.layout8);
+    obj.dataLink21:setDefaultValue("0");
+    obj.dataLink21:setField("ForB");
+    obj.dataLink21:setName("dataLink21");
 
     obj.edit18 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit18:setParent(obj.layout8);
@@ -1335,11 +1318,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit18:setFontFamily("Cambria");
     obj.edit18:setTransparent(true);
 
-    obj.dataLink23 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink23:setParent(obj.layout8);
-    obj.dataLink23:setDefaultValue("0");
-    obj.dataLink23:setField("DesB");
-    obj.dataLink23:setName("dataLink23");
+    obj.dataLink22 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink22:setParent(obj.layout8);
+    obj.dataLink22:setDefaultValue("0");
+    obj.dataLink22:setField("DesB");
+    obj.dataLink22:setName("dataLink22");
 
     obj.edit19 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit19:setParent(obj.layout8);
@@ -1358,11 +1341,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit19:setFontFamily("Cambria");
     obj.edit19:setTransparent(true);
 
-    obj.dataLink24 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink24:setParent(obj.layout8);
-    obj.dataLink24:setDefaultValue("0");
-    obj.dataLink24:setField("ConB");
-    obj.dataLink24:setName("dataLink24");
+    obj.dataLink23 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink23:setParent(obj.layout8);
+    obj.dataLink23:setDefaultValue("0");
+    obj.dataLink23:setField("ConB");
+    obj.dataLink23:setName("dataLink23");
 
     obj.edit20 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit20:setParent(obj.layout8);
@@ -1381,11 +1364,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit20:setFontFamily("Cambria");
     obj.edit20:setTransparent(true);
 
-    obj.dataLink25 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink25:setParent(obj.layout8);
-    obj.dataLink25:setDefaultValue("0");
-    obj.dataLink25:setField("IntB");
-    obj.dataLink25:setName("dataLink25");
+    obj.dataLink24 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink24:setParent(obj.layout8);
+    obj.dataLink24:setDefaultValue("0");
+    obj.dataLink24:setField("IntB");
+    obj.dataLink24:setName("dataLink24");
 
     obj.edit21 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit21:setParent(obj.layout8);
@@ -1404,11 +1387,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit21:setFontFamily("Cambria");
     obj.edit21:setTransparent(true);
 
-    obj.dataLink26 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink26:setParent(obj.layout8);
-    obj.dataLink26:setDefaultValue("0");
-    obj.dataLink26:setField("SabB");
-    obj.dataLink26:setName("dataLink26");
+    obj.dataLink25 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink25:setParent(obj.layout8);
+    obj.dataLink25:setDefaultValue("0");
+    obj.dataLink25:setField("SabB");
+    obj.dataLink25:setName("dataLink25");
 
     obj.edit22 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit22:setParent(obj.layout8);
@@ -1427,11 +1410,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit22:setFontFamily("Cambria");
     obj.edit22:setTransparent(true);
 
-    obj.dataLink27 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink27:setParent(obj.layout8);
-    obj.dataLink27:setDefaultValue("0");
-    obj.dataLink27:setField("CarB");
-    obj.dataLink27:setName("dataLink27");
+    obj.dataLink26 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink26:setParent(obj.layout8);
+    obj.dataLink26:setDefaultValue("0");
+    obj.dataLink26:setField("CarB");
+    obj.dataLink26:setName("dataLink26");
 
     obj.edit23 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit23:setParent(obj.layout8);
@@ -1450,11 +1433,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit23:setFontFamily("Cambria");
     obj.edit23:setTransparent(true);
 
-    obj.dataLink28 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink28:setParent(obj.layout8);
-    obj.dataLink28:setDefaultValue("0");
-    obj.dataLink28:setField("ForM");
-    obj.dataLink28:setName("dataLink28");
+    obj.dataLink27 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink27:setParent(obj.layout8);
+    obj.dataLink27:setDefaultValue("0");
+    obj.dataLink27:setField("ForM");
+    obj.dataLink27:setName("dataLink27");
 
     obj.edit24 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit24:setParent(obj.layout8);
@@ -1473,11 +1456,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit24:setFontFamily("Cambria");
     obj.edit24:setTransparent(true);
 
-    obj.dataLink29 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink29:setParent(obj.layout8);
-    obj.dataLink29:setDefaultValue("0");
-    obj.dataLink29:setField("DesM");
-    obj.dataLink29:setName("dataLink29");
+    obj.dataLink28 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink28:setParent(obj.layout8);
+    obj.dataLink28:setDefaultValue("0");
+    obj.dataLink28:setField("DesM");
+    obj.dataLink28:setName("dataLink28");
 
     obj.edit25 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit25:setParent(obj.layout8);
@@ -1496,11 +1479,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit25:setFontFamily("Cambria");
     obj.edit25:setTransparent(true);
 
-    obj.dataLink30 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink30:setParent(obj.layout8);
-    obj.dataLink30:setDefaultValue("0");
-    obj.dataLink30:setField("ConM");
-    obj.dataLink30:setName("dataLink30");
+    obj.dataLink29 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink29:setParent(obj.layout8);
+    obj.dataLink29:setDefaultValue("0");
+    obj.dataLink29:setField("ConM");
+    obj.dataLink29:setName("dataLink29");
 
     obj.edit26 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit26:setParent(obj.layout8);
@@ -1519,11 +1502,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit26:setFontFamily("Cambria");
     obj.edit26:setTransparent(true);
 
-    obj.dataLink31 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink31:setParent(obj.layout8);
-    obj.dataLink31:setDefaultValue("0");
-    obj.dataLink31:setField("IntM");
-    obj.dataLink31:setName("dataLink31");
+    obj.dataLink30 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink30:setParent(obj.layout8);
+    obj.dataLink30:setDefaultValue("0");
+    obj.dataLink30:setField("IntM");
+    obj.dataLink30:setName("dataLink30");
 
     obj.edit27 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit27:setParent(obj.layout8);
@@ -1542,11 +1525,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit27:setFontFamily("Cambria");
     obj.edit27:setTransparent(true);
 
-    obj.dataLink32 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink32:setParent(obj.layout8);
-    obj.dataLink32:setDefaultValue("0");
-    obj.dataLink32:setField("SabM");
-    obj.dataLink32:setName("dataLink32");
+    obj.dataLink31 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink31:setParent(obj.layout8);
+    obj.dataLink31:setDefaultValue("0");
+    obj.dataLink31:setField("SabM");
+    obj.dataLink31:setName("dataLink31");
 
     obj.edit28 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit28:setParent(obj.layout8);
@@ -1565,11 +1548,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit28:setFontFamily("Cambria");
     obj.edit28:setTransparent(true);
 
-    obj.dataLink33 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink33:setParent(obj.layout8);
-    obj.dataLink33:setDefaultValue("0");
-    obj.dataLink33:setField("CarM");
-    obj.dataLink33:setName("dataLink33");
+    obj.dataLink32 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink32:setParent(obj.layout8);
+    obj.dataLink32:setDefaultValue("0");
+    obj.dataLink32:setField("CarM");
+    obj.dataLink32:setName("dataLink32");
 
     obj.layout9 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout9:setParent(obj.flowPart2);
@@ -1633,7 +1616,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle33:setParent(obj.scrollBox2);
     obj.rectangle33:setWidth(600);
     obj.rectangle33:setHeight(20);
-    obj.rectangle33:setColor("#669ffa");
+    obj.rectangle33:setColor("#363636");
     obj.rectangle33:setXradius(5);
     obj.rectangle33:setYradius(5);
     obj.rectangle33:setCornerType("round");
@@ -1644,7 +1627,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle34:setWidth(600);
     obj.rectangle34:setTop(40);
     obj.rectangle34:setHeight(20);
-    obj.rectangle34:setColor("#669ffa");
+    obj.rectangle34:setColor("#363636");
     obj.rectangle34:setXradius(5);
     obj.rectangle34:setYradius(5);
     obj.rectangle34:setCornerType("round");
@@ -1655,7 +1638,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle35:setWidth(600);
     obj.rectangle35:setTop(80);
     obj.rectangle35:setHeight(20);
-    obj.rectangle35:setColor("#669ffa");
+    obj.rectangle35:setColor("#363636");
     obj.rectangle35:setXradius(5);
     obj.rectangle35:setYradius(5);
     obj.rectangle35:setCornerType("round");
@@ -1666,7 +1649,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle36:setWidth(600);
     obj.rectangle36:setTop(120);
     obj.rectangle36:setHeight(20);
-    obj.rectangle36:setColor("#669ffa");
+    obj.rectangle36:setColor("#363636");
     obj.rectangle36:setXradius(5);
     obj.rectangle36:setYradius(5);
     obj.rectangle36:setCornerType("round");
@@ -1677,7 +1660,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle37:setWidth(600);
     obj.rectangle37:setTop(160);
     obj.rectangle37:setHeight(20);
-    obj.rectangle37:setColor("#669ffa");
+    obj.rectangle37:setColor("#363636");
     obj.rectangle37:setXradius(5);
     obj.rectangle37:setYradius(5);
     obj.rectangle37:setCornerType("round");
@@ -1688,7 +1671,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle38:setWidth(600);
     obj.rectangle38:setTop(200);
     obj.rectangle38:setHeight(20);
-    obj.rectangle38:setColor("#669ffa");
+    obj.rectangle38:setColor("#363636");
     obj.rectangle38:setXradius(5);
     obj.rectangle38:setYradius(5);
     obj.rectangle38:setCornerType("round");
@@ -1699,7 +1682,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle39:setWidth(600);
     obj.rectangle39:setTop(240);
     obj.rectangle39:setHeight(20);
-    obj.rectangle39:setColor("#669ffa");
+    obj.rectangle39:setColor("#363636");
     obj.rectangle39:setXradius(5);
     obj.rectangle39:setYradius(5);
     obj.rectangle39:setCornerType("round");
@@ -1710,7 +1693,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle40:setWidth(600);
     obj.rectangle40:setTop(280);
     obj.rectangle40:setHeight(20);
-    obj.rectangle40:setColor("#669ffa");
+    obj.rectangle40:setColor("#363636");
     obj.rectangle40:setXradius(5);
     obj.rectangle40:setYradius(5);
     obj.rectangle40:setCornerType("round");
@@ -1721,7 +1704,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle41:setWidth(600);
     obj.rectangle41:setTop(320);
     obj.rectangle41:setHeight(20);
-    obj.rectangle41:setColor("#669ffa");
+    obj.rectangle41:setColor("#363636");
     obj.rectangle41:setXradius(5);
     obj.rectangle41:setYradius(5);
     obj.rectangle41:setCornerType("round");
@@ -1732,7 +1715,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle42:setWidth(600);
     obj.rectangle42:setTop(360);
     obj.rectangle42:setHeight(20);
-    obj.rectangle42:setColor("#669ffa");
+    obj.rectangle42:setColor("#363636");
     obj.rectangle42:setXradius(5);
     obj.rectangle42:setYradius(5);
     obj.rectangle42:setCornerType("round");
@@ -1743,7 +1726,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle43:setWidth(600);
     obj.rectangle43:setTop(400);
     obj.rectangle43:setHeight(20);
-    obj.rectangle43:setColor("#669ffa");
+    obj.rectangle43:setColor("#363636");
     obj.rectangle43:setXradius(5);
     obj.rectangle43:setYradius(5);
     obj.rectangle43:setCornerType("round");
@@ -1754,7 +1737,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle44:setWidth(600);
     obj.rectangle44:setTop(440);
     obj.rectangle44:setHeight(20);
-    obj.rectangle44:setColor("#669ffa");
+    obj.rectangle44:setColor("#363636");
     obj.rectangle44:setXradius(5);
     obj.rectangle44:setYradius(5);
     obj.rectangle44:setCornerType("round");
@@ -1765,7 +1748,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle45:setWidth(600);
     obj.rectangle45:setTop(480);
     obj.rectangle45:setHeight(20);
-    obj.rectangle45:setColor("#669ffa");
+    obj.rectangle45:setColor("#363636");
     obj.rectangle45:setXradius(5);
     obj.rectangle45:setYradius(5);
     obj.rectangle45:setCornerType("round");
@@ -1776,7 +1759,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle46:setWidth(600);
     obj.rectangle46:setTop(520);
     obj.rectangle46:setHeight(20);
-    obj.rectangle46:setColor("#669ffa");
+    obj.rectangle46:setColor("#363636");
     obj.rectangle46:setXradius(5);
     obj.rectangle46:setYradius(5);
     obj.rectangle46:setCornerType("round");
@@ -1787,7 +1770,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle47:setWidth(600);
     obj.rectangle47:setTop(560);
     obj.rectangle47:setHeight(20);
-    obj.rectangle47:setColor("#669ffa");
+    obj.rectangle47:setColor("#363636");
     obj.rectangle47:setXradius(5);
     obj.rectangle47:setYradius(5);
     obj.rectangle47:setCornerType("round");
@@ -1798,7 +1781,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle48:setWidth(600);
     obj.rectangle48:setTop(600);
     obj.rectangle48:setHeight(20);
-    obj.rectangle48:setColor("#669ffa");
+    obj.rectangle48:setColor("#363636");
     obj.rectangle48:setXradius(5);
     obj.rectangle48:setYradius(5);
     obj.rectangle48:setCornerType("round");
@@ -1809,7 +1792,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle49:setWidth(600);
     obj.rectangle49:setTop(640);
     obj.rectangle49:setHeight(20);
-    obj.rectangle49:setColor("#669ffa");
+    obj.rectangle49:setColor("#363636");
     obj.rectangle49:setXradius(5);
     obj.rectangle49:setYradius(5);
     obj.rectangle49:setCornerType("round");
@@ -1820,7 +1803,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle50:setWidth(600);
     obj.rectangle50:setTop(680);
     obj.rectangle50:setHeight(20);
-    obj.rectangle50:setColor("#669ffa");
+    obj.rectangle50:setColor("#363636");
     obj.rectangle50:setXradius(5);
     obj.rectangle50:setYradius(5);
     obj.rectangle50:setCornerType("round");
@@ -1831,7 +1814,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle51:setWidth(600);
     obj.rectangle51:setTop(720);
     obj.rectangle51:setHeight(20);
-    obj.rectangle51:setColor("#669ffa");
+    obj.rectangle51:setColor("#363636");
     obj.rectangle51:setXradius(5);
     obj.rectangle51:setYradius(5);
     obj.rectangle51:setCornerType("round");
@@ -1842,7 +1825,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle52:setWidth(600);
     obj.rectangle52:setTop(760);
     obj.rectangle52:setHeight(20);
-    obj.rectangle52:setColor("#669ffa");
+    obj.rectangle52:setColor("#363636");
     obj.rectangle52:setXradius(5);
     obj.rectangle52:setYradius(5);
     obj.rectangle52:setCornerType("round");
@@ -1853,7 +1836,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle53:setWidth(600);
     obj.rectangle53:setTop(800);
     obj.rectangle53:setHeight(20);
-    obj.rectangle53:setColor("#669ffa");
+    obj.rectangle53:setColor("#363636");
     obj.rectangle53:setXradius(5);
     obj.rectangle53:setYradius(5);
     obj.rectangle53:setCornerType("round");
@@ -1864,7 +1847,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle54:setWidth(600);
     obj.rectangle54:setTop(840);
     obj.rectangle54:setHeight(20);
-    obj.rectangle54:setColor("#669ffa");
+    obj.rectangle54:setColor("#363636");
     obj.rectangle54:setXradius(5);
     obj.rectangle54:setYradius(5);
     obj.rectangle54:setCornerType("round");
@@ -1875,7 +1858,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle55:setWidth(600);
     obj.rectangle55:setTop(880);
     obj.rectangle55:setHeight(20);
-    obj.rectangle55:setColor("#669ffa");
+    obj.rectangle55:setColor("#363636");
     obj.rectangle55:setXradius(5);
     obj.rectangle55:setYradius(5);
     obj.rectangle55:setCornerType("round");
@@ -1886,7 +1869,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle56:setWidth(600);
     obj.rectangle56:setTop(920);
     obj.rectangle56:setHeight(20);
-    obj.rectangle56:setColor("#669ffa");
+    obj.rectangle56:setColor("#363636");
     obj.rectangle56:setXradius(5);
     obj.rectangle56:setYradius(5);
     obj.rectangle56:setCornerType("round");
@@ -1897,7 +1880,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle57:setWidth(600);
     obj.rectangle57:setTop(960);
     obj.rectangle57:setHeight(20);
-    obj.rectangle57:setColor("#669ffa");
+    obj.rectangle57:setColor("#363636");
     obj.rectangle57:setXradius(5);
     obj.rectangle57:setYradius(5);
     obj.rectangle57:setCornerType("round");
@@ -1968,7 +1951,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label29:setFontSize(20.0);
     obj.label29:setWidth(400);
     obj.label29:setFontColor("#ffffff");
-    obj.label29:setText("Braco de Ferro");
+    obj.label29:setText("Braço de Ferro");
     obj.label29:setLeft(0);
     obj.label29:setTop(100);
     obj.label29:setName("label29");
@@ -2076,7 +2059,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label38:setFontSize(20.0);
     obj.label38:setWidth(400);
     obj.label38:setFontColor("#ffffff");
-    obj.label38:setText("Montaria/Direcao");
+    obj.label38:setText("Montaria/Direção");
     obj.label38:setLeft(0);
     obj.label38:setTop(280);
     obj.label38:setName("label38");
@@ -2088,7 +2071,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label39:setFontSize(20.0);
     obj.label39:setWidth(400);
     obj.label39:setFontColor("#ffffff");
-    obj.label39:setText("Acerto a Distancia");
+    obj.label39:setText("Acerto a Distância");
     obj.label39:setLeft(0);
     obj.label39:setTop(300);
     obj.label39:setName("label39");
@@ -2136,7 +2119,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label43:setFontSize(18.0);
     obj.label43:setWidth(400);
     obj.label43:setFontColor("#ffffff");
-    obj.label43:setText("Resistencia a cansaco");
+    obj.label43:setText("Resistência a cansaço");
     obj.label43:setLeft(0);
     obj.label43:setTop(380);
     obj.label43:setName("label43");
@@ -2184,7 +2167,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label47:setFontSize(20.0);
     obj.label47:setWidth(400);
     obj.label47:setFontColor("#ffffff");
-    obj.label47:setText("Profissao");
+    obj.label47:setText("Profissão");
     obj.label47:setLeft(0);
     obj.label47:setTop(460);
     obj.label47:setName("label47");
@@ -2232,7 +2215,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label51:setFontSize(20.0);
     obj.label51:setWidth(400);
     obj.label51:setFontColor("#ffffff");
-    obj.label51:setText("Preparar Estrategia");
+    obj.label51:setText("Preparar Estratégia");
     obj.label51:setLeft(0);
     obj.label51:setTop(540);
     obj.label51:setName("label51");
@@ -2256,7 +2239,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label53:setFontSize(20.0);
     obj.label53:setWidth(400);
     obj.label53:setFontColor("#ffffff");
-    obj.label53:setText("Historia");
+    obj.label53:setText("História");
     obj.label53:setLeft(0);
     obj.label53:setTop(580);
     obj.label53:setName("label53");
@@ -2268,7 +2251,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label54:setFontSize(20.0);
     obj.label54:setWidth(400);
     obj.label54:setFontColor("#ffffff");
-    obj.label54:setText("Investigacao");
+    obj.label54:setText("Investigacão");
     obj.label54:setLeft(0);
     obj.label54:setTop(600);
     obj.label54:setName("label54");
@@ -2292,7 +2275,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label56:setFontSize(20.0);
     obj.label56:setWidth(400);
     obj.label56:setFontColor("#ffffff");
-    obj.label56:setText("Percepcao");
+    obj.label56:setText("Percepção");
     obj.label56:setLeft(0);
     obj.label56:setTop(640);
     obj.label56:setName("label56");
@@ -2328,7 +2311,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label59:setFontSize(20.0);
     obj.label59:setWidth(400);
     obj.label59:setFontColor("#ffffff");
-    obj.label59:setText("Acerto Magico");
+    obj.label59:setText("Acerto Mágico");
     obj.label59:setLeft(0);
     obj.label59:setTop(700);
     obj.label59:setName("label59");
@@ -2340,7 +2323,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label60:setFontSize(20.0);
     obj.label60:setWidth(400);
     obj.label60:setFontColor("#ffffff");
-    obj.label60:setText("Dano Magico");
+    obj.label60:setText("Dano Mágico");
     obj.label60:setLeft(0);
     obj.label60:setTop(720);
     obj.label60:setName("label60");
@@ -2352,7 +2335,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label61:setFontSize(20.0);
     obj.label61:setWidth(400);
     obj.label61:setFontColor("#ffffff");
-    obj.label61:setText("Sobrevivencia");
+    obj.label61:setText("Sobrevivência");
     obj.label61:setLeft(0);
     obj.label61:setTop(740);
     obj.label61:setName("label61");
@@ -2388,7 +2371,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label64:setFontSize(20.0);
     obj.label64:setWidth(400);
     obj.label64:setFontColor("#ffffff");
-    obj.label64:setText("Religiao");
+    obj.label64:setText("Religião");
     obj.label64:setLeft(0);
     obj.label64:setTop(800);
     obj.label64:setName("label64");
@@ -2412,7 +2395,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label66:setFontSize(20.0);
     obj.label66:setWidth(400);
     obj.label66:setFontColor("#ffffff");
-    obj.label66:setText("Seducao");
+    obj.label66:setText("Sedução");
     obj.label66:setLeft(0);
     obj.label66:setTop(840);
     obj.label66:setName("label66");
@@ -2508,11 +2491,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit29:setFontFamily("Cambria");
     obj.edit29:setTransparent(true);
 
-    obj.dataLink34 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink34:setParent(obj.scrollBox2);
-    obj.dataLink34:setDefaultValue("0");
-    obj.dataLink34:setField("NvDanoCurtoAlcance");
-    obj.dataLink34:setName("dataLink34");
+    obj.dataLink33 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink33:setParent(obj.scrollBox2);
+    obj.dataLink33:setDefaultValue("0");
+    obj.dataLink33:setField("NvDanoCurtoAlcance");
+    obj.dataLink33:setName("dataLink33");
 
     obj.edit30 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit30:setParent(obj.scrollBox2);
@@ -2531,11 +2514,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit30:setFontFamily("Cambria");
     obj.edit30:setTransparent(true);
 
-    obj.dataLink35 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink35:setParent(obj.scrollBox2);
-    obj.dataLink35:setDefaultValue("0");
-    obj.dataLink35:setField("NvDanoLongoAlcance");
-    obj.dataLink35:setName("dataLink35");
+    obj.dataLink34 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink34:setParent(obj.scrollBox2);
+    obj.dataLink34:setDefaultValue("0");
+    obj.dataLink34:setField("NvDanoLongoAlcance");
+    obj.dataLink34:setName("dataLink34");
 
     obj.edit31 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit31:setParent(obj.scrollBox2);
@@ -2554,11 +2537,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit31:setFontFamily("Cambria");
     obj.edit31:setTransparent(true);
 
-    obj.dataLink36 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink36:setParent(obj.scrollBox2);
-    obj.dataLink36:setDefaultValue("0");
-    obj.dataLink36:setField("NvQuebrarObjetos");
-    obj.dataLink36:setName("dataLink36");
+    obj.dataLink35 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink35:setParent(obj.scrollBox2);
+    obj.dataLink35:setDefaultValue("0");
+    obj.dataLink35:setField("NvQuebrarObjetos");
+    obj.dataLink35:setName("dataLink35");
 
     obj.edit32 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit32:setParent(obj.scrollBox2);
@@ -2577,11 +2560,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit32:setFontFamily("Cambria");
     obj.edit32:setTransparent(true);
 
-    obj.dataLink37 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink37:setParent(obj.scrollBox2);
-    obj.dataLink37:setDefaultValue("0");
-    obj.dataLink37:setField("NvLevantarPeso");
-    obj.dataLink37:setName("dataLink37");
+    obj.dataLink36 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink36:setParent(obj.scrollBox2);
+    obj.dataLink36:setDefaultValue("0");
+    obj.dataLink36:setField("NvLevantarPeso");
+    obj.dataLink36:setName("dataLink36");
 
     obj.edit33 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit33:setParent(obj.scrollBox2);
@@ -2600,11 +2583,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit33:setFontFamily("Cambria");
     obj.edit33:setTransparent(true);
 
-    obj.dataLink38 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink38:setParent(obj.scrollBox2);
-    obj.dataLink38:setDefaultValue("0");
-    obj.dataLink38:setField("NvEmpurrarObstaculo");
-    obj.dataLink38:setName("dataLink38");
+    obj.dataLink37 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink37:setParent(obj.scrollBox2);
+    obj.dataLink37:setDefaultValue("0");
+    obj.dataLink37:setField("NvEmpurrarObstaculo");
+    obj.dataLink37:setName("dataLink37");
 
     obj.edit34 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit34:setParent(obj.scrollBox2);
@@ -2623,11 +2606,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit34:setFontFamily("Cambria");
     obj.edit34:setTransparent(true);
 
-    obj.dataLink39 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink39:setParent(obj.scrollBox2);
-    obj.dataLink39:setDefaultValue("0");
-    obj.dataLink39:setField("NvBracoDeFerro");
-    obj.dataLink39:setName("dataLink39");
+    obj.dataLink38 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink38:setParent(obj.scrollBox2);
+    obj.dataLink38:setDefaultValue("0");
+    obj.dataLink38:setField("NvBracoDeFerro");
+    obj.dataLink38:setName("dataLink38");
 
     obj.edit35 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit35:setParent(obj.scrollBox2);
@@ -2646,11 +2629,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit35:setFontFamily("Cambria");
     obj.edit35:setTransparent(true);
 
-    obj.dataLink40 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink40:setParent(obj.scrollBox2);
-    obj.dataLink40:setDefaultValue("0");
-    obj.dataLink40:setField("NvEscalar");
-    obj.dataLink40:setName("dataLink40");
+    obj.dataLink39 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink39:setParent(obj.scrollBox2);
+    obj.dataLink39:setDefaultValue("0");
+    obj.dataLink39:setField("NvEscalar");
+    obj.dataLink39:setName("dataLink39");
 
     obj.edit36 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit36:setParent(obj.scrollBox2);
@@ -2669,11 +2652,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit36:setFontFamily("Cambria");
     obj.edit36:setTransparent(true);
 
-    obj.dataLink41 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink41:setParent(obj.scrollBox2);
-    obj.dataLink41:setDefaultValue("0");
-    obj.dataLink41:setField("NvIniciativa");
-    obj.dataLink41:setName("dataLink41");
+    obj.dataLink40 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink40:setParent(obj.scrollBox2);
+    obj.dataLink40:setDefaultValue("0");
+    obj.dataLink40:setField("NvIniciativa");
+    obj.dataLink40:setName("dataLink40");
 
     obj.edit37 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit37:setParent(obj.scrollBox2);
@@ -2692,11 +2675,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit37:setFontFamily("Cambria");
     obj.edit37:setTransparent(true);
 
-    obj.dataLink42 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink42:setParent(obj.scrollBox2);
-    obj.dataLink42:setDefaultValue("0");
-    obj.dataLink42:setField("NvEsquivar");
-    obj.dataLink42:setName("dataLink42");
+    obj.dataLink41 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink41:setParent(obj.scrollBox2);
+    obj.dataLink41:setDefaultValue("0");
+    obj.dataLink41:setField("NvEsquivar");
+    obj.dataLink41:setName("dataLink41");
 
     obj.edit38 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit38:setParent(obj.scrollBox2);
@@ -2715,11 +2698,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit38:setFontFamily("Cambria");
     obj.edit38:setTransparent(true);
 
-    obj.dataLink43 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink43:setParent(obj.scrollBox2);
-    obj.dataLink43:setDefaultValue("0");
-    obj.dataLink43:setField("NvDesarmarArmadilha");
-    obj.dataLink43:setName("dataLink43");
+    obj.dataLink42 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink42:setParent(obj.scrollBox2);
+    obj.dataLink42:setDefaultValue("0");
+    obj.dataLink42:setField("NvDesarmarArmadilha");
+    obj.dataLink42:setName("dataLink42");
 
     obj.edit39 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit39:setParent(obj.scrollBox2);
@@ -2738,11 +2721,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit39:setFontFamily("Cambria");
     obj.edit39:setTransparent(true);
 
-    obj.dataLink44 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink44:setParent(obj.scrollBox2);
-    obj.dataLink44:setDefaultValue("0");
-    obj.dataLink44:setField("NvAcrobacias");
-    obj.dataLink44:setName("dataLink44");
+    obj.dataLink43 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink43:setParent(obj.scrollBox2);
+    obj.dataLink43:setDefaultValue("0");
+    obj.dataLink43:setField("NvAcrobacias");
+    obj.dataLink43:setName("dataLink43");
 
     obj.edit40 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit40:setParent(obj.scrollBox2);
@@ -2761,11 +2744,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit40:setFontFamily("Cambria");
     obj.edit40:setTransparent(true);
 
-    obj.dataLink45 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink45:setParent(obj.scrollBox2);
-    obj.dataLink45:setDefaultValue("0");
-    obj.dataLink45:setField("NvRoubo");
-    obj.dataLink45:setName("dataLink45");
+    obj.dataLink44 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink44:setParent(obj.scrollBox2);
+    obj.dataLink44:setDefaultValue("0");
+    obj.dataLink44:setField("NvRoubo");
+    obj.dataLink44:setName("dataLink44");
 
     obj.edit41 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit41:setParent(obj.scrollBox2);
@@ -2784,11 +2767,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit41:setFontFamily("Cambria");
     obj.edit41:setTransparent(true);
 
-    obj.dataLink46 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink46:setParent(obj.scrollBox2);
-    obj.dataLink46:setDefaultValue("0");
-    obj.dataLink46:setField("NvArremessarObjetos");
-    obj.dataLink46:setName("dataLink46");
+    obj.dataLink45 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink45:setParent(obj.scrollBox2);
+    obj.dataLink45:setDefaultValue("0");
+    obj.dataLink45:setField("NvArremessarObjetos");
+    obj.dataLink45:setName("dataLink45");
 
     obj.edit42 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit42:setParent(obj.scrollBox2);
@@ -2807,11 +2790,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit42:setFontFamily("Cambria");
     obj.edit42:setTransparent(true);
 
-    obj.dataLink47 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink47:setParent(obj.scrollBox2);
-    obj.dataLink47:setDefaultValue("0");
-    obj.dataLink47:setField("NvFurtividade");
-    obj.dataLink47:setName("dataLink47");
+    obj.dataLink46 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink46:setParent(obj.scrollBox2);
+    obj.dataLink46:setDefaultValue("0");
+    obj.dataLink46:setField("NvFurtividade");
+    obj.dataLink46:setName("dataLink46");
 
     obj.edit43 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit43:setParent(obj.scrollBox2);
@@ -2830,11 +2813,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit43:setFontFamily("Cambria");
     obj.edit43:setTransparent(true);
 
-    obj.dataLink48 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink48:setParent(obj.scrollBox2);
-    obj.dataLink48:setDefaultValue("0");
-    obj.dataLink48:setField("NvMontaria");
-    obj.dataLink48:setName("dataLink48");
+    obj.dataLink47 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink47:setParent(obj.scrollBox2);
+    obj.dataLink47:setDefaultValue("0");
+    obj.dataLink47:setField("NvMontaria");
+    obj.dataLink47:setName("dataLink47");
 
     obj.edit44 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit44:setParent(obj.scrollBox2);
@@ -2853,11 +2836,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit44:setFontFamily("Cambria");
     obj.edit44:setTransparent(true);
 
-    obj.dataLink49 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink49:setParent(obj.scrollBox2);
-    obj.dataLink49:setDefaultValue("0");
-    obj.dataLink49:setField("NvAcertoDistancia");
-    obj.dataLink49:setName("dataLink49");
+    obj.dataLink48 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink48:setParent(obj.scrollBox2);
+    obj.dataLink48:setDefaultValue("0");
+    obj.dataLink48:setField("NvAcertoDistancia");
+    obj.dataLink48:setName("dataLink48");
 
     obj.edit45 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit45:setParent(obj.scrollBox2);
@@ -2876,11 +2859,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit45:setFontFamily("Cambria");
     obj.edit45:setTransparent(true);
 
-    obj.dataLink50 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink50:setParent(obj.scrollBox2);
-    obj.dataLink50:setDefaultValue("0");
-    obj.dataLink50:setField("NvAcertoCurtoAlcance");
-    obj.dataLink50:setName("dataLink50");
+    obj.dataLink49 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink49:setParent(obj.scrollBox2);
+    obj.dataLink49:setDefaultValue("0");
+    obj.dataLink49:setField("NvAcertoCurtoAlcance");
+    obj.dataLink49:setName("dataLink49");
 
     obj.edit46 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit46:setParent(obj.scrollBox2);
@@ -2899,11 +2882,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit46:setFontFamily("Cambria");
     obj.edit46:setTransparent(true);
 
-    obj.dataLink51 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink51:setParent(obj.scrollBox2);
-    obj.dataLink51:setDefaultValue("0");
-    obj.dataLink51:setField("NvCorrer");
-    obj.dataLink51:setName("dataLink51");
+    obj.dataLink50 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink50:setParent(obj.scrollBox2);
+    obj.dataLink50:setDefaultValue("0");
+    obj.dataLink50:setField("NvCorrer");
+    obj.dataLink50:setName("dataLink50");
 
     obj.edit47 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit47:setParent(obj.scrollBox2);
@@ -2922,11 +2905,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit47:setFontFamily("Cambria");
     obj.edit47:setTransparent(true);
 
-    obj.dataLink52 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink52:setParent(obj.scrollBox2);
-    obj.dataLink52:setDefaultValue("0");
-    obj.dataLink52:setField("NvResistenciaVeneno");
-    obj.dataLink52:setName("dataLink52");
+    obj.dataLink51 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink51:setParent(obj.scrollBox2);
+    obj.dataLink51:setDefaultValue("0");
+    obj.dataLink51:setField("NvResistenciaVeneno");
+    obj.dataLink51:setName("dataLink51");
 
     obj.edit48 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit48:setParent(obj.scrollBox2);
@@ -2945,11 +2928,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit48:setFontFamily("Cambria");
     obj.edit48:setTransparent(true);
 
-    obj.dataLink53 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink53:setParent(obj.scrollBox2);
-    obj.dataLink53:setDefaultValue("0");
-    obj.dataLink53:setField("NvResistenciaCansaco");
-    obj.dataLink53:setName("dataLink53");
+    obj.dataLink52 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink52:setParent(obj.scrollBox2);
+    obj.dataLink52:setDefaultValue("0");
+    obj.dataLink52:setField("NvResistenciaCansaco");
+    obj.dataLink52:setName("dataLink52");
 
     obj.edit49 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit49:setParent(obj.scrollBox2);
@@ -2968,11 +2951,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit49:setFontFamily("Cambria");
     obj.edit49:setTransparent(true);
 
-    obj.dataLink54 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink54:setParent(obj.scrollBox2);
-    obj.dataLink54:setDefaultValue("0");
-    obj.dataLink54:setField("NvSegurarFolego");
-    obj.dataLink54:setName("dataLink54");
+    obj.dataLink53 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink53:setParent(obj.scrollBox2);
+    obj.dataLink53:setDefaultValue("0");
+    obj.dataLink53:setField("NvSegurarFolego");
+    obj.dataLink53:setName("dataLink53");
 
     obj.edit50 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit50:setParent(obj.scrollBox2);
@@ -2991,11 +2974,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit50:setFontFamily("Cambria");
     obj.edit50:setTransparent(true);
 
-    obj.dataLink55 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink55:setParent(obj.scrollBox2);
-    obj.dataLink55:setDefaultValue("0");
-    obj.dataLink55:setField("NvSuporteFrioCalor");
-    obj.dataLink55:setName("dataLink55");
+    obj.dataLink54 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink54:setParent(obj.scrollBox2);
+    obj.dataLink54:setDefaultValue("0");
+    obj.dataLink54:setField("NvSuporteFrioCalor");
+    obj.dataLink54:setName("dataLink54");
 
     obj.edit51 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit51:setParent(obj.scrollBox2);
@@ -3014,11 +2997,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit51:setFontFamily("Cambria");
     obj.edit51:setTransparent(true);
 
-    obj.dataLink56 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink56:setParent(obj.scrollBox2);
-    obj.dataLink56:setDefaultValue("0");
-    obj.dataLink56:setField("NvDefender");
-    obj.dataLink56:setName("dataLink56");
+    obj.dataLink55 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink55:setParent(obj.scrollBox2);
+    obj.dataLink55:setDefaultValue("0");
+    obj.dataLink55:setField("NvDefender");
+    obj.dataLink55:setName("dataLink55");
 
     obj.edit52 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit52:setParent(obj.scrollBox2);
@@ -3037,11 +3020,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit52:setFontFamily("Cambria");
     obj.edit52:setTransparent(true);
 
-    obj.dataLink57 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink57:setParent(obj.scrollBox2);
-    obj.dataLink57:setDefaultValue("0");
-    obj.dataLink57:setField("NvProfissao");
-    obj.dataLink57:setName("dataLink57");
+    obj.dataLink56 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink56:setParent(obj.scrollBox2);
+    obj.dataLink56:setDefaultValue("0");
+    obj.dataLink56:setField("NvProfissao");
+    obj.dataLink56:setName("dataLink56");
 
     obj.edit53 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit53:setParent(obj.scrollBox2);
@@ -3060,11 +3043,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit53:setFontFamily("Cambria");
     obj.edit53:setTransparent(true);
 
-    obj.dataLink58 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink58:setParent(obj.scrollBox2);
-    obj.dataLink58:setDefaultValue("0");
-    obj.dataLink58:setField("NvDecifrarCodigo");
-    obj.dataLink58:setName("dataLink58");
+    obj.dataLink57 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink57:setParent(obj.scrollBox2);
+    obj.dataLink57:setDefaultValue("0");
+    obj.dataLink57:setField("NvDecifrarCodigo");
+    obj.dataLink57:setName("dataLink57");
 
     obj.edit54 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit54:setParent(obj.scrollBox2);
@@ -3083,11 +3066,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit54:setFontFamily("Cambria");
     obj.edit54:setTransparent(true);
 
-    obj.dataLink59 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink59:setParent(obj.scrollBox2);
-    obj.dataLink59:setDefaultValue("0");
-    obj.dataLink59:setField("NvIdentificarCriatura");
-    obj.dataLink59:setName("dataLink59");
+    obj.dataLink58 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink58:setParent(obj.scrollBox2);
+    obj.dataLink58:setDefaultValue("0");
+    obj.dataLink58:setField("NvIdentificarCriatura");
+    obj.dataLink58:setName("dataLink58");
 
     obj.edit55 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit55:setParent(obj.scrollBox2);
@@ -3106,11 +3089,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit55:setFontFamily("Cambria");
     obj.edit55:setTransparent(true);
 
-    obj.dataLink60 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink60:setParent(obj.scrollBox2);
-    obj.dataLink60:setDefaultValue("0");
-    obj.dataLink60:setField("NvLerManuscrito");
-    obj.dataLink60:setName("dataLink60");
+    obj.dataLink59 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink59:setParent(obj.scrollBox2);
+    obj.dataLink59:setDefaultValue("0");
+    obj.dataLink59:setField("NvLerManuscrito");
+    obj.dataLink59:setName("dataLink59");
 
     obj.edit56 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit56:setParent(obj.scrollBox2);
@@ -3129,11 +3112,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit56:setFontFamily("Cambria");
     obj.edit56:setTransparent(true);
 
-    obj.dataLink61 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink61:setParent(obj.scrollBox2);
-    obj.dataLink61:setDefaultValue("0");
-    obj.dataLink61:setField("NvPrepararEstrategia");
-    obj.dataLink61:setName("dataLink61");
+    obj.dataLink60 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink60:setParent(obj.scrollBox2);
+    obj.dataLink60:setDefaultValue("0");
+    obj.dataLink60:setField("NvPrepararEstrategia");
+    obj.dataLink60:setName("dataLink60");
 
     obj.edit57 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit57:setParent(obj.scrollBox2);
@@ -3152,11 +3135,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit57:setFontFamily("Cambria");
     obj.edit57:setTransparent(true);
 
-    obj.dataLink62 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink62:setParent(obj.scrollBox2);
-    obj.dataLink62:setDefaultValue("0");
-    obj.dataLink62:setField("NvResistenciaMental");
-    obj.dataLink62:setName("dataLink62");
+    obj.dataLink61 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink61:setParent(obj.scrollBox2);
+    obj.dataLink61:setDefaultValue("0");
+    obj.dataLink61:setField("NvResistenciaMental");
+    obj.dataLink61:setName("dataLink61");
 
     obj.edit58 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit58:setParent(obj.scrollBox2);
@@ -3175,11 +3158,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit58:setFontFamily("Cambria");
     obj.edit58:setTransparent(true);
 
-    obj.dataLink63 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink63:setParent(obj.scrollBox2);
-    obj.dataLink63:setDefaultValue("0");
-    obj.dataLink63:setField("NvHistoria");
-    obj.dataLink63:setName("dataLink63");
+    obj.dataLink62 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink62:setParent(obj.scrollBox2);
+    obj.dataLink62:setDefaultValue("0");
+    obj.dataLink62:setField("NvHistoria");
+    obj.dataLink62:setName("dataLink62");
 
     obj.edit59 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit59:setParent(obj.scrollBox2);
@@ -3198,11 +3181,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit59:setFontFamily("Cambria");
     obj.edit59:setTransparent(true);
 
-    obj.dataLink64 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink64:setParent(obj.scrollBox2);
-    obj.dataLink64:setDefaultValue("0");
-    obj.dataLink64:setField("NvInvestigacao");
-    obj.dataLink64:setName("dataLink64");
+    obj.dataLink63 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink63:setParent(obj.scrollBox2);
+    obj.dataLink63:setDefaultValue("0");
+    obj.dataLink63:setField("NvInvestigacao");
+    obj.dataLink63:setName("dataLink63");
 
     obj.edit60 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit60:setParent(obj.scrollBox2);
@@ -3221,11 +3204,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit60:setFontFamily("Cambria");
     obj.edit60:setTransparent(true);
 
-    obj.dataLink65 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink65:setParent(obj.scrollBox2);
-    obj.dataLink65:setDefaultValue("0");
-    obj.dataLink65:setField("NvPerceberMentira");
-    obj.dataLink65:setName("dataLink65");
+    obj.dataLink64 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink64:setParent(obj.scrollBox2);
+    obj.dataLink64:setDefaultValue("0");
+    obj.dataLink64:setField("NvPerceberMentira");
+    obj.dataLink64:setName("dataLink64");
 
     obj.edit61 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit61:setParent(obj.scrollBox2);
@@ -3244,11 +3227,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit61:setFontFamily("Cambria");
     obj.edit61:setTransparent(true);
 
-    obj.dataLink66 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink66:setParent(obj.scrollBox2);
-    obj.dataLink66:setDefaultValue("0");
-    obj.dataLink66:setField("NvPercepcao");
-    obj.dataLink66:setName("dataLink66");
+    obj.dataLink65 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink65:setParent(obj.scrollBox2);
+    obj.dataLink65:setDefaultValue("0");
+    obj.dataLink65:setField("NvPercepcao");
+    obj.dataLink65:setName("dataLink65");
 
     obj.edit62 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit62:setParent(obj.scrollBox2);
@@ -3267,11 +3250,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit62:setFontFamily("Cambria");
     obj.edit62:setTransparent(true);
 
-    obj.dataLink67 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink67:setParent(obj.scrollBox2);
-    obj.dataLink67:setDefaultValue("0");
-    obj.dataLink67:setField("NvSentirPerigo");
-    obj.dataLink67:setName("dataLink67");
+    obj.dataLink66 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink66:setParent(obj.scrollBox2);
+    obj.dataLink66:setDefaultValue("0");
+    obj.dataLink66:setField("NvSentirPerigo");
+    obj.dataLink66:setName("dataLink66");
 
     obj.edit63 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit63:setParent(obj.scrollBox2);
@@ -3290,11 +3273,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit63:setFontFamily("Cambria");
     obj.edit63:setTransparent(true);
 
-    obj.dataLink68 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink68:setParent(obj.scrollBox2);
-    obj.dataLink68:setDefaultValue("0");
-    obj.dataLink68:setField("NvDetectarMagia");
-    obj.dataLink68:setName("dataLink68");
+    obj.dataLink67 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink67:setParent(obj.scrollBox2);
+    obj.dataLink67:setDefaultValue("0");
+    obj.dataLink67:setField("NvDetectarMagia");
+    obj.dataLink67:setName("dataLink67");
 
     obj.edit64 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit64:setParent(obj.scrollBox2);
@@ -3313,11 +3296,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit64:setFontFamily("Cambria");
     obj.edit64:setTransparent(true);
 
-    obj.dataLink69 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink69:setParent(obj.scrollBox2);
-    obj.dataLink69:setDefaultValue("0");
-    obj.dataLink69:setField("NvAcertoMagico");
-    obj.dataLink69:setName("dataLink69");
+    obj.dataLink68 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink68:setParent(obj.scrollBox2);
+    obj.dataLink68:setDefaultValue("0");
+    obj.dataLink68:setField("NvAcertoMagico");
+    obj.dataLink68:setName("dataLink68");
 
     obj.edit65 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit65:setParent(obj.scrollBox2);
@@ -3336,11 +3319,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit65:setFontFamily("Cambria");
     obj.edit65:setTransparent(true);
 
-    obj.dataLink70 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink70:setParent(obj.scrollBox2);
-    obj.dataLink70:setDefaultValue("0");
-    obj.dataLink70:setField("NvDanoMagico");
-    obj.dataLink70:setName("dataLink70");
+    obj.dataLink69 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink69:setParent(obj.scrollBox2);
+    obj.dataLink69:setDefaultValue("0");
+    obj.dataLink69:setField("NvDanoMagico");
+    obj.dataLink69:setName("dataLink69");
 
     obj.edit66 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit66:setParent(obj.scrollBox2);
@@ -3359,11 +3342,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit66:setFontFamily("Cambria");
     obj.edit66:setTransparent(true);
 
-    obj.dataLink71 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink71:setParent(obj.scrollBox2);
-    obj.dataLink71:setDefaultValue("0");
-    obj.dataLink71:setField("NvSobrevivencia");
-    obj.dataLink71:setName("dataLink71");
+    obj.dataLink70 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink70:setParent(obj.scrollBox2);
+    obj.dataLink70:setDefaultValue("0");
+    obj.dataLink70:setField("NvSobrevivencia");
+    obj.dataLink70:setName("dataLink70");
 
     obj.edit67 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit67:setParent(obj.scrollBox2);
@@ -3382,11 +3365,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit67:setFontFamily("Cambria");
     obj.edit67:setTransparent(true);
 
-    obj.dataLink72 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink72:setParent(obj.scrollBox2);
-    obj.dataLink72:setDefaultValue("0");
-    obj.dataLink72:setField("NvMedicina");
-    obj.dataLink72:setName("dataLink72");
+    obj.dataLink71 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink71:setParent(obj.scrollBox2);
+    obj.dataLink71:setDefaultValue("0");
+    obj.dataLink71:setField("NvMedicina");
+    obj.dataLink71:setName("dataLink71");
 
     obj.edit68 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit68:setParent(obj.scrollBox2);
@@ -3405,11 +3388,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit68:setFontFamily("Cambria");
     obj.edit68:setTransparent(true);
 
-    obj.dataLink73 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink73:setParent(obj.scrollBox2);
-    obj.dataLink73:setDefaultValue("0");
-    obj.dataLink73:setField("NvNatureza");
-    obj.dataLink73:setName("dataLink73");
+    obj.dataLink72 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink72:setParent(obj.scrollBox2);
+    obj.dataLink72:setDefaultValue("0");
+    obj.dataLink72:setField("NvNatureza");
+    obj.dataLink72:setName("dataLink72");
 
     obj.edit69 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit69:setParent(obj.scrollBox2);
@@ -3428,11 +3411,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit69:setFontFamily("Cambria");
     obj.edit69:setTransparent(true);
 
-    obj.dataLink74 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink74:setParent(obj.scrollBox2);
-    obj.dataLink74:setDefaultValue("0");
-    obj.dataLink74:setField("NvReligiao");
-    obj.dataLink74:setName("dataLink74");
+    obj.dataLink73 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink73:setParent(obj.scrollBox2);
+    obj.dataLink73:setDefaultValue("0");
+    obj.dataLink73:setField("NvReligiao");
+    obj.dataLink73:setName("dataLink73");
 
     obj.edit70 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit70:setParent(obj.scrollBox2);
@@ -3451,11 +3434,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit70:setFontFamily("Cambria");
     obj.edit70:setTransparent(true);
 
-    obj.dataLink75 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink75:setParent(obj.scrollBox2);
-    obj.dataLink75:setDefaultValue("0");
-    obj.dataLink75:setField("NvDiscurso");
-    obj.dataLink75:setName("dataLink75");
+    obj.dataLink74 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink74:setParent(obj.scrollBox2);
+    obj.dataLink74:setDefaultValue("0");
+    obj.dataLink74:setField("NvDiscurso");
+    obj.dataLink74:setName("dataLink74");
 
     obj.edit71 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit71:setParent(obj.scrollBox2);
@@ -3474,11 +3457,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit71:setFontFamily("Cambria");
     obj.edit71:setTransparent(true);
 
-    obj.dataLink76 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink76:setParent(obj.scrollBox2);
-    obj.dataLink76:setDefaultValue("0");
-    obj.dataLink76:setField("NvSeducao");
-    obj.dataLink76:setName("dataLink76");
+    obj.dataLink75 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink75:setParent(obj.scrollBox2);
+    obj.dataLink75:setDefaultValue("0");
+    obj.dataLink75:setField("NvSeducao");
+    obj.dataLink75:setName("dataLink75");
 
     obj.edit72 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit72:setParent(obj.scrollBox2);
@@ -3497,11 +3480,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit72:setFontFamily("Cambria");
     obj.edit72:setTransparent(true);
 
-    obj.dataLink77 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink77:setParent(obj.scrollBox2);
-    obj.dataLink77:setDefaultValue("0");
-    obj.dataLink77:setField("NvIntimidar");
-    obj.dataLink77:setName("dataLink77");
+    obj.dataLink76 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink76:setParent(obj.scrollBox2);
+    obj.dataLink76:setDefaultValue("0");
+    obj.dataLink76:setField("NvIntimidar");
+    obj.dataLink76:setName("dataLink76");
 
     obj.edit73 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit73:setParent(obj.scrollBox2);
@@ -3520,11 +3503,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit73:setFontFamily("Cambria");
     obj.edit73:setTransparent(true);
 
-    obj.dataLink78 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink78:setParent(obj.scrollBox2);
-    obj.dataLink78:setDefaultValue("0");
-    obj.dataLink78:setField("NvAtuar");
-    obj.dataLink78:setName("dataLink78");
+    obj.dataLink77 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink77:setParent(obj.scrollBox2);
+    obj.dataLink77:setDefaultValue("0");
+    obj.dataLink77:setField("NvAtuar");
+    obj.dataLink77:setName("dataLink77");
 
     obj.edit74 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit74:setParent(obj.scrollBox2);
@@ -3543,11 +3526,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit74:setFontFamily("Cambria");
     obj.edit74:setTransparent(true);
 
-    obj.dataLink79 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink79:setParent(obj.scrollBox2);
-    obj.dataLink79:setDefaultValue("0");
-    obj.dataLink79:setField("NvPersuadir");
-    obj.dataLink79:setName("dataLink79");
+    obj.dataLink78 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink78:setParent(obj.scrollBox2);
+    obj.dataLink78:setDefaultValue("0");
+    obj.dataLink78:setField("NvPersuadir");
+    obj.dataLink78:setName("dataLink78");
 
     obj.edit75 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit75:setParent(obj.scrollBox2);
@@ -3566,11 +3549,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit75:setFontFamily("Cambria");
     obj.edit75:setTransparent(true);
 
-    obj.dataLink80 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink80:setParent(obj.scrollBox2);
-    obj.dataLink80:setDefaultValue("0");
-    obj.dataLink80:setField("NvMentir");
-    obj.dataLink80:setName("dataLink80");
+    obj.dataLink79 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink79:setParent(obj.scrollBox2);
+    obj.dataLink79:setDefaultValue("0");
+    obj.dataLink79:setField("NvMentir");
+    obj.dataLink79:setName("dataLink79");
 
     obj.edit76 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit76:setParent(obj.scrollBox2);
@@ -3589,11 +3572,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit76:setFontFamily("Cambria");
     obj.edit76:setTransparent(true);
 
-    obj.dataLink81 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink81:setParent(obj.scrollBox2);
-    obj.dataLink81:setDefaultValue("0");
-    obj.dataLink81:setField("BDanoCurtoAlcance");
-    obj.dataLink81:setName("dataLink81");
+    obj.dataLink80 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink80:setParent(obj.scrollBox2);
+    obj.dataLink80:setDefaultValue("0");
+    obj.dataLink80:setField("BDanoCurtoAlcance");
+    obj.dataLink80:setName("dataLink80");
 
     obj.edit77 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit77:setParent(obj.scrollBox2);
@@ -3612,11 +3595,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit77:setFontFamily("Cambria");
     obj.edit77:setTransparent(true);
 
-    obj.dataLink82 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink82:setParent(obj.scrollBox2);
-    obj.dataLink82:setDefaultValue("0");
-    obj.dataLink82:setField("BDanoLongoAlcance");
-    obj.dataLink82:setName("dataLink82");
+    obj.dataLink81 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink81:setParent(obj.scrollBox2);
+    obj.dataLink81:setDefaultValue("0");
+    obj.dataLink81:setField("BDanoLongoAlcance");
+    obj.dataLink81:setName("dataLink81");
 
     obj.edit78 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit78:setParent(obj.scrollBox2);
@@ -3635,11 +3618,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit78:setFontFamily("Cambria");
     obj.edit78:setTransparent(true);
 
-    obj.dataLink83 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink83:setParent(obj.scrollBox2);
-    obj.dataLink83:setDefaultValue("0");
-    obj.dataLink83:setField("BQuebrarObjetos");
-    obj.dataLink83:setName("dataLink83");
+    obj.dataLink82 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink82:setParent(obj.scrollBox2);
+    obj.dataLink82:setDefaultValue("0");
+    obj.dataLink82:setField("BQuebrarObjetos");
+    obj.dataLink82:setName("dataLink82");
 
     obj.edit79 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit79:setParent(obj.scrollBox2);
@@ -3658,11 +3641,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit79:setFontFamily("Cambria");
     obj.edit79:setTransparent(true);
 
-    obj.dataLink84 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink84:setParent(obj.scrollBox2);
-    obj.dataLink84:setDefaultValue("0");
-    obj.dataLink84:setField("BLevantarPeso");
-    obj.dataLink84:setName("dataLink84");
+    obj.dataLink83 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink83:setParent(obj.scrollBox2);
+    obj.dataLink83:setDefaultValue("0");
+    obj.dataLink83:setField("BLevantarPeso");
+    obj.dataLink83:setName("dataLink83");
 
     obj.edit80 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit80:setParent(obj.scrollBox2);
@@ -3681,11 +3664,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit80:setFontFamily("Cambria");
     obj.edit80:setTransparent(true);
 
-    obj.dataLink85 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink85:setParent(obj.scrollBox2);
-    obj.dataLink85:setDefaultValue("0");
-    obj.dataLink85:setField("BEmpurrarObstaculo");
-    obj.dataLink85:setName("dataLink85");
+    obj.dataLink84 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink84:setParent(obj.scrollBox2);
+    obj.dataLink84:setDefaultValue("0");
+    obj.dataLink84:setField("BEmpurrarObstaculo");
+    obj.dataLink84:setName("dataLink84");
 
     obj.edit81 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit81:setParent(obj.scrollBox2);
@@ -3704,11 +3687,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit81:setFontFamily("Cambria");
     obj.edit81:setTransparent(true);
 
-    obj.dataLink86 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink86:setParent(obj.scrollBox2);
-    obj.dataLink86:setDefaultValue("0");
-    obj.dataLink86:setField("BBracoDeFerro");
-    obj.dataLink86:setName("dataLink86");
+    obj.dataLink85 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink85:setParent(obj.scrollBox2);
+    obj.dataLink85:setDefaultValue("0");
+    obj.dataLink85:setField("BBracoDeFerro");
+    obj.dataLink85:setName("dataLink85");
 
     obj.edit82 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit82:setParent(obj.scrollBox2);
@@ -3727,11 +3710,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit82:setFontFamily("Cambria");
     obj.edit82:setTransparent(true);
 
-    obj.dataLink87 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink87:setParent(obj.scrollBox2);
-    obj.dataLink87:setDefaultValue("0");
-    obj.dataLink87:setField("BEscalar");
-    obj.dataLink87:setName("dataLink87");
+    obj.dataLink86 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink86:setParent(obj.scrollBox2);
+    obj.dataLink86:setDefaultValue("0");
+    obj.dataLink86:setField("BEscalar");
+    obj.dataLink86:setName("dataLink86");
 
     obj.edit83 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit83:setParent(obj.scrollBox2);
@@ -3750,11 +3733,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit83:setFontFamily("Cambria");
     obj.edit83:setTransparent(true);
 
-    obj.dataLink88 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink88:setParent(obj.scrollBox2);
-    obj.dataLink88:setDefaultValue("0");
-    obj.dataLink88:setField("BIniciativa");
-    obj.dataLink88:setName("dataLink88");
+    obj.dataLink87 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink87:setParent(obj.scrollBox2);
+    obj.dataLink87:setDefaultValue("0");
+    obj.dataLink87:setField("BIniciativa");
+    obj.dataLink87:setName("dataLink87");
 
     obj.edit84 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit84:setParent(obj.scrollBox2);
@@ -3773,11 +3756,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit84:setFontFamily("Cambria");
     obj.edit84:setTransparent(true);
 
-    obj.dataLink89 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink89:setParent(obj.scrollBox2);
-    obj.dataLink89:setDefaultValue("0");
-    obj.dataLink89:setField("BEsquivar");
-    obj.dataLink89:setName("dataLink89");
+    obj.dataLink88 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink88:setParent(obj.scrollBox2);
+    obj.dataLink88:setDefaultValue("0");
+    obj.dataLink88:setField("BEsquivar");
+    obj.dataLink88:setName("dataLink88");
 
     obj.edit85 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit85:setParent(obj.scrollBox2);
@@ -3796,11 +3779,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit85:setFontFamily("Cambria");
     obj.edit85:setTransparent(true);
 
-    obj.dataLink90 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink90:setParent(obj.scrollBox2);
-    obj.dataLink90:setDefaultValue("0");
-    obj.dataLink90:setField("BDesarmarArmadilha");
-    obj.dataLink90:setName("dataLink90");
+    obj.dataLink89 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink89:setParent(obj.scrollBox2);
+    obj.dataLink89:setDefaultValue("0");
+    obj.dataLink89:setField("BDesarmarArmadilha");
+    obj.dataLink89:setName("dataLink89");
 
     obj.edit86 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit86:setParent(obj.scrollBox2);
@@ -3819,11 +3802,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit86:setFontFamily("Cambria");
     obj.edit86:setTransparent(true);
 
-    obj.dataLink91 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink91:setParent(obj.scrollBox2);
-    obj.dataLink91:setDefaultValue("0");
-    obj.dataLink91:setField("BAcrobacias");
-    obj.dataLink91:setName("dataLink91");
+    obj.dataLink90 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink90:setParent(obj.scrollBox2);
+    obj.dataLink90:setDefaultValue("0");
+    obj.dataLink90:setField("BAcrobacias");
+    obj.dataLink90:setName("dataLink90");
 
     obj.edit87 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit87:setParent(obj.scrollBox2);
@@ -3842,11 +3825,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit87:setFontFamily("Cambria");
     obj.edit87:setTransparent(true);
 
-    obj.dataLink92 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink92:setParent(obj.scrollBox2);
-    obj.dataLink92:setDefaultValue("0");
-    obj.dataLink92:setField("BRoubo");
-    obj.dataLink92:setName("dataLink92");
+    obj.dataLink91 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink91:setParent(obj.scrollBox2);
+    obj.dataLink91:setDefaultValue("0");
+    obj.dataLink91:setField("BRoubo");
+    obj.dataLink91:setName("dataLink91");
 
     obj.edit88 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit88:setParent(obj.scrollBox2);
@@ -3865,11 +3848,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit88:setFontFamily("Cambria");
     obj.edit88:setTransparent(true);
 
-    obj.dataLink93 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink93:setParent(obj.scrollBox2);
-    obj.dataLink93:setDefaultValue("0");
-    obj.dataLink93:setField("BArremessarObjetos");
-    obj.dataLink93:setName("dataLink93");
+    obj.dataLink92 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink92:setParent(obj.scrollBox2);
+    obj.dataLink92:setDefaultValue("0");
+    obj.dataLink92:setField("BArremessarObjetos");
+    obj.dataLink92:setName("dataLink92");
 
     obj.edit89 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit89:setParent(obj.scrollBox2);
@@ -3888,11 +3871,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit89:setFontFamily("Cambria");
     obj.edit89:setTransparent(true);
 
-    obj.dataLink94 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink94:setParent(obj.scrollBox2);
-    obj.dataLink94:setDefaultValue("0");
-    obj.dataLink94:setField("BFurtividade");
-    obj.dataLink94:setName("dataLink94");
+    obj.dataLink93 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink93:setParent(obj.scrollBox2);
+    obj.dataLink93:setDefaultValue("0");
+    obj.dataLink93:setField("BFurtividade");
+    obj.dataLink93:setName("dataLink93");
 
     obj.edit90 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit90:setParent(obj.scrollBox2);
@@ -3911,11 +3894,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit90:setFontFamily("Cambria");
     obj.edit90:setTransparent(true);
 
-    obj.dataLink95 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink95:setParent(obj.scrollBox2);
-    obj.dataLink95:setDefaultValue("0");
-    obj.dataLink95:setField("BMontaria");
-    obj.dataLink95:setName("dataLink95");
+    obj.dataLink94 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink94:setParent(obj.scrollBox2);
+    obj.dataLink94:setDefaultValue("0");
+    obj.dataLink94:setField("BMontaria");
+    obj.dataLink94:setName("dataLink94");
 
     obj.edit91 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit91:setParent(obj.scrollBox2);
@@ -3934,11 +3917,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit91:setFontFamily("Cambria");
     obj.edit91:setTransparent(true);
 
-    obj.dataLink96 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink96:setParent(obj.scrollBox2);
-    obj.dataLink96:setDefaultValue("0");
-    obj.dataLink96:setField("BAcertoDistancia");
-    obj.dataLink96:setName("dataLink96");
+    obj.dataLink95 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink95:setParent(obj.scrollBox2);
+    obj.dataLink95:setDefaultValue("0");
+    obj.dataLink95:setField("BAcertoDistancia");
+    obj.dataLink95:setName("dataLink95");
 
     obj.edit92 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit92:setParent(obj.scrollBox2);
@@ -3957,11 +3940,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit92:setFontFamily("Cambria");
     obj.edit92:setTransparent(true);
 
-    obj.dataLink97 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink97:setParent(obj.scrollBox2);
-    obj.dataLink97:setDefaultValue("0");
-    obj.dataLink97:setField("BAcertoCurtoAlcance");
-    obj.dataLink97:setName("dataLink97");
+    obj.dataLink96 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink96:setParent(obj.scrollBox2);
+    obj.dataLink96:setDefaultValue("0");
+    obj.dataLink96:setField("BAcertoCurtoAlcance");
+    obj.dataLink96:setName("dataLink96");
 
     obj.edit93 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit93:setParent(obj.scrollBox2);
@@ -3980,11 +3963,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit93:setFontFamily("Cambria");
     obj.edit93:setTransparent(true);
 
-    obj.dataLink98 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink98:setParent(obj.scrollBox2);
-    obj.dataLink98:setDefaultValue("0");
-    obj.dataLink98:setField("BCorrer");
-    obj.dataLink98:setName("dataLink98");
+    obj.dataLink97 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink97:setParent(obj.scrollBox2);
+    obj.dataLink97:setDefaultValue("0");
+    obj.dataLink97:setField("BCorrer");
+    obj.dataLink97:setName("dataLink97");
 
     obj.edit94 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit94:setParent(obj.scrollBox2);
@@ -4003,11 +3986,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit94:setFontFamily("Cambria");
     obj.edit94:setTransparent(true);
 
-    obj.dataLink99 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink99:setParent(obj.scrollBox2);
-    obj.dataLink99:setDefaultValue("0");
-    obj.dataLink99:setField("BResistenciaVeneno");
-    obj.dataLink99:setName("dataLink99");
+    obj.dataLink98 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink98:setParent(obj.scrollBox2);
+    obj.dataLink98:setDefaultValue("0");
+    obj.dataLink98:setField("BResistenciaVeneno");
+    obj.dataLink98:setName("dataLink98");
 
     obj.edit95 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit95:setParent(obj.scrollBox2);
@@ -4026,11 +4009,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit95:setFontFamily("Cambria");
     obj.edit95:setTransparent(true);
 
-    obj.dataLink100 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink100:setParent(obj.scrollBox2);
-    obj.dataLink100:setDefaultValue("0");
-    obj.dataLink100:setField("BResistenciaCansaco");
-    obj.dataLink100:setName("dataLink100");
+    obj.dataLink99 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink99:setParent(obj.scrollBox2);
+    obj.dataLink99:setDefaultValue("0");
+    obj.dataLink99:setField("BResistenciaCansaco");
+    obj.dataLink99:setName("dataLink99");
 
     obj.edit96 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit96:setParent(obj.scrollBox2);
@@ -4049,11 +4032,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit96:setFontFamily("Cambria");
     obj.edit96:setTransparent(true);
 
-    obj.dataLink101 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink101:setParent(obj.scrollBox2);
-    obj.dataLink101:setDefaultValue("0");
-    obj.dataLink101:setField("BSegurarFolego");
-    obj.dataLink101:setName("dataLink101");
+    obj.dataLink100 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink100:setParent(obj.scrollBox2);
+    obj.dataLink100:setDefaultValue("0");
+    obj.dataLink100:setField("BSegurarFolego");
+    obj.dataLink100:setName("dataLink100");
 
     obj.edit97 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit97:setParent(obj.scrollBox2);
@@ -4072,11 +4055,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit97:setFontFamily("Cambria");
     obj.edit97:setTransparent(true);
 
-    obj.dataLink102 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink102:setParent(obj.scrollBox2);
-    obj.dataLink102:setDefaultValue("0");
-    obj.dataLink102:setField("BSuporteFrioCalor");
-    obj.dataLink102:setName("dataLink102");
+    obj.dataLink101 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink101:setParent(obj.scrollBox2);
+    obj.dataLink101:setDefaultValue("0");
+    obj.dataLink101:setField("BSuporteFrioCalor");
+    obj.dataLink101:setName("dataLink101");
 
     obj.edit98 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit98:setParent(obj.scrollBox2);
@@ -4095,11 +4078,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit98:setFontFamily("Cambria");
     obj.edit98:setTransparent(true);
 
-    obj.dataLink103 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink103:setParent(obj.scrollBox2);
-    obj.dataLink103:setDefaultValue("0");
-    obj.dataLink103:setField("BDefender");
-    obj.dataLink103:setName("dataLink103");
+    obj.dataLink102 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink102:setParent(obj.scrollBox2);
+    obj.dataLink102:setDefaultValue("0");
+    obj.dataLink102:setField("BDefender");
+    obj.dataLink102:setName("dataLink102");
 
     obj.edit99 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit99:setParent(obj.scrollBox2);
@@ -4118,11 +4101,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit99:setFontFamily("Cambria");
     obj.edit99:setTransparent(true);
 
-    obj.dataLink104 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink104:setParent(obj.scrollBox2);
-    obj.dataLink104:setDefaultValue("0");
-    obj.dataLink104:setField("BProfissao");
-    obj.dataLink104:setName("dataLink104");
+    obj.dataLink103 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink103:setParent(obj.scrollBox2);
+    obj.dataLink103:setDefaultValue("0");
+    obj.dataLink103:setField("BProfissao");
+    obj.dataLink103:setName("dataLink103");
 
     obj.edit100 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit100:setParent(obj.scrollBox2);
@@ -4141,11 +4124,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit100:setFontFamily("Cambria");
     obj.edit100:setTransparent(true);
 
-    obj.dataLink105 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink105:setParent(obj.scrollBox2);
-    obj.dataLink105:setDefaultValue("0");
-    obj.dataLink105:setField("BDecifrarCodigo");
-    obj.dataLink105:setName("dataLink105");
+    obj.dataLink104 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink104:setParent(obj.scrollBox2);
+    obj.dataLink104:setDefaultValue("0");
+    obj.dataLink104:setField("BDecifrarCodigo");
+    obj.dataLink104:setName("dataLink104");
 
     obj.edit101 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit101:setParent(obj.scrollBox2);
@@ -4164,11 +4147,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit101:setFontFamily("Cambria");
     obj.edit101:setTransparent(true);
 
-    obj.dataLink106 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink106:setParent(obj.scrollBox2);
-    obj.dataLink106:setDefaultValue("0");
-    obj.dataLink106:setField("BIdentificarCriatura");
-    obj.dataLink106:setName("dataLink106");
+    obj.dataLink105 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink105:setParent(obj.scrollBox2);
+    obj.dataLink105:setDefaultValue("0");
+    obj.dataLink105:setField("BIdentificarCriatura");
+    obj.dataLink105:setName("dataLink105");
 
     obj.edit102 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit102:setParent(obj.scrollBox2);
@@ -4187,11 +4170,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit102:setFontFamily("Cambria");
     obj.edit102:setTransparent(true);
 
-    obj.dataLink107 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink107:setParent(obj.scrollBox2);
-    obj.dataLink107:setDefaultValue("0");
-    obj.dataLink107:setField("BLerManuscrito");
-    obj.dataLink107:setName("dataLink107");
+    obj.dataLink106 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink106:setParent(obj.scrollBox2);
+    obj.dataLink106:setDefaultValue("0");
+    obj.dataLink106:setField("BLerManuscrito");
+    obj.dataLink106:setName("dataLink106");
 
     obj.edit103 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit103:setParent(obj.scrollBox2);
@@ -4210,11 +4193,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit103:setFontFamily("Cambria");
     obj.edit103:setTransparent(true);
 
-    obj.dataLink108 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink108:setParent(obj.scrollBox2);
-    obj.dataLink108:setDefaultValue("0");
-    obj.dataLink108:setField("BPrepararEstrategia");
-    obj.dataLink108:setName("dataLink108");
+    obj.dataLink107 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink107:setParent(obj.scrollBox2);
+    obj.dataLink107:setDefaultValue("0");
+    obj.dataLink107:setField("BPrepararEstrategia");
+    obj.dataLink107:setName("dataLink107");
 
     obj.edit104 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit104:setParent(obj.scrollBox2);
@@ -4233,11 +4216,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit104:setFontFamily("Cambria");
     obj.edit104:setTransparent(true);
 
-    obj.dataLink109 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink109:setParent(obj.scrollBox2);
-    obj.dataLink109:setDefaultValue("0");
-    obj.dataLink109:setField("BResistenciaMental");
-    obj.dataLink109:setName("dataLink109");
+    obj.dataLink108 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink108:setParent(obj.scrollBox2);
+    obj.dataLink108:setDefaultValue("0");
+    obj.dataLink108:setField("BResistenciaMental");
+    obj.dataLink108:setName("dataLink108");
 
     obj.edit105 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit105:setParent(obj.scrollBox2);
@@ -4256,11 +4239,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit105:setFontFamily("Cambria");
     obj.edit105:setTransparent(true);
 
-    obj.dataLink110 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink110:setParent(obj.scrollBox2);
-    obj.dataLink110:setDefaultValue("0");
-    obj.dataLink110:setField("BHistoria");
-    obj.dataLink110:setName("dataLink110");
+    obj.dataLink109 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink109:setParent(obj.scrollBox2);
+    obj.dataLink109:setDefaultValue("0");
+    obj.dataLink109:setField("BHistoria");
+    obj.dataLink109:setName("dataLink109");
 
     obj.edit106 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit106:setParent(obj.scrollBox2);
@@ -4279,11 +4262,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit106:setFontFamily("Cambria");
     obj.edit106:setTransparent(true);
 
-    obj.dataLink111 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink111:setParent(obj.scrollBox2);
-    obj.dataLink111:setDefaultValue("0");
-    obj.dataLink111:setField("BInvestigacao");
-    obj.dataLink111:setName("dataLink111");
+    obj.dataLink110 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink110:setParent(obj.scrollBox2);
+    obj.dataLink110:setDefaultValue("0");
+    obj.dataLink110:setField("BInvestigacao");
+    obj.dataLink110:setName("dataLink110");
 
     obj.edit107 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit107:setParent(obj.scrollBox2);
@@ -4302,11 +4285,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit107:setFontFamily("Cambria");
     obj.edit107:setTransparent(true);
 
-    obj.dataLink112 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink112:setParent(obj.scrollBox2);
-    obj.dataLink112:setDefaultValue("0");
-    obj.dataLink112:setField("BPerceberMentira");
-    obj.dataLink112:setName("dataLink112");
+    obj.dataLink111 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink111:setParent(obj.scrollBox2);
+    obj.dataLink111:setDefaultValue("0");
+    obj.dataLink111:setField("BPerceberMentira");
+    obj.dataLink111:setName("dataLink111");
 
     obj.edit108 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit108:setParent(obj.scrollBox2);
@@ -4325,11 +4308,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit108:setFontFamily("Cambria");
     obj.edit108:setTransparent(true);
 
-    obj.dataLink113 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink113:setParent(obj.scrollBox2);
-    obj.dataLink113:setDefaultValue("0");
-    obj.dataLink113:setField("BPercepcao");
-    obj.dataLink113:setName("dataLink113");
+    obj.dataLink112 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink112:setParent(obj.scrollBox2);
+    obj.dataLink112:setDefaultValue("0");
+    obj.dataLink112:setField("BPercepcao");
+    obj.dataLink112:setName("dataLink112");
 
     obj.edit109 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit109:setParent(obj.scrollBox2);
@@ -4348,11 +4331,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit109:setFontFamily("Cambria");
     obj.edit109:setTransparent(true);
 
-    obj.dataLink114 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink114:setParent(obj.scrollBox2);
-    obj.dataLink114:setDefaultValue("0");
-    obj.dataLink114:setField("BSentirPerigo");
-    obj.dataLink114:setName("dataLink114");
+    obj.dataLink113 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink113:setParent(obj.scrollBox2);
+    obj.dataLink113:setDefaultValue("0");
+    obj.dataLink113:setField("BSentirPerigo");
+    obj.dataLink113:setName("dataLink113");
 
     obj.edit110 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit110:setParent(obj.scrollBox2);
@@ -4371,11 +4354,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit110:setFontFamily("Cambria");
     obj.edit110:setTransparent(true);
 
-    obj.dataLink115 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink115:setParent(obj.scrollBox2);
-    obj.dataLink115:setDefaultValue("0");
-    obj.dataLink115:setField("BDetectarMagia");
-    obj.dataLink115:setName("dataLink115");
+    obj.dataLink114 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink114:setParent(obj.scrollBox2);
+    obj.dataLink114:setDefaultValue("0");
+    obj.dataLink114:setField("BDetectarMagia");
+    obj.dataLink114:setName("dataLink114");
 
     obj.edit111 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit111:setParent(obj.scrollBox2);
@@ -4394,11 +4377,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit111:setFontFamily("Cambria");
     obj.edit111:setTransparent(true);
 
-    obj.dataLink116 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink116:setParent(obj.scrollBox2);
-    obj.dataLink116:setDefaultValue("0");
-    obj.dataLink116:setField("BAcertoMagico");
-    obj.dataLink116:setName("dataLink116");
+    obj.dataLink115 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink115:setParent(obj.scrollBox2);
+    obj.dataLink115:setDefaultValue("0");
+    obj.dataLink115:setField("BAcertoMagico");
+    obj.dataLink115:setName("dataLink115");
 
     obj.edit112 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit112:setParent(obj.scrollBox2);
@@ -4417,11 +4400,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit112:setFontFamily("Cambria");
     obj.edit112:setTransparent(true);
 
-    obj.dataLink117 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink117:setParent(obj.scrollBox2);
-    obj.dataLink117:setDefaultValue("0");
-    obj.dataLink117:setField("BDanoMagico");
-    obj.dataLink117:setName("dataLink117");
+    obj.dataLink116 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink116:setParent(obj.scrollBox2);
+    obj.dataLink116:setDefaultValue("0");
+    obj.dataLink116:setField("BDanoMagico");
+    obj.dataLink116:setName("dataLink116");
 
     obj.edit113 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit113:setParent(obj.scrollBox2);
@@ -4440,11 +4423,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit113:setFontFamily("Cambria");
     obj.edit113:setTransparent(true);
 
-    obj.dataLink118 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink118:setParent(obj.scrollBox2);
-    obj.dataLink118:setDefaultValue("0");
-    obj.dataLink118:setField("BSobrevivencia");
-    obj.dataLink118:setName("dataLink118");
+    obj.dataLink117 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink117:setParent(obj.scrollBox2);
+    obj.dataLink117:setDefaultValue("0");
+    obj.dataLink117:setField("BSobrevivencia");
+    obj.dataLink117:setName("dataLink117");
 
     obj.edit114 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit114:setParent(obj.scrollBox2);
@@ -4463,11 +4446,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit114:setFontFamily("Cambria");
     obj.edit114:setTransparent(true);
 
-    obj.dataLink119 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink119:setParent(obj.scrollBox2);
-    obj.dataLink119:setDefaultValue("0");
-    obj.dataLink119:setField("BMedicina");
-    obj.dataLink119:setName("dataLink119");
+    obj.dataLink118 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink118:setParent(obj.scrollBox2);
+    obj.dataLink118:setDefaultValue("0");
+    obj.dataLink118:setField("BMedicina");
+    obj.dataLink118:setName("dataLink118");
 
     obj.edit115 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit115:setParent(obj.scrollBox2);
@@ -4486,11 +4469,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit115:setFontFamily("Cambria");
     obj.edit115:setTransparent(true);
 
-    obj.dataLink120 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink120:setParent(obj.scrollBox2);
-    obj.dataLink120:setDefaultValue("0");
-    obj.dataLink120:setField("BNatureza");
-    obj.dataLink120:setName("dataLink120");
+    obj.dataLink119 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink119:setParent(obj.scrollBox2);
+    obj.dataLink119:setDefaultValue("0");
+    obj.dataLink119:setField("BNatureza");
+    obj.dataLink119:setName("dataLink119");
 
     obj.edit116 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit116:setParent(obj.scrollBox2);
@@ -4509,11 +4492,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit116:setFontFamily("Cambria");
     obj.edit116:setTransparent(true);
 
-    obj.dataLink121 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink121:setParent(obj.scrollBox2);
-    obj.dataLink121:setDefaultValue("0");
-    obj.dataLink121:setField("BReligiao");
-    obj.dataLink121:setName("dataLink121");
+    obj.dataLink120 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink120:setParent(obj.scrollBox2);
+    obj.dataLink120:setDefaultValue("0");
+    obj.dataLink120:setField("BReligiao");
+    obj.dataLink120:setName("dataLink120");
 
     obj.edit117 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit117:setParent(obj.scrollBox2);
@@ -4532,11 +4515,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit117:setFontFamily("Cambria");
     obj.edit117:setTransparent(true);
 
-    obj.dataLink122 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink122:setParent(obj.scrollBox2);
-    obj.dataLink122:setDefaultValue("0");
-    obj.dataLink122:setField("BDiscurso");
-    obj.dataLink122:setName("dataLink122");
+    obj.dataLink121 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink121:setParent(obj.scrollBox2);
+    obj.dataLink121:setDefaultValue("0");
+    obj.dataLink121:setField("BDiscurso");
+    obj.dataLink121:setName("dataLink121");
 
     obj.edit118 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit118:setParent(obj.scrollBox2);
@@ -4555,11 +4538,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit118:setFontFamily("Cambria");
     obj.edit118:setTransparent(true);
 
-    obj.dataLink123 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink123:setParent(obj.scrollBox2);
-    obj.dataLink123:setDefaultValue("0");
-    obj.dataLink123:setField("BSeducao");
-    obj.dataLink123:setName("dataLink123");
+    obj.dataLink122 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink122:setParent(obj.scrollBox2);
+    obj.dataLink122:setDefaultValue("0");
+    obj.dataLink122:setField("BSeducao");
+    obj.dataLink122:setName("dataLink122");
 
     obj.edit119 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit119:setParent(obj.scrollBox2);
@@ -4578,11 +4561,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit119:setFontFamily("Cambria");
     obj.edit119:setTransparent(true);
 
-    obj.dataLink124 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink124:setParent(obj.scrollBox2);
-    obj.dataLink124:setDefaultValue("0");
-    obj.dataLink124:setField("BIntimidar");
-    obj.dataLink124:setName("dataLink124");
+    obj.dataLink123 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink123:setParent(obj.scrollBox2);
+    obj.dataLink123:setDefaultValue("0");
+    obj.dataLink123:setField("BIntimidar");
+    obj.dataLink123:setName("dataLink123");
 
     obj.edit120 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit120:setParent(obj.scrollBox2);
@@ -4601,11 +4584,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit120:setFontFamily("Cambria");
     obj.edit120:setTransparent(true);
 
-    obj.dataLink125 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink125:setParent(obj.scrollBox2);
-    obj.dataLink125:setDefaultValue("0");
-    obj.dataLink125:setField("BAtuar");
-    obj.dataLink125:setName("dataLink125");
+    obj.dataLink124 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink124:setParent(obj.scrollBox2);
+    obj.dataLink124:setDefaultValue("0");
+    obj.dataLink124:setField("BAtuar");
+    obj.dataLink124:setName("dataLink124");
 
     obj.edit121 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit121:setParent(obj.scrollBox2);
@@ -4624,11 +4607,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit121:setFontFamily("Cambria");
     obj.edit121:setTransparent(true);
 
-    obj.dataLink126 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink126:setParent(obj.scrollBox2);
-    obj.dataLink126:setDefaultValue("0");
-    obj.dataLink126:setField("BPersuadir");
-    obj.dataLink126:setName("dataLink126");
+    obj.dataLink125 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink125:setParent(obj.scrollBox2);
+    obj.dataLink125:setDefaultValue("0");
+    obj.dataLink125:setField("BPersuadir");
+    obj.dataLink125:setName("dataLink125");
 
     obj.edit122 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit122:setParent(obj.scrollBox2);
@@ -4647,11 +4630,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit122:setFontFamily("Cambria");
     obj.edit122:setTransparent(true);
 
-    obj.dataLink127 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink127:setParent(obj.scrollBox2);
-    obj.dataLink127:setDefaultValue("0");
-    obj.dataLink127:setField("BMentir");
-    obj.dataLink127:setName("dataLink127");
+    obj.dataLink126 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink126:setParent(obj.scrollBox2);
+    obj.dataLink126:setDefaultValue("0");
+    obj.dataLink126:setField("BMentir");
+    obj.dataLink126:setName("dataLink126");
 
     obj.edit123 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit123:setParent(obj.scrollBox2);
@@ -4670,11 +4653,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit123:setFontFamily("Cambria");
     obj.edit123:setTransparent(true);
 
-    obj.dataLink128 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink128:setParent(obj.scrollBox2);
-    obj.dataLink128:setDefaultValue("0");
-    obj.dataLink128:setField("ModDanoCurtoAlcance");
-    obj.dataLink128:setName("dataLink128");
+    obj.dataLink127 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink127:setParent(obj.scrollBox2);
+    obj.dataLink127:setDefaultValue("0");
+    obj.dataLink127:setField("ModDanoCurtoAlcance");
+    obj.dataLink127:setName("dataLink127");
 
     obj.edit124 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit124:setParent(obj.scrollBox2);
@@ -4693,11 +4676,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit124:setFontFamily("Cambria");
     obj.edit124:setTransparent(true);
 
-    obj.dataLink129 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink129:setParent(obj.scrollBox2);
-    obj.dataLink129:setDefaultValue("0");
-    obj.dataLink129:setField("ModDanoLongoAlcance");
-    obj.dataLink129:setName("dataLink129");
+    obj.dataLink128 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink128:setParent(obj.scrollBox2);
+    obj.dataLink128:setDefaultValue("0");
+    obj.dataLink128:setField("ModDanoLongoAlcance");
+    obj.dataLink128:setName("dataLink128");
 
     obj.edit125 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit125:setParent(obj.scrollBox2);
@@ -4716,11 +4699,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit125:setFontFamily("Cambria");
     obj.edit125:setTransparent(true);
 
-    obj.dataLink130 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink130:setParent(obj.scrollBox2);
-    obj.dataLink130:setDefaultValue("0");
-    obj.dataLink130:setField("ModQuebrarObjetos");
-    obj.dataLink130:setName("dataLink130");
+    obj.dataLink129 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink129:setParent(obj.scrollBox2);
+    obj.dataLink129:setDefaultValue("0");
+    obj.dataLink129:setField("ModQuebrarObjetos");
+    obj.dataLink129:setName("dataLink129");
 
     obj.edit126 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit126:setParent(obj.scrollBox2);
@@ -4739,11 +4722,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit126:setFontFamily("Cambria");
     obj.edit126:setTransparent(true);
 
-    obj.dataLink131 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink131:setParent(obj.scrollBox2);
-    obj.dataLink131:setDefaultValue("0");
-    obj.dataLink131:setField("ModLevantarPeso");
-    obj.dataLink131:setName("dataLink131");
+    obj.dataLink130 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink130:setParent(obj.scrollBox2);
+    obj.dataLink130:setDefaultValue("0");
+    obj.dataLink130:setField("ModLevantarPeso");
+    obj.dataLink130:setName("dataLink130");
 
     obj.edit127 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit127:setParent(obj.scrollBox2);
@@ -4762,11 +4745,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit127:setFontFamily("Cambria");
     obj.edit127:setTransparent(true);
 
-    obj.dataLink132 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink132:setParent(obj.scrollBox2);
-    obj.dataLink132:setDefaultValue("0");
-    obj.dataLink132:setField("ModEmpurrarObstaculo");
-    obj.dataLink132:setName("dataLink132");
+    obj.dataLink131 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink131:setParent(obj.scrollBox2);
+    obj.dataLink131:setDefaultValue("0");
+    obj.dataLink131:setField("ModEmpurrarObstaculo");
+    obj.dataLink131:setName("dataLink131");
 
     obj.edit128 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit128:setParent(obj.scrollBox2);
@@ -4785,11 +4768,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit128:setFontFamily("Cambria");
     obj.edit128:setTransparent(true);
 
-    obj.dataLink133 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink133:setParent(obj.scrollBox2);
-    obj.dataLink133:setDefaultValue("0");
-    obj.dataLink133:setField("ModBracoDeFerro");
-    obj.dataLink133:setName("dataLink133");
+    obj.dataLink132 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink132:setParent(obj.scrollBox2);
+    obj.dataLink132:setDefaultValue("0");
+    obj.dataLink132:setField("ModBracoDeFerro");
+    obj.dataLink132:setName("dataLink132");
 
     obj.edit129 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit129:setParent(obj.scrollBox2);
@@ -4808,11 +4791,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit129:setFontFamily("Cambria");
     obj.edit129:setTransparent(true);
 
-    obj.dataLink134 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink134:setParent(obj.scrollBox2);
-    obj.dataLink134:setDefaultValue("0");
-    obj.dataLink134:setField("ModEscalar");
-    obj.dataLink134:setName("dataLink134");
+    obj.dataLink133 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink133:setParent(obj.scrollBox2);
+    obj.dataLink133:setDefaultValue("0");
+    obj.dataLink133:setField("ModEscalar");
+    obj.dataLink133:setName("dataLink133");
 
     obj.edit130 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit130:setParent(obj.scrollBox2);
@@ -4831,11 +4814,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit130:setFontFamily("Cambria");
     obj.edit130:setTransparent(true);
 
-    obj.dataLink135 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink135:setParent(obj.scrollBox2);
-    obj.dataLink135:setDefaultValue("0");
-    obj.dataLink135:setField("ModIniciativa");
-    obj.dataLink135:setName("dataLink135");
+    obj.dataLink134 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink134:setParent(obj.scrollBox2);
+    obj.dataLink134:setDefaultValue("0");
+    obj.dataLink134:setField("ModIniciativa");
+    obj.dataLink134:setName("dataLink134");
 
     obj.edit131 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit131:setParent(obj.scrollBox2);
@@ -4854,11 +4837,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit131:setFontFamily("Cambria");
     obj.edit131:setTransparent(true);
 
-    obj.dataLink136 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink136:setParent(obj.scrollBox2);
-    obj.dataLink136:setDefaultValue("0");
-    obj.dataLink136:setField("ModEsquivar");
-    obj.dataLink136:setName("dataLink136");
+    obj.dataLink135 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink135:setParent(obj.scrollBox2);
+    obj.dataLink135:setDefaultValue("0");
+    obj.dataLink135:setField("ModEsquivar");
+    obj.dataLink135:setName("dataLink135");
 
     obj.edit132 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit132:setParent(obj.scrollBox2);
@@ -4877,11 +4860,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit132:setFontFamily("Cambria");
     obj.edit132:setTransparent(true);
 
-    obj.dataLink137 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink137:setParent(obj.scrollBox2);
-    obj.dataLink137:setDefaultValue("0");
-    obj.dataLink137:setField("ModDesarmarArmadilha");
-    obj.dataLink137:setName("dataLink137");
+    obj.dataLink136 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink136:setParent(obj.scrollBox2);
+    obj.dataLink136:setDefaultValue("0");
+    obj.dataLink136:setField("ModDesarmarArmadilha");
+    obj.dataLink136:setName("dataLink136");
 
     obj.edit133 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit133:setParent(obj.scrollBox2);
@@ -4900,11 +4883,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit133:setFontFamily("Cambria");
     obj.edit133:setTransparent(true);
 
-    obj.dataLink138 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink138:setParent(obj.scrollBox2);
-    obj.dataLink138:setDefaultValue("0");
-    obj.dataLink138:setField("ModAcrobacias");
-    obj.dataLink138:setName("dataLink138");
+    obj.dataLink137 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink137:setParent(obj.scrollBox2);
+    obj.dataLink137:setDefaultValue("0");
+    obj.dataLink137:setField("ModAcrobacias");
+    obj.dataLink137:setName("dataLink137");
 
     obj.edit134 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit134:setParent(obj.scrollBox2);
@@ -4923,11 +4906,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit134:setFontFamily("Cambria");
     obj.edit134:setTransparent(true);
 
-    obj.dataLink139 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink139:setParent(obj.scrollBox2);
-    obj.dataLink139:setDefaultValue("0");
-    obj.dataLink139:setField("ModRoubo");
-    obj.dataLink139:setName("dataLink139");
+    obj.dataLink138 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink138:setParent(obj.scrollBox2);
+    obj.dataLink138:setDefaultValue("0");
+    obj.dataLink138:setField("ModRoubo");
+    obj.dataLink138:setName("dataLink138");
 
     obj.edit135 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit135:setParent(obj.scrollBox2);
@@ -4946,11 +4929,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit135:setFontFamily("Cambria");
     obj.edit135:setTransparent(true);
 
-    obj.dataLink140 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink140:setParent(obj.scrollBox2);
-    obj.dataLink140:setDefaultValue("0");
-    obj.dataLink140:setField("ModArremessarObjetos");
-    obj.dataLink140:setName("dataLink140");
+    obj.dataLink139 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink139:setParent(obj.scrollBox2);
+    obj.dataLink139:setDefaultValue("0");
+    obj.dataLink139:setField("ModArremessarObjetos");
+    obj.dataLink139:setName("dataLink139");
 
     obj.edit136 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit136:setParent(obj.scrollBox2);
@@ -4969,11 +4952,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit136:setFontFamily("Cambria");
     obj.edit136:setTransparent(true);
 
-    obj.dataLink141 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink141:setParent(obj.scrollBox2);
-    obj.dataLink141:setDefaultValue("0");
-    obj.dataLink141:setField("ModFurtividade");
-    obj.dataLink141:setName("dataLink141");
+    obj.dataLink140 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink140:setParent(obj.scrollBox2);
+    obj.dataLink140:setDefaultValue("0");
+    obj.dataLink140:setField("ModFurtividade");
+    obj.dataLink140:setName("dataLink140");
 
     obj.edit137 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit137:setParent(obj.scrollBox2);
@@ -4992,11 +4975,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit137:setFontFamily("Cambria");
     obj.edit137:setTransparent(true);
 
-    obj.dataLink142 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink142:setParent(obj.scrollBox2);
-    obj.dataLink142:setDefaultValue("0");
-    obj.dataLink142:setField("ModMontaria");
-    obj.dataLink142:setName("dataLink142");
+    obj.dataLink141 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink141:setParent(obj.scrollBox2);
+    obj.dataLink141:setDefaultValue("0");
+    obj.dataLink141:setField("ModMontaria");
+    obj.dataLink141:setName("dataLink141");
 
     obj.edit138 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit138:setParent(obj.scrollBox2);
@@ -5015,11 +4998,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit138:setFontFamily("Cambria");
     obj.edit138:setTransparent(true);
 
-    obj.dataLink143 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink143:setParent(obj.scrollBox2);
-    obj.dataLink143:setDefaultValue("0");
-    obj.dataLink143:setField("ModAcertoDistancia");
-    obj.dataLink143:setName("dataLink143");
+    obj.dataLink142 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink142:setParent(obj.scrollBox2);
+    obj.dataLink142:setDefaultValue("0");
+    obj.dataLink142:setField("ModAcertoDistancia");
+    obj.dataLink142:setName("dataLink142");
 
     obj.edit139 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit139:setParent(obj.scrollBox2);
@@ -5038,11 +5021,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit139:setFontFamily("Cambria");
     obj.edit139:setTransparent(true);
 
-    obj.dataLink144 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink144:setParent(obj.scrollBox2);
-    obj.dataLink144:setDefaultValue("0");
-    obj.dataLink144:setField("ModAcertoCurtoAlcance");
-    obj.dataLink144:setName("dataLink144");
+    obj.dataLink143 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink143:setParent(obj.scrollBox2);
+    obj.dataLink143:setDefaultValue("0");
+    obj.dataLink143:setField("ModAcertoCurtoAlcance");
+    obj.dataLink143:setName("dataLink143");
 
     obj.edit140 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit140:setParent(obj.scrollBox2);
@@ -5061,11 +5044,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit140:setFontFamily("Cambria");
     obj.edit140:setTransparent(true);
 
-    obj.dataLink145 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink145:setParent(obj.scrollBox2);
-    obj.dataLink145:setDefaultValue("0");
-    obj.dataLink145:setField("ModCorrer");
-    obj.dataLink145:setName("dataLink145");
+    obj.dataLink144 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink144:setParent(obj.scrollBox2);
+    obj.dataLink144:setDefaultValue("0");
+    obj.dataLink144:setField("ModCorrer");
+    obj.dataLink144:setName("dataLink144");
 
     obj.edit141 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit141:setParent(obj.scrollBox2);
@@ -5084,11 +5067,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit141:setFontFamily("Cambria");
     obj.edit141:setTransparent(true);
 
-    obj.dataLink146 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink146:setParent(obj.scrollBox2);
-    obj.dataLink146:setDefaultValue("0");
-    obj.dataLink146:setField("ModResistenciaVeneno");
-    obj.dataLink146:setName("dataLink146");
+    obj.dataLink145 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink145:setParent(obj.scrollBox2);
+    obj.dataLink145:setDefaultValue("0");
+    obj.dataLink145:setField("ModResistenciaVeneno");
+    obj.dataLink145:setName("dataLink145");
 
     obj.edit142 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit142:setParent(obj.scrollBox2);
@@ -5107,11 +5090,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit142:setFontFamily("Cambria");
     obj.edit142:setTransparent(true);
 
-    obj.dataLink147 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink147:setParent(obj.scrollBox2);
-    obj.dataLink147:setDefaultValue("0");
-    obj.dataLink147:setField("ModResistenciaCansaco");
-    obj.dataLink147:setName("dataLink147");
+    obj.dataLink146 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink146:setParent(obj.scrollBox2);
+    obj.dataLink146:setDefaultValue("0");
+    obj.dataLink146:setField("ModResistenciaCansaco");
+    obj.dataLink146:setName("dataLink146");
 
     obj.edit143 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit143:setParent(obj.scrollBox2);
@@ -5130,11 +5113,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit143:setFontFamily("Cambria");
     obj.edit143:setTransparent(true);
 
-    obj.dataLink148 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink148:setParent(obj.scrollBox2);
-    obj.dataLink148:setDefaultValue("0");
-    obj.dataLink148:setField("ModSegurarFolego");
-    obj.dataLink148:setName("dataLink148");
+    obj.dataLink147 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink147:setParent(obj.scrollBox2);
+    obj.dataLink147:setDefaultValue("0");
+    obj.dataLink147:setField("ModSegurarFolego");
+    obj.dataLink147:setName("dataLink147");
 
     obj.edit144 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit144:setParent(obj.scrollBox2);
@@ -5153,11 +5136,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit144:setFontFamily("Cambria");
     obj.edit144:setTransparent(true);
 
-    obj.dataLink149 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink149:setParent(obj.scrollBox2);
-    obj.dataLink149:setDefaultValue("0");
-    obj.dataLink149:setField("ModSuporteFrioCalor");
-    obj.dataLink149:setName("dataLink149");
+    obj.dataLink148 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink148:setParent(obj.scrollBox2);
+    obj.dataLink148:setDefaultValue("0");
+    obj.dataLink148:setField("ModSuporteFrioCalor");
+    obj.dataLink148:setName("dataLink148");
 
     obj.edit145 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit145:setParent(obj.scrollBox2);
@@ -5176,11 +5159,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit145:setFontFamily("Cambria");
     obj.edit145:setTransparent(true);
 
-    obj.dataLink150 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink150:setParent(obj.scrollBox2);
-    obj.dataLink150:setDefaultValue("0");
-    obj.dataLink150:setField("ModDefender");
-    obj.dataLink150:setName("dataLink150");
+    obj.dataLink149 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink149:setParent(obj.scrollBox2);
+    obj.dataLink149:setDefaultValue("0");
+    obj.dataLink149:setField("ModDefender");
+    obj.dataLink149:setName("dataLink149");
 
     obj.edit146 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit146:setParent(obj.scrollBox2);
@@ -5199,11 +5182,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit146:setFontFamily("Cambria");
     obj.edit146:setTransparent(true);
 
-    obj.dataLink151 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink151:setParent(obj.scrollBox2);
-    obj.dataLink151:setDefaultValue("0");
-    obj.dataLink151:setField("ModProfissao");
-    obj.dataLink151:setName("dataLink151");
+    obj.dataLink150 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink150:setParent(obj.scrollBox2);
+    obj.dataLink150:setDefaultValue("0");
+    obj.dataLink150:setField("ModProfissao");
+    obj.dataLink150:setName("dataLink150");
 
     obj.edit147 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit147:setParent(obj.scrollBox2);
@@ -5222,11 +5205,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit147:setFontFamily("Cambria");
     obj.edit147:setTransparent(true);
 
-    obj.dataLink152 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink152:setParent(obj.scrollBox2);
-    obj.dataLink152:setDefaultValue("0");
-    obj.dataLink152:setField("ModDecifrarCodigo");
-    obj.dataLink152:setName("dataLink152");
+    obj.dataLink151 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink151:setParent(obj.scrollBox2);
+    obj.dataLink151:setDefaultValue("0");
+    obj.dataLink151:setField("ModDecifrarCodigo");
+    obj.dataLink151:setName("dataLink151");
 
     obj.edit148 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit148:setParent(obj.scrollBox2);
@@ -5245,11 +5228,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit148:setFontFamily("Cambria");
     obj.edit148:setTransparent(true);
 
-    obj.dataLink153 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink153:setParent(obj.scrollBox2);
-    obj.dataLink153:setDefaultValue("0");
-    obj.dataLink153:setField("ModIdentificarCriatura");
-    obj.dataLink153:setName("dataLink153");
+    obj.dataLink152 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink152:setParent(obj.scrollBox2);
+    obj.dataLink152:setDefaultValue("0");
+    obj.dataLink152:setField("ModIdentificarCriatura");
+    obj.dataLink152:setName("dataLink152");
 
     obj.edit149 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit149:setParent(obj.scrollBox2);
@@ -5268,11 +5251,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit149:setFontFamily("Cambria");
     obj.edit149:setTransparent(true);
 
-    obj.dataLink154 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink154:setParent(obj.scrollBox2);
-    obj.dataLink154:setDefaultValue("0");
-    obj.dataLink154:setField("ModLerManuscrito");
-    obj.dataLink154:setName("dataLink154");
+    obj.dataLink153 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink153:setParent(obj.scrollBox2);
+    obj.dataLink153:setDefaultValue("0");
+    obj.dataLink153:setField("ModLerManuscrito");
+    obj.dataLink153:setName("dataLink153");
 
     obj.edit150 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit150:setParent(obj.scrollBox2);
@@ -5291,11 +5274,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit150:setFontFamily("Cambria");
     obj.edit150:setTransparent(true);
 
-    obj.dataLink155 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink155:setParent(obj.scrollBox2);
-    obj.dataLink155:setDefaultValue("0");
-    obj.dataLink155:setField("ModPrepararEstrategia");
-    obj.dataLink155:setName("dataLink155");
+    obj.dataLink154 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink154:setParent(obj.scrollBox2);
+    obj.dataLink154:setDefaultValue("0");
+    obj.dataLink154:setField("ModPrepararEstrategia");
+    obj.dataLink154:setName("dataLink154");
 
     obj.edit151 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit151:setParent(obj.scrollBox2);
@@ -5314,11 +5297,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit151:setFontFamily("Cambria");
     obj.edit151:setTransparent(true);
 
-    obj.dataLink156 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink156:setParent(obj.scrollBox2);
-    obj.dataLink156:setDefaultValue("0");
-    obj.dataLink156:setField("ModResistenciaMental");
-    obj.dataLink156:setName("dataLink156");
+    obj.dataLink155 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink155:setParent(obj.scrollBox2);
+    obj.dataLink155:setDefaultValue("0");
+    obj.dataLink155:setField("ModResistenciaMental");
+    obj.dataLink155:setName("dataLink155");
 
     obj.edit152 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit152:setParent(obj.scrollBox2);
@@ -5337,11 +5320,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit152:setFontFamily("Cambria");
     obj.edit152:setTransparent(true);
 
-    obj.dataLink157 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink157:setParent(obj.scrollBox2);
-    obj.dataLink157:setDefaultValue("0");
-    obj.dataLink157:setField("ModHistoria");
-    obj.dataLink157:setName("dataLink157");
+    obj.dataLink156 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink156:setParent(obj.scrollBox2);
+    obj.dataLink156:setDefaultValue("0");
+    obj.dataLink156:setField("ModHistoria");
+    obj.dataLink156:setName("dataLink156");
 
     obj.edit153 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit153:setParent(obj.scrollBox2);
@@ -5360,11 +5343,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit153:setFontFamily("Cambria");
     obj.edit153:setTransparent(true);
 
-    obj.dataLink158 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink158:setParent(obj.scrollBox2);
-    obj.dataLink158:setDefaultValue("0");
-    obj.dataLink158:setField("ModInvestigacao");
-    obj.dataLink158:setName("dataLink158");
+    obj.dataLink157 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink157:setParent(obj.scrollBox2);
+    obj.dataLink157:setDefaultValue("0");
+    obj.dataLink157:setField("ModInvestigacao");
+    obj.dataLink157:setName("dataLink157");
 
     obj.edit154 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit154:setParent(obj.scrollBox2);
@@ -5383,11 +5366,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit154:setFontFamily("Cambria");
     obj.edit154:setTransparent(true);
 
-    obj.dataLink159 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink159:setParent(obj.scrollBox2);
-    obj.dataLink159:setDefaultValue("0");
-    obj.dataLink159:setField("ModPerceberMentira");
-    obj.dataLink159:setName("dataLink159");
+    obj.dataLink158 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink158:setParent(obj.scrollBox2);
+    obj.dataLink158:setDefaultValue("0");
+    obj.dataLink158:setField("ModPerceberMentira");
+    obj.dataLink158:setName("dataLink158");
 
     obj.edit155 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit155:setParent(obj.scrollBox2);
@@ -5406,11 +5389,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit155:setFontFamily("Cambria");
     obj.edit155:setTransparent(true);
 
-    obj.dataLink160 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink160:setParent(obj.scrollBox2);
-    obj.dataLink160:setDefaultValue("0");
-    obj.dataLink160:setField("ModPercepcao");
-    obj.dataLink160:setName("dataLink160");
+    obj.dataLink159 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink159:setParent(obj.scrollBox2);
+    obj.dataLink159:setDefaultValue("0");
+    obj.dataLink159:setField("ModPercepcao");
+    obj.dataLink159:setName("dataLink159");
 
     obj.edit156 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit156:setParent(obj.scrollBox2);
@@ -5429,11 +5412,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit156:setFontFamily("Cambria");
     obj.edit156:setTransparent(true);
 
-    obj.dataLink161 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink161:setParent(obj.scrollBox2);
-    obj.dataLink161:setDefaultValue("0");
-    obj.dataLink161:setField("ModSentirPerigo");
-    obj.dataLink161:setName("dataLink161");
+    obj.dataLink160 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink160:setParent(obj.scrollBox2);
+    obj.dataLink160:setDefaultValue("0");
+    obj.dataLink160:setField("ModSentirPerigo");
+    obj.dataLink160:setName("dataLink160");
 
     obj.edit157 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit157:setParent(obj.scrollBox2);
@@ -5452,11 +5435,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit157:setFontFamily("Cambria");
     obj.edit157:setTransparent(true);
 
-    obj.dataLink162 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink162:setParent(obj.scrollBox2);
-    obj.dataLink162:setDefaultValue("0");
-    obj.dataLink162:setField("ModDetectarMagia");
-    obj.dataLink162:setName("dataLink162");
+    obj.dataLink161 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink161:setParent(obj.scrollBox2);
+    obj.dataLink161:setDefaultValue("0");
+    obj.dataLink161:setField("ModDetectarMagia");
+    obj.dataLink161:setName("dataLink161");
 
     obj.edit158 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit158:setParent(obj.scrollBox2);
@@ -5475,11 +5458,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit158:setFontFamily("Cambria");
     obj.edit158:setTransparent(true);
 
-    obj.dataLink163 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink163:setParent(obj.scrollBox2);
-    obj.dataLink163:setDefaultValue("0");
-    obj.dataLink163:setField("ModAcertoMagico");
-    obj.dataLink163:setName("dataLink163");
+    obj.dataLink162 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink162:setParent(obj.scrollBox2);
+    obj.dataLink162:setDefaultValue("0");
+    obj.dataLink162:setField("ModAcertoMagico");
+    obj.dataLink162:setName("dataLink162");
 
     obj.edit159 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit159:setParent(obj.scrollBox2);
@@ -5498,11 +5481,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit159:setFontFamily("Cambria");
     obj.edit159:setTransparent(true);
 
-    obj.dataLink164 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink164:setParent(obj.scrollBox2);
-    obj.dataLink164:setDefaultValue("0");
-    obj.dataLink164:setField("ModDanoMagico");
-    obj.dataLink164:setName("dataLink164");
+    obj.dataLink163 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink163:setParent(obj.scrollBox2);
+    obj.dataLink163:setDefaultValue("0");
+    obj.dataLink163:setField("ModDanoMagico");
+    obj.dataLink163:setName("dataLink163");
 
     obj.edit160 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit160:setParent(obj.scrollBox2);
@@ -5521,11 +5504,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit160:setFontFamily("Cambria");
     obj.edit160:setTransparent(true);
 
-    obj.dataLink165 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink165:setParent(obj.scrollBox2);
-    obj.dataLink165:setDefaultValue("0");
-    obj.dataLink165:setField("ModSobrevivencia");
-    obj.dataLink165:setName("dataLink165");
+    obj.dataLink164 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink164:setParent(obj.scrollBox2);
+    obj.dataLink164:setDefaultValue("0");
+    obj.dataLink164:setField("ModSobrevivencia");
+    obj.dataLink164:setName("dataLink164");
 
     obj.edit161 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit161:setParent(obj.scrollBox2);
@@ -5544,11 +5527,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit161:setFontFamily("Cambria");
     obj.edit161:setTransparent(true);
 
-    obj.dataLink166 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink166:setParent(obj.scrollBox2);
-    obj.dataLink166:setDefaultValue("0");
-    obj.dataLink166:setField("ModMedicina");
-    obj.dataLink166:setName("dataLink166");
+    obj.dataLink165 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink165:setParent(obj.scrollBox2);
+    obj.dataLink165:setDefaultValue("0");
+    obj.dataLink165:setField("ModMedicina");
+    obj.dataLink165:setName("dataLink165");
 
     obj.edit162 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit162:setParent(obj.scrollBox2);
@@ -5567,11 +5550,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit162:setFontFamily("Cambria");
     obj.edit162:setTransparent(true);
 
-    obj.dataLink167 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink167:setParent(obj.scrollBox2);
-    obj.dataLink167:setDefaultValue("0");
-    obj.dataLink167:setField("ModNatureza");
-    obj.dataLink167:setName("dataLink167");
+    obj.dataLink166 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink166:setParent(obj.scrollBox2);
+    obj.dataLink166:setDefaultValue("0");
+    obj.dataLink166:setField("ModNatureza");
+    obj.dataLink166:setName("dataLink166");
 
     obj.edit163 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit163:setParent(obj.scrollBox2);
@@ -5590,11 +5573,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit163:setFontFamily("Cambria");
     obj.edit163:setTransparent(true);
 
-    obj.dataLink168 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink168:setParent(obj.scrollBox2);
-    obj.dataLink168:setDefaultValue("0");
-    obj.dataLink168:setField("ModReligiao");
-    obj.dataLink168:setName("dataLink168");
+    obj.dataLink167 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink167:setParent(obj.scrollBox2);
+    obj.dataLink167:setDefaultValue("0");
+    obj.dataLink167:setField("ModReligiao");
+    obj.dataLink167:setName("dataLink167");
 
     obj.edit164 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit164:setParent(obj.scrollBox2);
@@ -5613,11 +5596,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit164:setFontFamily("Cambria");
     obj.edit164:setTransparent(true);
 
-    obj.dataLink169 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink169:setParent(obj.scrollBox2);
-    obj.dataLink169:setDefaultValue("0");
-    obj.dataLink169:setField("ModDiscurso");
-    obj.dataLink169:setName("dataLink169");
+    obj.dataLink168 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink168:setParent(obj.scrollBox2);
+    obj.dataLink168:setDefaultValue("0");
+    obj.dataLink168:setField("ModDiscurso");
+    obj.dataLink168:setName("dataLink168");
 
     obj.edit165 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit165:setParent(obj.scrollBox2);
@@ -5636,11 +5619,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit165:setFontFamily("Cambria");
     obj.edit165:setTransparent(true);
 
-    obj.dataLink170 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink170:setParent(obj.scrollBox2);
-    obj.dataLink170:setDefaultValue("0");
-    obj.dataLink170:setField("ModSeducao");
-    obj.dataLink170:setName("dataLink170");
+    obj.dataLink169 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink169:setParent(obj.scrollBox2);
+    obj.dataLink169:setDefaultValue("0");
+    obj.dataLink169:setField("ModSeducao");
+    obj.dataLink169:setName("dataLink169");
 
     obj.edit166 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit166:setParent(obj.scrollBox2);
@@ -5659,11 +5642,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit166:setFontFamily("Cambria");
     obj.edit166:setTransparent(true);
 
-    obj.dataLink171 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink171:setParent(obj.scrollBox2);
-    obj.dataLink171:setDefaultValue("0");
-    obj.dataLink171:setField("ModIntimidar");
-    obj.dataLink171:setName("dataLink171");
+    obj.dataLink170 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink170:setParent(obj.scrollBox2);
+    obj.dataLink170:setDefaultValue("0");
+    obj.dataLink170:setField("ModIntimidar");
+    obj.dataLink170:setName("dataLink170");
 
     obj.edit167 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit167:setParent(obj.scrollBox2);
@@ -5682,11 +5665,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit167:setFontFamily("Cambria");
     obj.edit167:setTransparent(true);
 
-    obj.dataLink172 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink172:setParent(obj.scrollBox2);
-    obj.dataLink172:setDefaultValue("0");
-    obj.dataLink172:setField("ModAtuar");
-    obj.dataLink172:setName("dataLink172");
+    obj.dataLink171 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink171:setParent(obj.scrollBox2);
+    obj.dataLink171:setDefaultValue("0");
+    obj.dataLink171:setField("ModAtuar");
+    obj.dataLink171:setName("dataLink171");
 
     obj.edit168 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit168:setParent(obj.scrollBox2);
@@ -5705,11 +5688,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit168:setFontFamily("Cambria");
     obj.edit168:setTransparent(true);
 
-    obj.dataLink173 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink173:setParent(obj.scrollBox2);
-    obj.dataLink173:setDefaultValue("0");
-    obj.dataLink173:setField("ModPersuadir");
-    obj.dataLink173:setName("dataLink173");
+    obj.dataLink172 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink172:setParent(obj.scrollBox2);
+    obj.dataLink172:setDefaultValue("0");
+    obj.dataLink172:setField("ModPersuadir");
+    obj.dataLink172:setName("dataLink172");
 
     obj.edit169 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit169:setParent(obj.scrollBox2);
@@ -5728,11 +5711,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit169:setFontFamily("Cambria");
     obj.edit169:setTransparent(true);
 
-    obj.dataLink174 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink174:setParent(obj.scrollBox2);
-    obj.dataLink174:setDefaultValue("0");
-    obj.dataLink174:setField("ModMentir");
-    obj.dataLink174:setName("dataLink174");
+    obj.dataLink173 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink173:setParent(obj.scrollBox2);
+    obj.dataLink173:setDefaultValue("0");
+    obj.dataLink173:setField("ModMentir");
+    obj.dataLink173:setName("dataLink173");
 
     obj.flowPart5 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart5:setParent(obj.flowLayout2);
@@ -5794,22 +5777,22 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.horzLine4:setStrokeColor("#424242");
     obj.horzLine4:setName("horzLine4");
 
-    obj.image5 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image5:setParent(obj.flowPart5);
-    obj.image5:setField("imagemPJ");
-    obj.image5:setStyle("autoFit");
-    obj.image5:setEditable(true);
-    obj.image5:setWidth(289);
-    obj.image5:setHeight(500);
-    obj.image5:setTop(105);
-    obj.image5:setLeft(10.5);
-    obj.image5:setName("image5");
+    obj.image4 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image4:setParent(obj.flowPart5);
+    obj.image4:setField("imagemPJ");
+    obj.image4:setStyle("autoFit");
+    obj.image4:setEditable(true);
+    obj.image4:setWidth(289);
+    obj.image4:setHeight(500);
+    obj.image4:setTop(105);
+    obj.image4:setLeft(10.5);
+    obj.image4:setName("image4");
 
-    obj.dataLink175 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink175:setParent(obj.flowPart5);
-    obj.dataLink175:setField("imagemPJ");
-    obj.dataLink175:setDefaultValue("/Frames/avatar.jpg");
-    obj.dataLink175:setName("dataLink175");
+    obj.dataLink174 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink174:setParent(obj.flowPart5);
+    obj.dataLink174:setField("imagemPJ");
+    obj.dataLink174:setDefaultValue("/Frames/avatar.jpg");
+    obj.dataLink174:setName("dataLink174");
 
     obj.layout13 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout13:setParent(obj.flowPart5);
@@ -5964,14 +5947,14 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit170:setFontColor("#cdcdcd");
     obj.edit170:setFontFamily("Cambria");
 
-    obj.image6 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image6:setParent(obj.flowPart5);
-    obj.image6:setURL("");
-    obj.image6:setHeight(135);
-    obj.image6:setStyle("proportional");
-    obj.image6:setAlign("bottom");
-    obj.image6:setMargins({bottom=80});
-    obj.image6:setName("image6");
+    obj.image5 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image5:setParent(obj.flowPart5);
+    obj.image5:setURL("");
+    obj.image5:setHeight(135);
+    obj.image5:setStyle("proportional");
+    obj.image5:setAlign("bottom");
+    obj.image5:setMargins({bottom=80});
+    obj.image5:setName("image5");
 
     obj.layout15 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout15:setParent(obj.flowPart5);
@@ -5986,14 +5969,14 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.layout16:setHeight(400);
     obj.layout16:setName("layout16");
 
-    obj.image7 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image7:setParent(obj.flowPart5);
-    obj.image7:setURL("seu logo aqui");
-    obj.image7:setHeight(135);
-    obj.image7:setStyle("proportional");
-    obj.image7:setAlign("bottom");
-    obj.image7:setMargins({bottom=80});
-    obj.image7:setName("image7");
+    obj.image6 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image6:setParent(obj.flowPart5);
+    obj.image6:setURL("seu logo aqui");
+    obj.image6:setHeight(135);
+    obj.image6:setStyle("proportional");
+    obj.image6:setAlign("bottom");
+    obj.image6:setMargins({bottom=80});
+    obj.image6:setName("image6");
 
     obj.layMecanicas = GUI.fromHandle(_obj_newObject("layout"));
     obj.layMecanicas:setParent(obj.rectangle3);
@@ -6040,7 +6023,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
 
     obj.button8 = GUI.fromHandle(_obj_newObject("button"));
     obj.button8:setParent(obj.rectangle62);
-    obj.button8:setText("I N V E N T a R I O");
+    obj.button8:setText("I N V E N T Á R I O");
     obj.button8:setName("button8");
     obj.button8:setAlign("left");
     obj.button8:setMargins({right=2});
@@ -6062,7 +6045,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
 
     obj.button10 = GUI.fromHandle(_obj_newObject("button"));
     obj.button10:setParent(obj.rectangle62);
-    obj.button10:setText("D I a R I O");
+    obj.button10:setText("D I Á R I O");
     obj.button10:setName("button10");
     obj.button10:setAlign("left");
     obj.button10:setMargins({right=2});
@@ -6073,7 +6056,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
 
     obj.button11 = GUI.fromHandle(_obj_newObject("button"));
     obj.button11:setParent(obj.rectangle62);
-    obj.button11:setText("A N O T A c Õ E S");
+    obj.button11:setText("A N O T A Ç Õ E S");
     obj.button11:setName("button11");
     obj.button11:setAlign("left");
     obj.button11:setMargins({right=2});
@@ -6165,22 +6148,22 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.horzLine9:setStrokeColor("#424242");
     obj.horzLine9:setName("horzLine9");
 
-    obj.image8 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image8:setParent(obj.fpDireitaMec);
-    obj.image8:setField("imagemPJ");
-    obj.image8:setStyle("autoFit");
-    obj.image8:setEditable(true);
-    obj.image8:setWidth(289);
-    obj.image8:setHeight(500);
-    obj.image8:setTop(105);
-    obj.image8:setLeft(10.5);
-    obj.image8:setName("image8");
+    obj.image7 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image7:setParent(obj.fpDireitaMec);
+    obj.image7:setField("imagemPJ");
+    obj.image7:setStyle("autoFit");
+    obj.image7:setEditable(true);
+    obj.image7:setWidth(289);
+    obj.image7:setHeight(500);
+    obj.image7:setTop(105);
+    obj.image7:setLeft(10.5);
+    obj.image7:setName("image7");
 
-    obj.dataLink176 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink176:setParent(obj.fpDireitaMec);
-    obj.dataLink176:setField("imagemPJ");
-    obj.dataLink176:setDefaultValue("/Frames/avatar.jpg");
-    obj.dataLink176:setName("dataLink176");
+    obj.dataLink175 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink175:setParent(obj.fpDireitaMec);
+    obj.dataLink175:setField("imagemPJ");
+    obj.dataLink175:setDefaultValue("/Frames/avatar.jpg");
+    obj.dataLink175:setName("dataLink175");
 
     obj.rclArmas = GUI.fromHandle(_obj_newObject("recordList"));
     obj.rclArmas:setParent(obj.fpDireitaMec);
@@ -6221,7 +6204,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
 
     obj.button13 = GUI.fromHandle(_obj_newObject("button"));
     obj.button13:setParent(obj.rectangle65);
-    obj.button13:setText("I N V E N T a R I O");
+    obj.button13:setText("I N V E N T Á R I O");
     obj.button13:setName("button13");
     obj.button13:setAlign("left");
     obj.button13:setMargins({right=2});
@@ -6243,7 +6226,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
 
     obj.button15 = GUI.fromHandle(_obj_newObject("button"));
     obj.button15:setParent(obj.rectangle65);
-    obj.button15:setText("D I a R I O");
+    obj.button15:setText("D I Á R I O");
     obj.button15:setName("button15");
     obj.button15:setAlign("left");
     obj.button15:setMargins({right=2});
@@ -6254,7 +6237,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
 
     obj.button16 = GUI.fromHandle(_obj_newObject("button"));
     obj.button16:setParent(obj.rectangle65);
-    obj.button16:setText("A N O T A c Õ E S");
+    obj.button16:setText("A N O T A Ç Õ E S");
     obj.button16:setName("button16");
     obj.button16:setAlign("left");
     obj.button16:setMargins({right=2});
@@ -6350,7 +6333,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
 
     obj.button19 = GUI.fromHandle(_obj_newObject("button"));
     obj.button19:setParent(obj.rectangle67);
-    obj.button19:setText("I N V E N T a R I O");
+    obj.button19:setText("I N V E N T Á R I O");
     obj.button19:setName("button19");
     obj.button19:setAlign("left");
     obj.button19:setMargins({right=2});
@@ -6372,7 +6355,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
 
     obj.button21 = GUI.fromHandle(_obj_newObject("button"));
     obj.button21:setParent(obj.rectangle67);
-    obj.button21:setText("D I a R I O");
+    obj.button21:setText("D I Á R I O");
     obj.button21:setName("button21");
     obj.button21:setAlign("left");
     obj.button21:setMargins({right=2});
@@ -6383,7 +6366,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
 
     obj.button22 = GUI.fromHandle(_obj_newObject("button"));
     obj.button22:setParent(obj.rectangle67);
-    obj.button22:setText("A N O T A c Õ E S");
+    obj.button22:setText("A N O T A Ç Õ E S");
     obj.button22:setName("button22");
     obj.button22:setAlign("left");
     obj.button22:setMargins({right=2});
@@ -6475,22 +6458,22 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.horzLine12:setStrokeColor("#424242");
     obj.horzLine12:setName("horzLine12");
 
-    obj.image9 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image9:setParent(obj.flowPart7);
-    obj.image9:setField("imagemPJ");
-    obj.image9:setStyle("autoFit");
-    obj.image9:setEditable(true);
-    obj.image9:setWidth(289);
-    obj.image9:setHeight(500);
-    obj.image9:setTop(105);
-    obj.image9:setLeft(10.5);
-    obj.image9:setName("image9");
+    obj.image8 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image8:setParent(obj.flowPart7);
+    obj.image8:setField("imagemPJ");
+    obj.image8:setStyle("autoFit");
+    obj.image8:setEditable(true);
+    obj.image8:setWidth(289);
+    obj.image8:setHeight(500);
+    obj.image8:setTop(105);
+    obj.image8:setLeft(10.5);
+    obj.image8:setName("image8");
 
-    obj.dataLink177 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink177:setParent(obj.flowPart7);
-    obj.dataLink177:setField("imagemPJ");
-    obj.dataLink177:setDefaultValue("/Frames/avatar.jpg");
-    obj.dataLink177:setName("dataLink177");
+    obj.dataLink176 = GUI.fromHandle(_obj_newObject("dataLink"));
+    obj.dataLink176:setParent(obj.flowPart7);
+    obj.dataLink176:setField("imagemPJ");
+    obj.dataLink176:setDefaultValue("/Frames/avatar.jpg");
+    obj.dataLink176:setName("dataLink176");
 
     obj.layout22 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout22:setParent(obj.flowPart7);
@@ -6500,14 +6483,14 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.layout22:setHeight(500);
     obj.layout22:setName("layout22");
 
-    obj.image10 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image10:setParent(obj.flowPart7);
-    obj.image10:setURL("");
-    obj.image10:setHeight(135);
-    obj.image10:setStyle("proportional");
-    obj.image10:setAlign("bottom");
-    obj.image10:setMargins({bottom=80});
-    obj.image10:setName("image10");
+    obj.image9 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image9:setParent(obj.flowPart7);
+    obj.image9:setURL("");
+    obj.image9:setHeight(135);
+    obj.image9:setStyle("proportional");
+    obj.image9:setAlign("bottom");
+    obj.image9:setMargins({bottom=80});
+    obj.image9:setName("image9");
 
     obj.layNote = GUI.fromHandle(_obj_newObject("layout"));
     obj.layNote:setParent(obj.rectangle3);
@@ -6539,7 +6522,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
 
     obj.button24 = GUI.fromHandle(_obj_newObject("button"));
     obj.button24:setParent(obj.rectangle70);
-    obj.button24:setText("I N V E N T a R I O");
+    obj.button24:setText("I N V E N T Á R I O");
     obj.button24:setName("button24");
     obj.button24:setAlign("left");
     obj.button24:setMargins({right=2});
@@ -6561,7 +6544,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
 
     obj.button26 = GUI.fromHandle(_obj_newObject("button"));
     obj.button26:setParent(obj.rectangle70);
-    obj.button26:setText("D I a R I O");
+    obj.button26:setText("D I Á R I O");
     obj.button26:setName("button26");
     obj.button26:setAlign("left");
     obj.button26:setMargins({right=2});
@@ -6572,7 +6555,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
 
     obj.button27 = GUI.fromHandle(_obj_newObject("button"));
     obj.button27:setParent(obj.rectangle70);
-    obj.button27:setText("A N O T A c Õ E S");
+    obj.button27:setText("A N O T A Ç Õ E S");
     obj.button27:setName("button27");
     obj.button27:setAlign("left");
     obj.button27:setMargins({right=2});
@@ -7065,9 +7048,9 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
         if self.label30 ~= nil then self.label30:destroy(); self.label30 = nil; end;
         if self.layout16 ~= nil then self.layout16:destroy(); self.layout16 = nil; end;
         if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
-        if self.dataLink43 ~= nil then self.dataLink43:destroy(); self.dataLink43 = nil; end;
-        if self.dataLink9 ~= nil then self.dataLink9:destroy(); self.dataLink9 = nil; end;
         if self.edit39 ~= nil then self.edit39:destroy(); self.edit39 = nil; end;
+        if self.dataLink9 ~= nil then self.dataLink9:destroy(); self.dataLink9 = nil; end;
+        if self.dataLink43 ~= nil then self.dataLink43:destroy(); self.dataLink43 = nil; end;
         if self.dataLink53 ~= nil then self.dataLink53:destroy(); self.dataLink53 = nil; end;
         if self.image7 ~= nil then self.image7:destroy(); self.image7 = nil; end;
         if self.edit128 ~= nil then self.edit128:destroy(); self.edit128 = nil; end;
@@ -7176,7 +7159,6 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
         if self.label38 ~= nil then self.label38:destroy(); self.label38 = nil; end;
         if self.edit101 ~= nil then self.edit101:destroy(); self.edit101 = nil; end;
         if self.button9 ~= nil then self.button9:destroy(); self.button9 = nil; end;
-        if self.image10 ~= nil then self.image10:destroy(); self.image10 = nil; end;
         if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
         if self.label46 ~= nil then self.label46:destroy(); self.label46 = nil; end;
         if self.rectangle69 ~= nil then self.rectangle69:destroy(); self.rectangle69 = nil; end;
@@ -7207,7 +7189,6 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
         if self.button25 ~= nil then self.button25:destroy(); self.button25 = nil; end;
         if self.edit35 ~= nil then self.edit35:destroy(); self.edit35 = nil; end;
         if self.rectangle42 ~= nil then self.rectangle42:destroy(); self.rectangle42 = nil; end;
-        if self.dataLink177 ~= nil then self.dataLink177:destroy(); self.dataLink177 = nil; end;
         if self.edit124 ~= nil then self.edit124:destroy(); self.edit124 = nil; end;
         if self.horzLine12 ~= nil then self.horzLine12:destroy(); self.horzLine12 = nil; end;
         if self.dataLink72 ~= nil then self.dataLink72:destroy(); self.dataLink72 = nil; end;
@@ -7425,8 +7406,8 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
         if self.dataLink54 ~= nil then self.dataLink54:destroy(); self.dataLink54 = nil; end;
         if self.dataLink8 ~= nil then self.dataLink8:destroy(); self.dataLink8 = nil; end;
         if self.flowLayout3 ~= nil then self.flowLayout3:destroy(); self.flowLayout3 = nil; end;
-        if self.image4 ~= nil then self.image4:destroy(); self.image4 = nil; end;
         if self.layout9 ~= nil then self.layout9:destroy(); self.layout9 = nil; end;
+        if self.image4 ~= nil then self.image4:destroy(); self.image4 = nil; end;
         if self.layMagias ~= nil then self.layMagias:destroy(); self.layMagias = nil; end;
         if self.edit129 ~= nil then self.edit129:destroy(); self.edit129 = nil; end;
         if self.rectangle66 ~= nil then self.rectangle66:destroy(); self.rectangle66 = nil; end;
