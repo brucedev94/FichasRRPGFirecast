@@ -7,14 +7,14 @@
 			<dataLink fields="{'ForV', 'DesV', 'ConV', 'IntV', 'SabV', 'CarV','ForA', 'DesA', 'ConA', 'IntA',
 			'SabA', 'CarA', 'ForB', 'DesB', 'ConB', 'IntB', 'SabB', 'CarB', 'ForM', 'DesM', 'ConM', 'IntM', 'SabM', 'CarM', 'NvDanoCurtoAlcance', 'NvDanoLongoAlcance', 'NvQuebrarObjetos', 
 			'NvLevantarPeso',  'NvEmpurrarObstaculo', 'NvBracoDeFerro', 'NvEscalar', 'NvIniciativa', 'NvEsquivar', 'NvDesarmarArmadilha', 'NvAcrobacias', 'NvRoubo', 'NvArremessarObjetos', 'NvFurtividade', 'NvMontaria',
-			'NvAcertoDistância', 'NvAcertoCurtoAlcance', 'NvCorrer', 'NvResistenciaVeneno', 'NvResistenciaCansaco', 'NvSegurarFolego', 'NvSuporteFrioCalor', 'NvDefender', 'NvProfissao', 'NvDecifrarCodigo',
+			'NvAcertoDistancia', 'NvAcertoCurtoAlcance', 'NvCorrer', 'NvResistenciaVeneno', 'NvResistenciaCansaco', 'NvSegurarFolego', 'NvSuporteFrioCalor', 'NvDefender', 'NvProfissao', 'NvDecifrarCodigo',
 			'NvIdentificarCriatura', 'NvLerManuscrito', 'NvPrepararEstrategia', 'NvResistenciaMental', 'NvHistoria', 'NvInvestigacao', 'NvPerceberMentira', 'NvPercepcao', 'NvSentirPerigo', 'NvDetectarMagia',
 			'NvAcertoMagico', 'NvDanoMagico', 'NvSobrevivencia', 'NvMedicina', 'NvNatureza', 'NvReligiao', 'NvDiscurso', 'NvSeducao', 'NvIntimidar', 'NvAtuar', 'NvPersuadir', 'NvMentir', 'BDanoCurtoAlcance',
 			'BDanoLongoAlcance', 'BQuebrarObjetos', 'BLevantarPeso', 'BEmpurrarObstaculo', 'BBracoDeFerro', 'BEscalar', 'BIniciativa', 'BEsquivar', 'BDesarmarArmadilha', 'BAcrobacias', 'BRoubo', 'BArremessarObjetos', 'BFurtividade', 'BMontaria',
-			'BAcertoDistância', 'BAcertoCurtoAlcance', 'BCorrer', 'BResistenciaVeneno', 'BResistenciaCansaco', 'BSegurarFolego', 'BSuporteFrioCalor', 'BDefender', 'BProfissao', 'BDecifrarCodigo', 'BIdentificarCriatura', 'BLerManuscrito',
+			'BAcertoDistancia', 'BAcertoCurtoAlcance', 'BCorrer', 'BResistenciaVeneno', 'BResistenciaCansaco', 'BSegurarFolego', 'BSuporteFrioCalor', 'BDefender', 'BProfissao', 'BDecifrarCodigo', 'BIdentificarCriatura', 'BLerManuscrito',
 			'BPrepararEstrategia', 'BResistenciaMental', 'BHistoria', 'BInvestigacao', 'BPerceberMentira', 'BPercepcao', 'BSentirPerigo', 'BDetectarMagia', 'BAcertoMagico', 'BDanoMagico', 'BSobrevivencia', 'BMedicina', 'BNatureza', 'BReligiao',
 			'BDiscurso', 'BSeducao', 'BIntimidar', 'BAtuar', 'BPersuadir', 'BMentir', 'ModDanoCurtoAlcance', 'ModDanoLongoAlcance', 'ModQuebrarObjetos', 'ModLevantarPeso', 'ModEmpurrarObstaculo', 'ModBracoDeFerro', 'ModEscalar', 'ModIniciativa',
-			'ModEsquivar', 'ModDesarmarArmadilha', 'ModAcrobacias', 'ModRoubo', 'ModArremessarObjetos', 'ModFurtividade', 'ModMontaria', 'ModAcertoDistância', 'ModAcertoCurtoAlcance', 'ModCorrer', 'ModResistenciaVeneno', 'ModResistenciaCansaco',
+			'ModEsquivar', 'ModDesarmarArmadilha', 'ModAcrobacias', 'ModRoubo', 'ModArremessarObjetos', 'ModFurtividade', 'ModMontaria', 'ModAcertoDistancia', 'ModAcertoCurtoAlcance', 'ModCorrer', 'ModResistenciaVeneno', 'ModResistenciaCansaco',
 			'ModSegurarFolego', 'ModSuporteFrioCalor', 'ModDefender', 'ModProfissao', 'ModDecifrarCodigo', 'ModIdentificarCriatura', 'ModLerManuscrito', 'ModPrepararEstrategia', 'ModResistenciaMental', 'ModHistoria', 'ModInvestigacao',
 			'ModPerceberMentira', 'ModPercepcao', 'ModSentirPerigo', 'ModDetectarMagia', 'ModAcertoMagico', 'ModDanoMagico', 'ModSobrevivencia', 'ModMedicina', 'ModNatureza', 'ModReligiao', 'ModDiscurso', 'ModSeducao',
 			'ModIntimidar', 'ModAtuar', 'ModPersuadir', 'ModMentir',}">
@@ -43,7 +43,7 @@
 						sheet.ModArremessarObjetos = math.floor (sheet.NvArremessarObjetos + sheet.BArremessarObjetos + sheet.DesM);
 						sheet.ModFurtividade = math.floor (sheet.NvFurtividade + sheet.BFurtividade + sheet.DesM);
 						sheet.ModMontaria = math.floor (sheet.NvMontaria + sheet.BMontaria + sheet.DesM);
-						sheet.ModAcertoDistância = math.floor (sheet.NvAcertoDistância + sheet.BAcertoDistância + sheet.DesM);
+						sheet.ModAcertoDistancia = math.floor (sheet.NvAcertoDistancia + sheet.BAcertoDistancia + sheet.DesM);
 						sheet.ModAcertoCurtoAlcance = math.floor (sheet.NvAcertoCurtoAlcance + sheet.BAcertoCurtoAlcance + sheet.DesM);
 					
 				-- calcular MOD CONSTITUIcAO			
@@ -440,7 +440,7 @@ button.Tab{
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Arremessar Objetos" left="0" top="240" />
 										<label fontSize="18.0" width="400" fontColor="#ffffff" text="Furtividade" left="0" top="260" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Montaria/Direcao" left="0" top="280" />
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Acerto a Distância" left="0" top="300" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Acerto a Distancia" left="0" top="300" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Acerto Curto alcance" left="0" top="320" />
 
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Correr" left="0" top="340" />
@@ -514,8 +514,8 @@ button.Tab{
 										<dataLink defaultValue="0" field="NvFurtividade"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvMontaria" left="304" top="274" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="NvMontaria"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvAcertoDistância" left="304" top="294" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="NvAcertoDistância"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvAcertoDistancia" left="304" top="294" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="NvAcertoDistancia"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvAcertoCurtoAlcance" left="304" top="314" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="NvAcertoCurtoAlcance"/>
 
@@ -617,8 +617,8 @@ button.Tab{
 										<dataLink defaultValue="0" field="BFurtividade"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BMontaria" left="413" top="274" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="BMontaria"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BAcertoDistância" left="413" top="294" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="BAcertoDistância"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BAcertoDistancia" left="413" top="294" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="BAcertoDistancia"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BAcertoCurtoAlcance" left="413" top="314" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="BAcertoCurtoAlcance"/>
 
@@ -719,8 +719,8 @@ button.Tab{
 										<dataLink defaultValue="0" field="ModFurtividade"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModMontaria" left="522" top="274" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ModMontaria"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModAcertoDistância" left="522" top="294" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="ModAcertoDistância"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModAcertoDistancia" left="522" top="294" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="ModAcertoDistancia"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModAcertoCurtoAlcance" left="522" top="314" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ModAcertoCurtoAlcance"/>
 
