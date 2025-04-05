@@ -84,12 +84,12 @@
 
 				-- calcular MOD CARISMA	
 				sheet.CarM = math.floor (sheet.CarV + sheet.CarA + sheet.CarB);
-						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
+						sheet.ModMentir = math.floor (sheet.NvMentir + sheet.BMentir + sheet.CarM);
+						sheet.ModPersuadir = math.floor (sheet.NvPersuadir + sheet.BPersuadir + sheet.CarM);
+						sheet.ModAtuar = math.floor (sheet.NvAtuar + sheet.BAtuar + sheet.CarM);
+						sheet.ModIntimidar = math.floor (sheet.NvIntimidar + sheet.BIntimidar + sheet.CarM);
+						sheet.ModSedução = math.floor (sheet.NvSedução + sheet.BSedução + sheet.CarM);
+						sheet.ModDiscurso = math.floor (sheet.NvDiscurso + sheet.BDiscurso + sheet.CarM);
 					
 			end;
 			
