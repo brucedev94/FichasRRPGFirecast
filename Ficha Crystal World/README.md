@@ -1,9 +1,8 @@
-![Logotipo](https://imgur.com/rbPv4U0.png)  
-  
-_⠀⠀“Contamos histórias dos heróis para nos lembrar de que nós também podemos ser grandes.” – **Doji Shizue.**_  
-  
-# 𝐋𝐞𝐠𝐞𝐧𝐝 𝐨𝐟 𝐭𝐡𝐞 𝟓 𝐑𝐢𝐧𝐠𝐬  
-***Plugin de ficha para o RRPG Firecast feito por Gatan 🙵  thirteen***  
-Ficha feita para o sistema _Lenda dos 5 Anéis (L5R)_ quarta edição, escrito por Shawn Carman, Robert Hobart, Jim Pinto & Brian Yoon, um sistema e cenário feito sobre Rokugan, o Império Esmeralda, e seus honrados e valorosos samurais, divididos entre diversos clãs.  
+![Logotipo](https://cdnb.artstation.com/p/assets/images/images/002/086/539/medium/david-kegg-kegg-portfoliomaster-mar2016-bierzerkers-15.jpg?1457034420)
 
-Rokugan é um reino fictício, um vasto império cuja história, mitos e cultura recorrem intensamente à cultura e história reais da Ásia antiga e medieval, principalmente o Japão, mas também incluindo China, Coreia e outros. É uma terra onde samurais, honrados servos do Imperador Divino, guerreiam e forjam paz em nome de seus senhores. É uma terra onde poderosos Clãs Maiores, cada um composto por várias antigas famílias, trabalham juntos e uns contra os outros na esperança de realizar seus planos políticos e militares. É uma terra onde valentes guerreiros, ou _bushis_, entram em conflito para ganhar o dia para seus clãs no campo de batalha. É uma terra onde devotos sacerdotes _shugenjas_ oram para a multidão de fortunas na esperança de conseguirem as bênçãos dos Céus para suas terras. É uma terra onde políticos palacianos travam uma infindável guerra de palavras, buscando qualquer vantagem possível para seus clãs. Rokugan é um império de honra e glória, conflito e aventura, horror e mistério.  
+# Crystal World New Adventure
+
+**_Plugin de ficha para o RRPG Firecast_**  
+Ficha feita para o sistema _Crystal World New Adventure_ primeira edição.
+
+O mundo mudou no dia em que exploradores encontraram o Reino Green. Uma terra vasta, onde a natureza dominava quase toda a paisagem, lar de criaturas jamais vistas e repleta de dungeons inexploradas. A promessa de riquezas escondidas entre as florestas e ruínas antigas atraiu os olhos gananciosos dos reinos vizinhos. Temendo um conflito pelo controle do território, os reis selaram um pacto: o Reino Green pertenceria a todos, mas caberia às guildas explorá-lo.
