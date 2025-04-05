@@ -12,7 +12,7 @@ local function constructNew_templateMagias()
     local self = obj;
     local sheet = nil;
 
-    rawset(obj, "_oldSetNodeObjectFunction", rawget(obj, "setNodeObject"));
+    rawset(obj, "_oldSetNodeObjectFunction", obj.setNodeObject);
 
     function obj:setNodeObject(nodeObject)
         sheet = nodeObject;
@@ -54,7 +54,7 @@ local function constructNew_templateMagias()
     obj.image1:setField("imagemestilo");
     obj.image1:setEditable(true);
     obj.image1:setStyle("autoFit");
-    lfm_setPropAsString(obj.image1, "animate",  "true");
+    obj.image1.animate = true;
     obj.image1:setName("image1");
 
     obj.dataLink2 = GUI.fromHandle(_obj_newObject("dataLink"));
@@ -80,13 +80,13 @@ local function constructNew_templateMagias()
     obj.button1:setName("button1");
     obj.button1:setFontFamily("Cambria");
     obj.button1:setFontColor("white");
-    lfm_setPropAsString(obj.button1, "fontStyle",  "bold");
+    lfm_setPropAsString(obj.button1, "fontStyle", "bold");
 
     obj.edit1 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit1:setParent(obj.layout1);
     obj.edit1:setField("nomeMagia");
     obj.edit1:setAlign("client");
-    lfm_setPropAsString(obj.edit1, "fontStyle",  "bold");
+    lfm_setPropAsString(obj.edit1, "fontStyle", "bold");
     obj.edit1:setName("edit1");
     obj.edit1:setFontFamily("Cambria");
     obj.edit1:setTransparent(true);
@@ -102,7 +102,7 @@ local function constructNew_templateMagias()
     obj.labDesc:setName("labDesc");
     obj.labDesc:setFontFamily("Cambria");
     obj.labDesc:setFontColor("white");
-    lfm_setPropAsString(obj.labDesc, "fontStyle",  "bold");
+    lfm_setPropAsString(obj.labDesc, "fontStyle", "bold");
 
     obj.popMagia = GUI.fromHandle(_obj_newObject("popup"));
     obj.popMagia:setParent(obj.rectangle1);
@@ -111,7 +111,7 @@ local function constructNew_templateMagias()
     obj.popMagia:setHeight(700);
     obj.popMagia:setBackOpacity(0);
     obj.popMagia:setDrawContainer(false);
-    lfm_setPropAsString(obj.popMagia, "autoScopeNode",  "true");
+    obj.popMagia.autoScopeNode = true;
 
     obj.rectangle2 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle2:setParent(obj.popMagia);
@@ -139,7 +139,7 @@ local function constructNew_templateMagias()
     obj.label1:setWidth(580);
     obj.label1:setField("nomeMagia");
     obj.label1:setMargins({bottom=5});
-    lfm_setPropAsString(obj.label1, "fontStyle",  "bold");
+    lfm_setPropAsString(obj.label1, "fontStyle", "bold");
     obj.label1:setFontFamily("Constantia");
     obj.label1:setFontSize(26);
     obj.label1:setHeight(30);
@@ -169,7 +169,7 @@ local function constructNew_templateMagias()
     obj.label2:setName("label2");
     obj.label2:setFontFamily("Cambria");
     obj.label2:setFontColor("white");
-    lfm_setPropAsString(obj.label2, "fontStyle",  "bold");
+    lfm_setPropAsString(obj.label2, "fontStyle", "bold");
 
     obj.edit2 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit2:setParent(obj.layout2);
@@ -207,13 +207,13 @@ local function constructNew_templateMagias()
     obj.richEdit1:setWidth(900);
     obj.richEdit1:setHeight(900);
     obj.richEdit1:setField("SkilsNOTAS");
-    lfm_setPropAsString(obj.richEdit1, "backgroundColor",  "#696969");
-    lfm_setPropAsString(obj.richEdit1, "defaultFontColor",  "white");
+    obj.richEdit1.backgroundColor = "#696969";
+    obj.richEdit1.defaultFontColor = "white";
     obj.richEdit1:setMargins({left=10, right=10, bottom=40});
     obj.richEdit1:setName("richEdit1");
 
     obj._e_event0 = obj.dataLink1:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
+        function (field, oldValue, newValue)
             if sheet ~= nil then
             			local node = NDB.getRoot(sheet);
             			local objetos = NDB.getChildNodes(node.magias);
@@ -235,15 +235,15 @@ local function constructNew_templateMagias()
             			end;
             
             		end
-        end, obj);
+        end);
 
     obj._e_event1 = obj.button1:addEventListener("onClick",
-        function (_)
+        function (event)
             NDB.deleteNode(sheet);
-        end, obj);
+        end);
 
     obj._e_event2 = obj.labDesc:addEventListener("onClick",
-        function (_)
+        function (event)
             local pop = self:findControlByName("popMagia");
             			if pop ~= nil then
             			pop:setNodeObject(self.sheet);
@@ -251,7 +251,7 @@ local function constructNew_templateMagias()
             			else
             			showMessage("Ops, bug... Nao encontrei o popup para exibir");
             			end;
-        end, obj);
+        end);
 
     function obj:_releaseEvents()
         __o_rrpgObjs.removeEventListenerById(self._e_event2);
@@ -268,26 +268,26 @@ local function constructNew_templateMagias()
           self:setNodeDatabase(nil);
         end;
 
-        if self.label2 ~= nil then self.label2:destroy(); self.label2 = nil; end;
-        if self.popMagia ~= nil then self.popMagia:destroy(); self.popMagia = nil; end;
-        if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
-        if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
-        if self.richEdit1 ~= nil then self.richEdit1:destroy(); self.richEdit1 = nil; end;
-        if self.labDesc ~= nil then self.labDesc:destroy(); self.labDesc = nil; end;
-        if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
-        if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
-        if self.image1 ~= nil then self.image1:destroy(); self.image1 = nil; end;
-        if self.image2 ~= nil then self.image2:destroy(); self.image2 = nil; end;
         if self.dataLink2 ~= nil then self.dataLink2:destroy(); self.dataLink2 = nil; end;
-        if self.horzLine1 ~= nil then self.horzLine1:destroy(); self.horzLine1 = nil; end;
-        if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;
-        if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
-        if self.dataLink4 ~= nil then self.dataLink4:destroy(); self.dataLink4 = nil; end;
-        if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
-        if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
-        if self.layout2 ~= nil then self.layout2:destroy(); self.layout2 = nil; end;
-        if self.MinhaDescMag ~= nil then self.MinhaDescMag:destroy(); self.MinhaDescMag = nil; end;
+        if self.image2 ~= nil then self.image2:destroy(); self.image2 = nil; end;
+        if self.label2 ~= nil then self.label2:destroy(); self.label2 = nil; end;
+        if self.richEdit1 ~= nil then self.richEdit1:destroy(); self.richEdit1 = nil; end;
         if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
+        if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
+        if self.dataLink4 ~= nil then self.dataLink4:destroy(); self.dataLink4 = nil; end;
+        if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
+        if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
+        if self.MinhaDescMag ~= nil then self.MinhaDescMag:destroy(); self.MinhaDescMag = nil; end;
+        if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
+        if self.labDesc ~= nil then self.labDesc:destroy(); self.labDesc = nil; end;
+        if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;
+        if self.horzLine1 ~= nil then self.horzLine1:destroy(); self.horzLine1 = nil; end;
+        if self.layout2 ~= nil then self.layout2:destroy(); self.layout2 = nil; end;
+        if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
+        if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
+        if self.popMagia ~= nil then self.popMagia:destroy(); self.popMagia = nil; end;
+        if self.image1 ~= nil then self.image1:destroy(); self.image1 = nil; end;
+        if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
         self:_oldLFMDestroy();
     end;
 
@@ -319,6 +319,7 @@ local _templateMagias = {
     dataType = "", 
     formType = "undefined", 
     formComponentName = "form", 
+    cacheMode = "none", 
     title = "", 
     description=""};
 
