@@ -35,7 +35,16 @@
 						
 				-- calcular MOD DESTREZA
 				sheet.DesM = math.floor (sheet.DesV + sheet.DesA + sheet.DesB);
-
+						sheet.ModIniciativa = math.floor (sheet.NvIniciativa + sheet.BIniciativa + sheet.DesM);
+						sheet.ModEsquivar = math.floor (sheet.NvEsquivar + sheet.BEsquivar + sheet.DesM);
+						sheet.ModDesarmarArmadilha = math.floor (sheet.NvDesarmarArmadilha + sheet.BDesarmarArmadilha + sheet.DesM);
+						sheet.ModAcrobacias = math.floor (sheet.NvAcrobacias + sheet.BAcrobacias + sheet.DesM);
+						sheet.ModRoubo = math.floor (sheet.NvRoubo + sheet.BRoubo + sheet.DesM);
+						sheet.ModArremessarObjetos = math.floor (sheet.NvArremessarObjetos + sheet.BArremessarObjetos + sheet.DesM);
+						sheet.ModFurtividade = math.floor (sheet.NvFurtividade + sheet.BFurtividade + sheet.DesM);
+						sheet.ModMontaria = math.floor (sheet.NvMontaria + sheet.BMontaria + sheet.DesM);
+						sheet.ModAcertoDistância = math.floor (sheet.NvAcertoDistância + sheet.BAcertoDistância + sheet.DesM);
+						sheet.ModAcertoCurtoAlcance = math.floor (sheet.NvAcertoCurtoAlcance + sheet.BAcertoCurtoAlcance + sheet.DesM);
 					
 				-- calcular MOD CONSTITUIcAO			
 				sheet.ConM = math.floor (sheet.ConV + sheet.ConA + sheet.ConB);
