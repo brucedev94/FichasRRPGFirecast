@@ -402,9 +402,10 @@ button.Tab{
 									<layout align="top" height="1500">
 
 										 <!-- PERICIAS -->
-										 --aqui
+									
 										<scrollBox width="630" height="820" left="20" top="0" >
 
+								
 										<!-- GRADES DAS PERICIAS, COR SIM COR NaO -->
 										<rectangle width="600" height="20" color="#363636" xradius="5" yradius="5" cornerType="round" />
 										<rectangle width="600" top="40" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
