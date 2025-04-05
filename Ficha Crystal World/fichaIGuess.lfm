@@ -24,7 +24,7 @@
 			if (NivelPersonagem ~= nil) then
 				local NivelPersonagem = tonumber(sheet.NivelPersonagem);
 
-				Cezar e brabo
+				
 
 				-- calcular MOD FORÇA		Nv - B - Mod  // V - A - B - M
 				sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
