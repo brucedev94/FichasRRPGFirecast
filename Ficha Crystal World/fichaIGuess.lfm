@@ -283,11 +283,7 @@ button.Tab{
 											<rectangle left="435" top="24" width="60" height="15" xradius="5" yradius="5" cornerType="round" color="#363636">
 											<label field="HpPersonagem" horzTextAlign="center" left="-30" top="0" /><dataLink field="HpPersonagem" defaultValue="0" />
 											</rectangle>
-											<rectangle left="500" top="24" width="60" height="15" xradius="5" yradius="5" cornerType="round" color="#363636">
-											<edit horzTextAlign="center" left="-20" top="-8" field="Vidabonus" type="number" min="0" max="9999" fontColor="white" />
-											<dataLink field="Vidabonus" defaultValue="0" />
-											</rectangle>
-
+											
 											<label fontSize="15.0" left="365" top="43" fontColor="white" text="Mana:" />
 											<rectangle left="435" top="44" width="60" height="15" xradius="5" yradius="5" cornerType="round" color="#363636">
 											<label field="ManaPersonagem" horzTextAlign="center" left="-30" top="-2" /><dataLink field="ManaPersonagem"   defaultValue="0" />
