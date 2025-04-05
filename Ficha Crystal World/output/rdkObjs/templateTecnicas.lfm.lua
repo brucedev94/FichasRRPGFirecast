@@ -12,7 +12,7 @@ local function constructNew_templateTecnicas()
     local self = obj;
     local sheet = nil;
 
-    rawset(obj, "_oldSetNodeObjectFunction", obj.setNodeObject);
+    rawset(obj, "_oldSetNodeObjectFunction", rawget(obj, "setNodeObject"));
 
     function obj:setNodeObject(nodeObject)
         sheet = nodeObject;
@@ -42,7 +42,7 @@ local function constructNew_templateTecnicas()
     obj.edit1:setWidth(283);
     obj.edit1:setAlign("left");
     obj.edit1:setMargins({right=2});
-    lfm_setPropAsString(obj.edit1, "fontStyle", "bold");
+    lfm_setPropAsString(obj.edit1, "fontStyle",  "bold");
     obj.edit1:setFontColor("white");
     obj.edit1:setName("edit1");
     obj.edit1:setFontFamily("Cambria");
@@ -139,7 +139,7 @@ local function constructNew_templateTecnicas()
     obj.popTecnica:setHeight(350);
     obj.popTecnica:setBackOpacity(0);
     obj.popTecnica:setDrawContainer(false);
-    obj.popTecnica.autoScopeNode = true;
+    lfm_setPropAsString(obj.popTecnica, "autoScopeNode",  "true");
 
     obj.rectangle3 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle3:setParent(obj.popTecnica);
@@ -157,7 +157,7 @@ local function constructNew_templateTecnicas()
     obj.label1:setAlign("top");
     obj.label1:setField("nomeEscola");
     obj.label1:setMargins({bottom=5});
-    lfm_setPropAsString(obj.label1, "fontStyle", "bold");
+    lfm_setPropAsString(obj.label1, "fontStyle",  "bold");
     obj.label1:setFontFamily("Constantia");
     obj.label1:setFontSize(26);
     obj.label1:setHeight(30);
@@ -192,11 +192,11 @@ local function constructNew_templateTecnicas()
     obj.button1:setName("button1");
 
     obj._e_event0 = obj.btnTec:addEventListener("onClick",
-        function (event)
-        end);
+        function (_)
+        end, obj);
 
     obj._e_event1 = obj.btnTec:addEventListener("onClick",
-        function (event)
+        function (_)
             local pop = self:findControlByName("popTecnica");
             				if pop ~= nil then
             				pop:setNodeObject(self.sheet);
@@ -204,12 +204,12 @@ local function constructNew_templateTecnicas()
             				else
             				showMessage("Ops, bug... Nao encontrei o popup para exibir");
             				end;
-        end);
+        end, obj);
 
     obj._e_event2 = obj.button1:addEventListener("onClick",
-        function (event)
+        function (_)
             NDB.deleteNode(sheet);
-        end);
+        end, obj);
 
     function obj:_releaseEvents()
         __o_rrpgObjs.removeEventListenerById(self._e_event2);
@@ -226,24 +226,24 @@ local function constructNew_templateTecnicas()
           self:setNodeDatabase(nil);
         end;
 
-        if self.dataLink2 ~= nil then self.dataLink2:destroy(); self.dataLink2 = nil; end;
-        if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
-        if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
-        if self.comboBox2 ~= nil then self.comboBox2:destroy(); self.comboBox2 = nil; end;
         if self.btnTec ~= nil then self.btnTec:destroy(); self.btnTec = nil; end;
-        if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
+        if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
         if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
-        if self.popTecnica ~= nil then self.popTecnica:destroy(); self.popTecnica = nil; end;
-        if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
         if self.comboBox3 ~= nil then self.comboBox3:destroy(); self.comboBox3 = nil; end;
+        if self.popTecnica ~= nil then self.popTecnica:destroy(); self.popTecnica = nil; end;
+        if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
+        if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
+        if self.rectangle3 ~= nil then self.rectangle3:destroy(); self.rectangle3 = nil; end;
         if self.textEditor1 ~= nil then self.textEditor1:destroy(); self.textEditor1 = nil; end;
         if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;
-        if self.horzLine1 ~= nil then self.horzLine1:destroy(); self.horzLine1 = nil; end;
-        if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
-        if self.rectangle3 ~= nil then self.rectangle3:destroy(); self.rectangle3 = nil; end;
-        if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
+        if self.dataLink2 ~= nil then self.dataLink2:destroy(); self.dataLink2 = nil; end;
         if self.comboBox1 ~= nil then self.comboBox1:destroy(); self.comboBox1 = nil; end;
         if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
+        if self.horzLine1 ~= nil then self.horzLine1:destroy(); self.horzLine1 = nil; end;
+        if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
+        if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
+        if self.comboBox2 ~= nil then self.comboBox2:destroy(); self.comboBox2 = nil; end;
+        if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
         self:_oldLFMDestroy();
     end;
 
@@ -275,7 +275,6 @@ local _templateTecnicas = {
     dataType = "", 
     formType = "undefined", 
     formComponentName = "form", 
-    cacheMode = "none", 
     title = "", 
     description=""};
 

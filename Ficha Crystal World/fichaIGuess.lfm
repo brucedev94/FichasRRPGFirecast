@@ -28,7 +28,7 @@
 
 				-- calcular MOD FORÇA		Nv - B - Mod  // V - A - B - M
 				sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
+						sheet.ModDanoCurtoAlcance = math.floor (sheet.NvDanoCurtoAlcance + sheet.BDanoCurtoAlcance + sheet.ForM);
 						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
 						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
 						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);

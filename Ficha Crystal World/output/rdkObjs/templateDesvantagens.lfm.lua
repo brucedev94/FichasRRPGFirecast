@@ -12,7 +12,7 @@ local function constructNew_templateDesVantagens()
     local self = obj;
     local sheet = nil;
 
-    rawset(obj, "_oldSetNodeObjectFunction", obj.setNodeObject);
+    rawset(obj, "_oldSetNodeObjectFunction", rawget(obj, "setNodeObject"));
 
     function obj:setNodeObject(nodeObject)
         sheet = nodeObject;
@@ -43,7 +43,7 @@ local function constructNew_templateDesVantagens()
     obj.edit1:setWidth(430);
     obj.edit1:setHeight(25);
     obj.edit1:setMargins({right=2});
-    lfm_setPropAsString(obj.edit1, "fontStyle", "bold");
+    lfm_setPropAsString(obj.edit1, "fontStyle",  "bold");
     obj.edit1:setName("edit1");
     obj.edit1:setFontFamily("Cambria");
     obj.edit1:setTransparent(true);
@@ -69,7 +69,7 @@ local function constructNew_templateDesVantagens()
     obj.popDesvantagem:setHeight(200);
     obj.popDesvantagem:setBackOpacity(0);
     obj.popDesvantagem:setDrawContainer(false);
-    obj.popDesvantagem.autoScopeNode = true;
+    lfm_setPropAsString(obj.popDesvantagem, "autoScopeNode",  "true");
 
     obj.rectangle1 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle1:setParent(obj.popDesvantagem);
@@ -87,7 +87,7 @@ local function constructNew_templateDesVantagens()
     obj.label1:setAlign("top");
     obj.label1:setField("aqq");
     obj.label1:setMargins({bottom=5, right=100});
-    lfm_setPropAsString(obj.label1, "fontStyle", "bold");
+    lfm_setPropAsString(obj.label1, "fontStyle",  "bold");
     obj.label1:setFontFamily("Constantia");
     obj.label1:setFontSize(26);
     obj.label1:setHeight(30);
@@ -96,11 +96,11 @@ local function constructNew_templateDesVantagens()
     obj.label2 = GUI.fromHandle(_obj_newObject("label"));
     obj.label2:setParent(obj.rectangle1);
     obj.label2:setField("atributoSkill");
-    lfm_setPropAsString(obj.label2, "anchors", "top right");
+    lfm_setPropAsString(obj.label2, "anchors",  "top right");
     obj.label2:setRight(0);
     obj.label2:setTop(20);
     obj.label2:setHorzTextAlign("trailing");
-    lfm_setPropAsString(obj.label2, "fontStyle", "bold");
+    lfm_setPropAsString(obj.label2, "fontStyle",  "bold");
     obj.label2:setName("label2");
     obj.label2:setFontFamily("Cambria");
     obj.label2:setFontColor("#cdcdcd");
@@ -173,7 +173,7 @@ local function constructNew_templateDesVantagens()
     obj.button1:setName("button1");
 
     obj._e_event0 = obj.labNome:addEventListener("onClick",
-        function (event)
+        function (_)
             local pop = self:findControlByName("popDesvantagem");
             					if pop ~= nil then
             					pop:setNodeObject(self.sheet);
@@ -181,12 +181,12 @@ local function constructNew_templateDesVantagens()
             					else
             					showMessage("Ops, bug... Nao encontrei o popup para exibir");
             					end;
-        end);
+        end, obj);
 
     obj._e_event1 = obj.button1:addEventListener("onClick",
-        function (event)
+        function (_)
             NDB.deleteNode(sheet);
-        end);
+        end, obj);
 
     function obj:_releaseEvents()
         __o_rrpgObjs.removeEventListenerById(self._e_event1);
@@ -202,22 +202,22 @@ local function constructNew_templateDesVantagens()
           self:setNodeDatabase(nil);
         end;
 
-        if self.dataLink2 ~= nil then self.dataLink2:destroy(); self.dataLink2 = nil; end;
-        if self.label2 ~= nil then self.label2:destroy(); self.label2 = nil; end;
-        if self.popDesvantagem ~= nil then self.popDesvantagem:destroy(); self.popDesvantagem = nil; end;
         if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
-        if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
-        if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
-        if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
-        if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
-        if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;
-        if self.horzLine1 ~= nil then self.horzLine1:destroy(); self.horzLine1 = nil; end;
         if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
-        if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
+        if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
+        if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
+        if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
         if self.labNome ~= nil then self.labNome:destroy(); self.labNome = nil; end;
         if self.MinhaVant ~= nil then self.MinhaVant:destroy(); self.MinhaVant = nil; end;
+        if self.horzLine1 ~= nil then self.horzLine1:destroy(); self.horzLine1 = nil; end;
+        if self.dataLink2 ~= nil then self.dataLink2:destroy(); self.dataLink2 = nil; end;
         if self.comboBox1 ~= nil then self.comboBox1:destroy(); self.comboBox1 = nil; end;
         if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
+        if self.popDesvantagem ~= nil then self.popDesvantagem:destroy(); self.popDesvantagem = nil; end;
+        if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
+        if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
+        if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;
+        if self.label2 ~= nil then self.label2:destroy(); self.label2 = nil; end;
         self:_oldLFMDestroy();
     end;
 
@@ -249,7 +249,6 @@ local _templateDesVantagens = {
     dataType = "", 
     formType = "undefined", 
     formComponentName = "form", 
-    cacheMode = "none", 
     title = "", 
     description=""};
 

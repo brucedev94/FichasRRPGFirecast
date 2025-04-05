@@ -12,7 +12,7 @@ local function constructNew_templateArmas()
     local self = obj;
     local sheet = nil;
 
-    rawset(obj, "_oldSetNodeObjectFunction", obj.setNodeObject);
+    rawset(obj, "_oldSetNodeObjectFunction", rawget(obj, "setNodeObject"));
 
     function obj:setNodeObject(nodeObject)
         sheet = nodeObject;
@@ -44,7 +44,7 @@ local function constructNew_templateArmas()
     obj.popArma:setHeight(260);
     obj.popArma:setBackOpacity(0);
     obj.popArma:setDrawContainer(false);
-    obj.popArma.autoScopeNode = true;
+    lfm_setPropAsString(obj.popArma, "autoScopeNode",  "true");
 
     obj.rectangle1 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle1:setParent(obj.popArma);
@@ -62,7 +62,7 @@ local function constructNew_templateArmas()
     obj.label1:setAlign("top");
     obj.label1:setField("nomeArma");
     obj.label1:setMargins({bottom=5});
-    lfm_setPropAsString(obj.label1, "fontStyle", "bold");
+    lfm_setPropAsString(obj.label1, "fontStyle",  "bold");
     obj.label1:setFontFamily("Constantia");
     obj.label1:setFontSize(26);
     obj.label1:setHeight(30);
@@ -96,7 +96,7 @@ local function constructNew_templateArmas()
     obj.label2:setName("label2");
     obj.label2:setFontFamily("Cambria");
     obj.label2:setFontColor("white");
-    lfm_setPropAsString(obj.label2, "fontStyle", "bold");
+    lfm_setPropAsString(obj.label2, "fontStyle",  "bold");
 
     obj.edit1 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit1:setParent(obj.layout2);
@@ -129,7 +129,7 @@ local function constructNew_templateArmas()
     obj.label3:setName("label3");
     obj.label3:setFontFamily("Cambria");
     obj.label3:setFontColor("white");
-    lfm_setPropAsString(obj.label3, "fontStyle", "bold");
+    lfm_setPropAsString(obj.label3, "fontStyle",  "bold");
 
     obj.edit2 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit2:setParent(obj.layout3);
@@ -167,7 +167,7 @@ local function constructNew_templateArmas()
     obj.label4:setName("label4");
     obj.label4:setFontFamily("Cambria");
     obj.label4:setFontColor("white");
-    lfm_setPropAsString(obj.label4, "fontStyle", "bold");
+    lfm_setPropAsString(obj.label4, "fontStyle",  "bold");
 
     obj.edit3 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit3:setParent(obj.layout5);
@@ -200,7 +200,7 @@ local function constructNew_templateArmas()
     obj.label5:setName("label5");
     obj.label5:setFontFamily("Cambria");
     obj.label5:setFontColor("white");
-    lfm_setPropAsString(obj.label5, "fontStyle", "bold");
+    lfm_setPropAsString(obj.label5, "fontStyle",  "bold");
 
     obj.edit4 = GUI.fromHandle(_obj_newObject("edit"));
     obj.edit4:setParent(obj.layout6);
@@ -245,7 +245,7 @@ local function constructNew_templateArmas()
     obj.edit5:setField("nomeArma");
     obj.edit5:setAlign("client");
     obj.edit5:setMargins({right=2});
-    lfm_setPropAsString(obj.edit5, "fontStyle", "bold");
+    lfm_setPropAsString(obj.edit5, "fontStyle",  "bold");
     obj.edit5:setFontColor("white");
     obj.edit5:setName("edit5");
     obj.edit5:setFontFamily("Cambria");
@@ -258,7 +258,7 @@ local function constructNew_templateArmas()
     obj.dataLink6:setName("dataLink6");
 
     obj._e_event0 = obj.btnArma:addEventListener("onClick",
-        function (event)
+        function (_)
             local pop = self:findControlByName("popArma");
             			if pop ~= nil then
             			pop:setNodeObject(self.sheet);
@@ -266,12 +266,12 @@ local function constructNew_templateArmas()
             			else
             			showMessage("Ops, bug... Nao encontrei o popup para exibir");
             			end;
-        end);
+        end, obj);
 
     obj._e_event1 = obj.button1:addEventListener("onClick",
-        function (event)
+        function (_)
             NDB.deleteNode(sheet);
-        end);
+        end, obj);
 
     function obj:_releaseEvents()
         __o_rrpgObjs.removeEventListenerById(self._e_event1);
@@ -287,34 +287,34 @@ local function constructNew_templateArmas()
           self:setNodeDatabase(nil);
         end;
 
-        if self.dataLink5 ~= nil then self.dataLink5:destroy(); self.dataLink5 = nil; end;
-        if self.label2 ~= nil then self.label2:destroy(); self.label2 = nil; end;
-        if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
-        if self.popArma ~= nil then self.popArma:destroy(); self.popArma = nil; end;
-        if self.edit4 ~= nil then self.edit4:destroy(); self.edit4 = nil; end;
-        if self.edit3 ~= nil then self.edit3:destroy(); self.edit3 = nil; end;
-        if self.layout3 ~= nil then self.layout3:destroy(); self.layout3 = nil; end;
-        if self.label5 ~= nil then self.label5:destroy(); self.label5 = nil; end;
-        if self.textEditor1 ~= nil then self.textEditor1:destroy(); self.textEditor1 = nil; end;
-        if self.layout6 ~= nil then self.layout6:destroy(); self.layout6 = nil; end;
-        if self.label3 ~= nil then self.label3:destroy(); self.label3 = nil; end;
-        if self.edit5 ~= nil then self.edit5:destroy(); self.edit5 = nil; end;
-        if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
-        if self.dataLink2 ~= nil then self.dataLink2:destroy(); self.dataLink2 = nil; end;
         if self.btnArma ~= nil then self.btnArma:destroy(); self.btnArma = nil; end;
-        if self.layout4 ~= nil then self.layout4:destroy(); self.layout4 = nil; end;
-        if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
-        if self.dataLink4 ~= nil then self.dataLink4:destroy(); self.dataLink4 = nil; end;
-        if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
         if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
-        if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;
-        if self.horzLine1 ~= nil then self.horzLine1:destroy(); self.horzLine1 = nil; end;
-        if self.layout2 ~= nil then self.layout2:destroy(); self.layout2 = nil; end;
+        if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
+        if self.layout4 ~= nil then self.layout4:destroy(); self.layout4 = nil; end;
+        if self.edit4 ~= nil then self.edit4:destroy(); self.edit4 = nil; end;
+        if self.label3 ~= nil then self.label3:destroy(); self.label3 = nil; end;
         if self.label4 ~= nil then self.label4:destroy(); self.label4 = nil; end;
-        if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
-        if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
+        if self.textEditor1 ~= nil then self.textEditor1:destroy(); self.textEditor1 = nil; end;
+        if self.edit5 ~= nil then self.edit5:destroy(); self.edit5 = nil; end;
+        if self.dataLink4 ~= nil then self.dataLink4:destroy(); self.dataLink4 = nil; end;
         if self.layout5 ~= nil then self.layout5:destroy(); self.layout5 = nil; end;
+        if self.label2 ~= nil then self.label2:destroy(); self.label2 = nil; end;
+        if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
+        if self.edit3 ~= nil then self.edit3:destroy(); self.edit3 = nil; end;
+        if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
+        if self.layout6 ~= nil then self.layout6:destroy(); self.layout6 = nil; end;
+        if self.label5 ~= nil then self.label5:destroy(); self.label5 = nil; end;
+        if self.popArma ~= nil then self.popArma:destroy(); self.popArma = nil; end;
         if self.dataLink6 ~= nil then self.dataLink6:destroy(); self.dataLink6 = nil; end;
+        if self.layout3 ~= nil then self.layout3:destroy(); self.layout3 = nil; end;
+        if self.dataLink5 ~= nil then self.dataLink5:destroy(); self.dataLink5 = nil; end;
+        if self.horzLine1 ~= nil then self.horzLine1:destroy(); self.horzLine1 = nil; end;
+        if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;
+        if self.dataLink2 ~= nil then self.dataLink2:destroy(); self.dataLink2 = nil; end;
+        if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
+        if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
+        if self.layout2 ~= nil then self.layout2:destroy(); self.layout2 = nil; end;
+        if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
         self:_oldLFMDestroy();
     end;
 
@@ -346,7 +346,6 @@ local _templateArmas = {
     dataType = "", 
     formType = "undefined", 
     formComponentName = "form", 
-    cacheMode = "none", 
     title = "", 
     description=""};
 

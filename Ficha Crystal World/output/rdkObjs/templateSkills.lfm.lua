@@ -12,7 +12,7 @@ local function constructNew_templateSkills()
     local self = obj;
     local sheet = nil;
 
-    rawset(obj, "_oldSetNodeObjectFunction", obj.setNodeObject);
+    rawset(obj, "_oldSetNodeObjectFunction", rawget(obj, "setNodeObject"));
 
     function obj:setNodeObject(nodeObject)
         sheet = nodeObject;
@@ -98,7 +98,7 @@ local function constructNew_templateSkills()
     obj.edit2:setType("number");
     obj.edit2:setMin(0);
     obj.edit2:setMax(10);
-    lfm_setPropAsString(obj.edit2, "fontStyle", "bold");
+    lfm_setPropAsString(obj.edit2, "fontStyle",  "bold");
     obj.edit2:setFontColor("white");
     obj.edit2:setName("edit2");
     obj.edit2:setFontFamily("Cambria");
@@ -170,7 +170,7 @@ local function constructNew_templateSkills()
     obj.label1:setAlign("top");
     obj.label1:setText("Ê N F A S E S");
     obj.label1:setMargins({bottom=5});
-    lfm_setPropAsString(obj.label1, "fontStyle", "bold");
+    lfm_setPropAsString(obj.label1, "fontStyle",  "bold");
     obj.label1:setFontFamily("Constantia");
     obj.label1:setName("label1");
 
@@ -255,7 +255,7 @@ local function constructNew_templateSkills()
     obj.label2:setMargins({bottom=10});
     obj.label2:setFontFamily("Constantia");
     obj.label2:setText("HABILIDADES DE MAESTRIA");
-    lfm_setPropAsString(obj.label2, "fontStyle", "bold");
+    lfm_setPropAsString(obj.label2, "fontStyle",  "bold");
     obj.label2:setName("label2");
 
     obj.label3 = GUI.fromHandle(_obj_newObject("label"));
@@ -263,7 +263,7 @@ local function constructNew_templateSkills()
     obj.label3:setAlign("top");
     obj.label3:setText("N Í V E L   3");
     obj.label3:setMargins({bottom=5});
-    lfm_setPropAsString(obj.label3, "fontStyle", "bold");
+    lfm_setPropAsString(obj.label3, "fontStyle",  "bold");
     obj.label3:setFontFamily("Constantia");
     obj.label3:setName("label3");
 
@@ -289,7 +289,7 @@ local function constructNew_templateSkills()
     obj.label4:setAlign("top");
     obj.label4:setText("N Í V E L   5");
     obj.label4:setMargins({bottom=5});
-    lfm_setPropAsString(obj.label4, "fontStyle", "bold");
+    lfm_setPropAsString(obj.label4, "fontStyle",  "bold");
     obj.label4:setFontFamily("Constantia");
     obj.label4:setName("label4");
 
@@ -315,7 +315,7 @@ local function constructNew_templateSkills()
     obj.label5:setAlign("top");
     obj.label5:setText("N Í V E L   7");
     obj.label5:setMargins({bottom=5});
-    lfm_setPropAsString(obj.label5, "fontStyle", "bold");
+    lfm_setPropAsString(obj.label5, "fontStyle",  "bold");
     obj.label5:setFontFamily("Constantia");
     obj.label5:setName("label5");
 
@@ -349,7 +349,7 @@ local function constructNew_templateSkills()
     obj.label6:setWidth(300);
     obj.label6:setHorzTextAlign("trailing");
     obj.label6:setField("nomeSkill");
-    lfm_setPropAsString(obj.label6, "fontStyle", "bold");
+    lfm_setPropAsString(obj.label6, "fontStyle",  "bold");
     obj.label6:setFontFamily("Constantia");
     obj.label6:setName("label6");
 
@@ -369,7 +369,7 @@ local function constructNew_templateSkills()
     obj.dataLink7:setName("dataLink7");
 
     obj._e_event0 = obj.dataLink5:addEventListener("onChange",
-        function (field, oldValue, newValue)
+        function (_, field, oldValue, newValue)
             if(sheet == nil) then return; end;
             						if(sheet.enfasesSkill == nil or sheet.enfasesSkill == "—") then
             							self.btnEnfase1.visible = true;
@@ -378,10 +378,10 @@ local function constructNew_templateSkills()
             							self.btnEnfase2.visible = true;
             							self.btnEnfase1.visible = false;
             						end;
-        end);
+        end, obj);
 
     obj._e_event1 = obj.btnMaestria1:addEventListener("onClick",
-        function (event)
+        function (_)
             local pop = self:findControlByName("popUp_Maestrias");
             				
             				if pop ~= nil then
@@ -390,10 +390,10 @@ local function constructNew_templateSkills()
             				else
             					showMessage("Ops, não encontrei o pop-up para exibir");
             				end;
-        end);
+        end, obj);
 
     obj._e_event2 = obj.btnMaestria2:addEventListener("onClick",
-        function (event)
+        function (_)
             local pop = self:findControlByName("popUp_Maestrias");
             				
             				if pop ~= nil then
@@ -402,10 +402,10 @@ local function constructNew_templateSkills()
             				else
             					showMessage("Ops, não encontrei o pop-up para exibir");
             				end;
-        end);
+        end, obj);
 
     obj._e_event3 = obj.dataLink6:addEventListener("onChange",
-        function (field, oldValue, newValue)
+        function (_, field, oldValue, newValue)
             if(sheet == nil) then return; end;
             							if(	(sheet.maestria3Skill == nil or sheet.maestria3Skill == "—") and
             								(sheet.maestria5Skill == nil or sheet.maestria5Skill == "—") and
@@ -416,15 +416,15 @@ local function constructNew_templateSkills()
             								self.btnMaestria2.visible = true;
             								self.btnMaestria1.visible = false;
             							end;
-        end);
+        end, obj);
 
     obj._e_event4 = obj.button1:addEventListener("onClick",
-        function (event)
+        function (_)
             NDB.deleteNode(sheet);
-        end);
+        end, obj);
 
     obj._e_event5 = obj.dataLink7:addEventListener("onChange",
-        function (field, oldValue, newValue)
+        function (_, field, oldValue, newValue)
             if sheet ~= nil then
             					local node = NDB.getRoot(sheet);
             					local objetos = NDB.getChildNodes(node.pericias);
@@ -436,7 +436,7 @@ local function constructNew_templateSkills()
             
             					node.countSum = soma;
             				end;
-        end);
+        end, obj);
 
     function obj:_releaseEvents()
         __o_rrpgObjs.removeEventListenerById(self._e_event5);
@@ -456,44 +456,44 @@ local function constructNew_templateSkills()
           self:setNodeDatabase(nil);
         end;
 
+        if self.rectangle5 ~= nil then self.rectangle5:destroy(); self.rectangle5 = nil; end;
+        if self.textEditor4 ~= nil then self.textEditor4:destroy(); self.textEditor4 = nil; end;
+        if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
+        if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
+        if self.label3 ~= nil then self.label3:destroy(); self.label3 = nil; end;
+        if self.label4 ~= nil then self.label4:destroy(); self.label4 = nil; end;
+        if self.textEditor1 ~= nil then self.textEditor1:destroy(); self.textEditor1 = nil; end;
+        if self.horzLine3 ~= nil then self.horzLine3:destroy(); self.horzLine3 = nil; end;
+        if self.label6 ~= nil then self.label6:destroy(); self.label6 = nil; end;
+        if self.popUp_Enfases ~= nil then self.popUp_Enfases:destroy(); self.popUp_Enfases = nil; end;
+        if self.dataLink4 ~= nil then self.dataLink4:destroy(); self.dataLink4 = nil; end;
+        if self.comboBox1 ~= nil then self.comboBox1:destroy(); self.comboBox1 = nil; end;
+        if self.textEditor2 ~= nil then self.textEditor2:destroy(); self.textEditor2 = nil; end;
         if self.popUp_Maestrias ~= nil then self.popUp_Maestrias:destroy(); self.popUp_Maestrias = nil; end;
-        if self.dataLink5 ~= nil then self.dataLink5:destroy(); self.dataLink5 = nil; end;
+        if self.horzLine4 ~= nil then self.horzLine4:destroy(); self.horzLine4 = nil; end;
+        if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
         if self.label2 ~= nil then self.label2:destroy(); self.label2 = nil; end;
+        if self.edit3 ~= nil then self.edit3:destroy(); self.edit3 = nil; end;
+        if self.textEditor3 ~= nil then self.textEditor3:destroy(); self.textEditor3 = nil; end;
+        if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
+        if self.label5 ~= nil then self.label5:destroy(); self.label5 = nil; end;
+        if self.rectangle4 ~= nil then self.rectangle4:destroy(); self.rectangle4 = nil; end;
+        if self.dataLink7 ~= nil then self.dataLink7:destroy(); self.dataLink7 = nil; end;
+        if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
+        if self.rectangle3 ~= nil then self.rectangle3:destroy(); self.rectangle3 = nil; end;
+        if self.btnMaestria1 ~= nil then self.btnMaestria1:destroy(); self.btnMaestria1 = nil; end;
+        if self.dataLink6 ~= nil then self.dataLink6:destroy(); self.dataLink6 = nil; end;
+        if self.btnMaestria2 ~= nil then self.btnMaestria2:destroy(); self.btnMaestria2 = nil; end;
+        if self.dataLink5 ~= nil then self.dataLink5:destroy(); self.dataLink5 = nil; end;
+        if self.dataLink2 ~= nil then self.dataLink2:destroy(); self.dataLink2 = nil; end;
+        if self.checkBox1 ~= nil then self.checkBox1:destroy(); self.checkBox1 = nil; end;
+        if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;
+        if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
+        if self.horzLine1 ~= nil then self.horzLine1:destroy(); self.horzLine1 = nil; end;
+        if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
         if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
         if self.comboBox2 ~= nil then self.comboBox2:destroy(); self.comboBox2 = nil; end;
-        if self.horzLine3 ~= nil then self.horzLine3:destroy(); self.horzLine3 = nil; end;
-        if self.edit3 ~= nil then self.edit3:destroy(); self.edit3 = nil; end;
-        if self.textEditor2 ~= nil then self.textEditor2:destroy(); self.textEditor2 = nil; end;
-        if self.label5 ~= nil then self.label5:destroy(); self.label5 = nil; end;
-        if self.textEditor1 ~= nil then self.textEditor1:destroy(); self.textEditor1 = nil; end;
-        if self.dataLink7 ~= nil then self.dataLink7:destroy(); self.dataLink7 = nil; end;
-        if self.rectangle3 ~= nil then self.rectangle3:destroy(); self.rectangle3 = nil; end;
-        if self.label3 ~= nil then self.label3:destroy(); self.label3 = nil; end;
-        if self.comboBox1 ~= nil then self.comboBox1:destroy(); self.comboBox1 = nil; end;
-        if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
-        if self.dataLink2 ~= nil then self.dataLink2:destroy(); self.dataLink2 = nil; end;
         if self.horzLine2 ~= nil then self.horzLine2:destroy(); self.horzLine2 = nil; end;
-        if self.rectangle5 ~= nil then self.rectangle5:destroy(); self.rectangle5 = nil; end;
-        if self.textEditor3 ~= nil then self.textEditor3:destroy(); self.textEditor3 = nil; end;
-        if self.textEditor4 ~= nil then self.textEditor4:destroy(); self.textEditor4 = nil; end;
-        if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
-        if self.label6 ~= nil then self.label6:destroy(); self.label6 = nil; end;
-        if self.checkBox1 ~= nil then self.checkBox1:destroy(); self.checkBox1 = nil; end;
-        if self.horzLine4 ~= nil then self.horzLine4:destroy(); self.horzLine4 = nil; end;
-        if self.dataLink4 ~= nil then self.dataLink4:destroy(); self.dataLink4 = nil; end;
-        if self.popUp_Enfases ~= nil then self.popUp_Enfases:destroy(); self.popUp_Enfases = nil; end;
-        if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
-        if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
-        if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
-        if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;
-        if self.btnMaestria2 ~= nil then self.btnMaestria2:destroy(); self.btnMaestria2 = nil; end;
-        if self.horzLine1 ~= nil then self.horzLine1:destroy(); self.horzLine1 = nil; end;
-        if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
-        if self.label4 ~= nil then self.label4:destroy(); self.label4 = nil; end;
-        if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
-        if self.btnMaestria1 ~= nil then self.btnMaestria1:destroy(); self.btnMaestria1 = nil; end;
-        if self.rectangle4 ~= nil then self.rectangle4:destroy(); self.rectangle4 = nil; end;
-        if self.dataLink6 ~= nil then self.dataLink6:destroy(); self.dataLink6 = nil; end;
         self:_oldLFMDestroy();
     end;
 
@@ -525,7 +525,6 @@ local _templateSkills = {
     dataType = "", 
     formType = "undefined", 
     formComponentName = "form", 
-    cacheMode = "none", 
     title = "", 
     description=""};
 
