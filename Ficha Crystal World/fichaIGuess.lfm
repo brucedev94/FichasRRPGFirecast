@@ -19,6 +19,9 @@
 			'ModPerceberMentira', 'ModPercepcao', 'ModSentirPerigo', 'ModDetectarMagia', 'ModAcertoMagico', 'ModDanoMagico', 'ModSobrevivencia', 'ModMedicina', 'ModNatureza', 'ModReligiao', 'ModDiscurso', 'ModSeducao',
 			'ModIntimidar', 'ModAtuar', 'ModPersuadir', 'ModMentir',}">
 			<event name="onChange">
+
+
+			
 			NivelPersonagem = 0;
 			if (NivelPersonagem ~= nil) then
 				local NivelPersonagem = tonumber(sheet.NivelPersonagem);
