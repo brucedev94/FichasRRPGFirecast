@@ -2,56 +2,42 @@
 
 <form formType="sheetTemplate" dataType="Alem_do_veu_Hiperion" title="Alem_do_veu(Hiperion))" name="frmOurFichaAlemDoVeuHiperion">
 
-<!-- CALCULOS INICIO-->
+			<!-- CALCULOS INICIO-->
 
-<dataLink fields="{'ForV', 'DesV', 'ConV', 'IntV', 'SabV', 'CarV','ForA', 'DesA', 'ConA', 'IntA', 
-'SabA', 'CarA', 'ForB', 'DesB', 'ConB', 'IntB', 'SabB', 'CarB', 'ForM', 'DesM', 'ConM', 'IntM', 'SabM', 'CarM', 'NvDanoCurtoAlcance', 'NvDanoLongoAlcance', 'NvQuebrarObjetos', 
-'NvLevantarPeso',  'NvEmpurrarObstaculo', 'NvBraçoDeFerro', 'NvEscalar', 'NvIniciativa', 'NvEsquivar', 'NvDesarmarArmadilha', 'NvAcrobacias', 'NvRoubo', 'NvArremessarObjetos', 'NvFurtividade', 'NvMontaria', 
-'NvAcertoDistância', 'NvAcertoCurtoAlcance', 'NvCorrer', 'NvResistenciaVeneno', 'NvResistenciaCansaço', 'NvSegurarFôlego', 'NvSuporteFrioCalor', 'NvDefender', 'NvProfissão', 'NvDecifrarCódigo', 
-'NvIdentificarCriatura', 'NvLerManuscrito', 'NvPrepararEstratégia', 'NvResistênciaMental', 'NvHistória', 'NvInvestigação', 'NvPerceberMentira', 'NvPercepção', 'NvSentirPerigo', 'NvDetectarMágia', 
-'NvAcertoMágico', 'NvDanoMágico', 'NvSobrevivência', 'NvMedicina', 'NvNatureza', 'NvReligião', 'NvDiscurso', 'NvSedução', 'NvIntimidar', 'NvAtuar', 'NvPersuadir', 'NvMentir', 'BDanoCurtoAlcance', 
-'BDanoLongoAlcance', 'BQuebrarObjetos', 'BLevantarPeso', 'BEmpurrarObstaculo', 'BBraçoDeFerro', 'BEscalar', 'BIniciativa', 'BEsquivar', 'BDesarmarArmadilha', 'BAcrobacias', 'BRoubo', 'BArremessarObjetos', 'BFurtividade', 'BMontaria', 
-'BAcertoDistância', 'BAcertoCurtoAlcance', 'BCorrer', 'BResistenciaVeneno', 'BResistenciaCansaço', 'BSegurarFôlego', 'BSuporteFrioCalor', 'BDefender', 'BProfissão', 'BDecifrarCódigo', 'BIdentificarCriatura', 'BLerManuscrito', 
-'BPrepararEstratégia', 'BResistênciaMental', 'BHistória', 'BInvestigação', 'BPerceberMentira', 'BPercepção', 'BSentirPerigo', 'BDetectarMágia', 'BAcertoMágico', 'BDanoMágico', 'BSobrevivência', 'BMedicina', 'BNatureza', 'BReligião', 
-'BDiscurso', 'BSedução', 'BIntimidar', 'BAtuar', 'BPersuadir', 'BMentir', 'ModDanoCurtoAlcance', 'ModDanoLongoAlcance', 'ModQuebrarObjetos', 'ModLevantarPeso', 'ModEmpurrarObstaculo', 'ModBraçoDeFerro', 'ModEscalar', 'ModIniciativa', 
-'ModEsquivar', 'ModDesarmarArmadilha', 'ModAcrobacias', 'ModRoubo', 'ModArremessarObjetos', 'ModFurtividade', 'ModMontaria', 'ModAcertoDistância', 'ModAcertoCurtoAlcance', 'ModCorrer', 'ModResistenciaVeneno', 'ModResistenciaCansaço', 
-'ModSegurarFôlego', 'ModSuporteFrioCalor', 'ModDefender', 'ModProfissão', 'ModDecifrarCódigo', 'ModIdentificarCriatura', 'ModLerManuscrito', 'ModPrepararEstratégia', 'ModResistênciaMental', 'ModHistória', 'ModInvestigação', 
-'ModPerceberMentira', 'ModPercepção', 'ModSentirPerigo', 'ModDetectarMágia', 'ModAcertoMágico', 'ModDanoMágico', 'ModSobrevivência', 'ModMedicina', 'ModNatureza', 'ModReligião', 'ModDiscurso', 'ModSedução', 
-'ModIntimidar', 'ModAtuar', 'ModPersuadir', 'ModMentir', }"> 
-
+			<dataLink fields="{'ForV', 'DesV', 'ConV', 'IntV', 'SabV', 'CarV','ForA', 'DesA', 'ConA', 'IntA',
+			'SabA', 'CarA', 'ForB', 'DesB', 'ConB', 'IntB', 'SabB', 'CarB', 'ForM', 'DesM', 'ConM', 'IntM', 'SabM', 'CarM', 'NvDanoCurtoAlcance', 'NvDanoLongoAlcance', 'NvQuebrarObjetos', 
+			'NvLevantarPeso',  'NvEmpurrarObstaculo', 'NvBracoDeFerro', 'NvEscalar', 'NvIniciativa', 'NvEsquivar', 'NvDesarmarArmadilha', 'NvAcrobacias', 'NvRoubo', 'NvArremessarObjetos', 'NvFurtividade', 'NvMontaria',
+			'NvAcertoDistância', 'NvAcertoCurtoAlcance', 'NvCorrer', 'NvResistenciaVeneno', 'NvResistenciaCansaco', 'NvSegurarFolego', 'NvSuporteFrioCalor', 'NvDefender', 'NvProfissao', 'NvDecifrarCodigo',
+			'NvIdentificarCriatura', 'NvLerManuscrito', 'NvPrepararEstrategia', 'NvResistenciaMental', 'NvHistoria', 'NvInvestigacao', 'NvPerceberMentira', 'NvPercepcao', 'NvSentirPerigo', 'NvDetectarMagia',
+			'NvAcertoMagico', 'NvDanoMagico', 'NvSobrevivencia', 'NvMedicina', 'NvNatureza', 'NvReligiao', 'NvDiscurso', 'NvSeducao', 'NvIntimidar', 'NvAtuar', 'NvPersuadir', 'NvMentir', 'BDanoCurtoAlcance',
+			'BDanoLongoAlcance', 'BQuebrarObjetos', 'BLevantarPeso', 'BEmpurrarObstaculo', 'BBracoDeFerro', 'BEscalar', 'BIniciativa', 'BEsquivar', 'BDesarmarArmadilha', 'BAcrobacias', 'BRoubo', 'BArremessarObjetos', 'BFurtividade', 'BMontaria',
+			'BAcertoDistância', 'BAcertoCurtoAlcance', 'BCorrer', 'BResistenciaVeneno', 'BResistenciaCansaco', 'BSegurarFolego', 'BSuporteFrioCalor', 'BDefender', 'BProfissao', 'BDecifrarCodigo', 'BIdentificarCriatura', 'BLerManuscrito',
+			'BPrepararEstrategia', 'BResistenciaMental', 'BHistoria', 'BInvestigacao', 'BPerceberMentira', 'BPercepcao', 'BSentirPerigo', 'BDetectarMagia', 'BAcertoMagico', 'BDanoMagico', 'BSobrevivencia', 'BMedicina', 'BNatureza', 'BReligiao',
+			'BDiscurso', 'BSeducao', 'BIntimidar', 'BAtuar', 'BPersuadir', 'BMentir', 'ModDanoCurtoAlcance', 'ModDanoLongoAlcance', 'ModQuebrarObjetos', 'ModLevantarPeso', 'ModEmpurrarObstaculo', 'ModBracoDeFerro', 'ModEscalar', 'ModIniciativa',
+			'ModEsquivar', 'ModDesarmarArmadilha', 'ModAcrobacias', 'ModRoubo', 'ModArremessarObjetos', 'ModFurtividade', 'ModMontaria', 'ModAcertoDistância', 'ModAcertoCurtoAlcance', 'ModCorrer', 'ModResistenciaVeneno', 'ModResistenciaCansaco',
+			'ModSegurarFolego', 'ModSuporteFrioCalor', 'ModDefender', 'ModProfissao', 'ModDecifrarCodigo', 'ModIdentificarCriatura', 'ModLerManuscrito', 'ModPrepararEstrategia', 'ModResistenciaMental', 'ModHistoria', 'ModInvestigacao',
+			'ModPerceberMentira', 'ModPercepcao', 'ModSentirPerigo', 'ModDetectarMagia', 'ModAcertoMagico', 'ModDanoMagico', 'ModSobrevivencia', 'ModMedicina', 'ModNatureza', 'ModReligiao', 'ModDiscurso', 'ModSeducao',
+			'ModIntimidar', 'ModAtuar', 'ModPersuadir', 'ModMentir',}">
 			<event name="onChange">
 			NivelPersonagem = 0;
 			if (NivelPersonagem ~= nil) then
 				local NivelPersonagem = tonumber(sheet.NivelPersonagem);
 
-				
-
-				-- calcular MOD FORÇA		Nv - B - Mod  // V - A - B - M
+				-- calcular MOD FORcA
 				sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
 						sheet.ModDanoCurtoAlcance = math.floor (sheet.NvDanoCurtoAlcance + sheet.BDanoCurtoAlcance + sheet.ForM);
 						sheet.ModDanoLongoAlcance = math.floor (sheet.NvDanoLongoAlcance + sheet.BDanoLongoAlcance + sheet.ForM);
 						sheet.ModQuebrarObjetos = math.floor (sheet.NvQuebrarObjetos + sheet.BQuebrarObjetos + sheet.ForM);
 						sheet.ModNvLevantarPeso = math.floor (sheet.NvNvLevantarPeso + sheet.BNvLevantarPeso + sheet.ForM);
 						sheet.ModEmpurrarObstaculo = math.floor (sheet.NvEmpurrarObstaculoe + sheet.BEmpurrarObstaculo + sheet.ForM);
-						sheet.ModBraçoDeFerro = math.floor (sheet.NvBraçoDeFerro + sheet.BBraçoDeFerro + sheet.ForM);
+						sheet.ModBracoDeFerro = math.floor (sheet.NvBracoDeFerro + sheet.BBracoDeFerro + sheet.ForM);
 						sheet.ModEscalar = math.floor (sheet.NvEscalar + sheet.BEscalar + sheet.ForM);
 						
-
 				-- calcular MOD DESTREZA
 				sheet.DesM = math.floor (sheet.DesV + sheet.DesA + sheet.DesB);
-						sheet.ModIniciativa = math.floor (sheet.NvIniciativa + sheet.BIniciativa + sheet.DesM);
-						sheet.ModEsquivar = math.floor (sheet.NvEsquivar + sheet.BEsquivar + sheet.DesM);
-						sheet.ModDesarmarArmadilha = math.floor (sheet.NvDesarmarArmadilha + sheet.BDesarmarArmadilha + sheet.DesM);
-						sheet.ModAcrobacias = math.floor (sheet.NvAcrobacias + sheet.BAcrobacias + sheet.DesM);
-						sheet.ModRoubo = math.floor (sheet.NvRoubo + sheet.BRoubo + sheet.DesM);
-						sheet.ModArremessarObjetos = math.floor (sheet.NvArremessarObjetos + sheet.BArremessarObjetos + sheet.DesM);
-						sheet.ModFurtividade = math.floor (sheet.NvFurtividade + sheet.BFurtividade + sheet.DesM);
-						sheet.ModMontaria = math.floor (sheet.NvMontaria + sheet.BMontaria + sheet.DesM);
-						sheet.ModAcertoDistância = math.floor (sheet.NvAcertoDistância + sheet.BAcertoDistância + sheet.DesM);
-						sheet.ModAcertoCurtoAlcance = math.floor (sheet.NvAcertoCurtoAlcance + sheet.BAcertoCurtoAlcance + sheet.DesM);
-					
 
-				-- calcular MOD CONSTITUIÇAO			
+					
+				-- calcular MOD CONSTITUIcAO			
 				sheet.ConM = math.floor (sheet.ConV + sheet.ConA + sheet.ConB);
 						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
 						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
@@ -90,14 +76,12 @@
 						sheet.ModPersuadir = math.floor (sheet.NvPersuadir + sheet.BPersuadir + sheet.CarM);
 						sheet.ModAtuar = math.floor (sheet.NvAtuar + sheet.BAtuar + sheet.CarM);
 						sheet.ModIntimidar = math.floor (sheet.NvIntimidar + sheet.BIntimidar + sheet.CarM);
-						sheet.ModSedução = math.floor (sheet.NvSedução + sheet.BSedução + sheet.CarM);
+						sheet.ModSeducao = math.floor (sheet.NvSeducao + sheet.BSeducao + sheet.CarM);
 						sheet.ModDiscurso = math.floor (sheet.NvDiscurso + sheet.BDiscurso + sheet.CarM);
-					
-			end;
-			
-			</event>
 
-	</dataLink>
+			end;	
+			</event>
+			</dataLink>
 
 
 <!-- CALCULOS FIM-->
@@ -217,15 +201,15 @@ button.Tab{
 								<template name="AsTabs">	
 									<rectangle margins="{left=20, right=10, top=20}" align="top" height="30" xradius="5" yradius="5" cornerType="round" color="#212121">
 										<button class="Tab" text="P E R S O N A G E M" onClick="TrocarAba('F');"/>
-										<button class="Tab" text="I N V E N T Á R I O" onClick="TrocarAba('M');"/>
+										<button class="Tab" text="I N V E N T a R I O" onClick="TrocarAba('M');"/>
 										<button class="Tab" text="S K I L L S" onClick="TrocarAba('S');"/>
-										<button class="Tab" text="D I Á R I O" onClick="TrocarAba('H');"/>
-										<button class="Tab" text="A N O T A Ç Õ E S" onClick="TrocarAba('A');"/>
+										<button class="Tab" text="D I a R I O" onClick="TrocarAba('H');"/>
+										<button class="Tab" text="A N O T A c Õ E S" onClick="TrocarAba('A');"/>
 									</rectangle>
 								</template>
 
 								<AsTabs />								
-									<!-- CABEÇALHO -->
+									<!-- CABEcALHO -->
 									<Divisor  texto="P E R S O N A G E M" largura="190" topo="10" />
 
 										<!-- RETANGULOS DO ModF -->
@@ -313,16 +297,16 @@ button.Tab{
 										<image align="client" src="imagens atributos" style="proportional"/>
 										
 										
-										<label fontSize="16.0" fontColor="#ffffff" text="FORÇA" left="0" top="38" />
+										<label fontSize="16.0" fontColor="#ffffff" text="FORcA" left="0" top="38" />
 										<label fontSize="16.0" fontColor="#ffffff" text="DESTREZA" left="0" top="78" />
-										<label fontSize="16.0" fontColor="#ffffff" text="CONSTITUIÇÃO" left="0" top="118" />
+										<label fontSize="16.0" fontColor="#ffffff" text="CONSTITUIcaO" left="0" top="118" />
 										<label fontSize="16.0" fontColor="#ffffff" text="INTELIGENCIA" left="0" top="158" />
 										<label fontSize="16.0" fontColor="#ffffff" text="SABEDORIA" left="0" top="198" />
 										<label fontSize="16.0" fontColor="#ffffff" text="CARISMA" left="0" top="238" />
 
 										<label fontSize="16.0" text="VALOR" left="180" top="10" />
 										<label fontSize="16.0" text="ADD" left="295" top="10" />
-										<label fontSize="16.0" text="BÔNUS" left="392" top="10" />
+										<label fontSize="16.0" text="BoNUS" left="392" top="10" />
 										<label fontSize="16.0" text="MOD" left="511" top="10" />
 
 															<!-- caixas -->	
@@ -404,7 +388,7 @@ button.Tab{
 										 --aqui
 										<scrollBox width="640" height="820" left="10" top="0" >
 
-										<!-- GRADES DAS PERICIAS, COR SIM COR NÃO -->
+										<!-- GRADES DAS PERICIAS, COR SIM COR NaO -->
 										<rectangle width="600" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round" />
 										<rectangle width="600" top="40" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
 										<rectangle width="600" top="80" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
@@ -435,8 +419,8 @@ button.Tab{
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Dano Longo alcance" left="0" top="20" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Quebrar Objetos" left="0" top="40" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Levantar Peso" left="0" top="60" />
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Empurrar obstáculo" left="0" top="80" />
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Braço de Ferro" left="0" top="100" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Empurrar obstaculo" left="0" top="80" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Braco de Ferro" left="0" top="100" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Escalar " left="0" top="120" />
 
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Iniciativa" left="0" top="140" />
@@ -446,30 +430,30 @@ button.Tab{
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Roubo" left="0" top="220" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Arremessar Objetos" left="0" top="240" />
 										<label fontSize="18.0" width="400" fontColor="#ffffff" text="Furtividade" left="0" top="260" />
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Montaria/Direção" left="0" top="280" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Montaria/Direcao" left="0" top="280" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Acerto a Distância" left="0" top="300" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Acerto Curto alcance" left="0" top="320" />
 
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Correr" left="0" top="340" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Resistir a veneno" left="0" top="360" />
-										<label fontSize="18.0" width="400" fontColor="#ffffff" text="Resistência a cansaço" left="0" top="380" />
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Segurar Fôlego" left="0" top="400" />
+										<label fontSize="18.0" width="400" fontColor="#ffffff" text="Resistencia a cansaco" left="0" top="380" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Segurar Folego" left="0" top="400" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Suporte Frio/Calor" left="0" top="420" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Defender" left="0" top="440" />
 
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Profissão" left="0" top="460" />
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Decifrar Código" left="0" top="480" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Profissao" left="0" top="460" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Decifrar Codigo" left="0" top="480" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Identificar Criatura" left="0" top="500" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Ler Manuscrito" left="0" top="520" />
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Preparar Estratégia" left="0" top="540" />
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Resistência Mental" left="0" top="560" />
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="História" left="0" top="580" />
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Investigação" left="0" top="600" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Preparar Estrategia" left="0" top="540" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Resistencia Mental" left="0" top="560" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Historia" left="0" top="580" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Investigacao" left="0" top="600" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Perceber Mentira" left="0" top="620" />
 
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Percepção" left="0" top="640" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Percepcao" left="0" top="640" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Sentir Perigo" left="0" top="660" />
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Detectar Mágia" left="0" top="680" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Detectar Magia" left="0" top="680" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Acerto Magico" left="0" top="700" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Dano Magico" left="0" top="720" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Sobrevivencia" left="0" top="740" />
@@ -478,7 +462,7 @@ button.Tab{
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Religiao" left="0" top="800" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Discurso" left="0" top="820" />
 
-										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Sedução" left="0" top="840" />
+										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Seducao" left="0" top="840" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Intimidar" left="0" top="860" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Atuar" left="0" top="880" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Persuadir" left="0" top="900" />
@@ -500,8 +484,8 @@ button.Tab{
 										<dataLink defaultValue="0" field="NvLevantarPeso"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvEmpurrarObstaculo" left="304" top="74" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="NvEmpurrarObstaculo"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvBraçoDeFerro" left="304" top="94" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="NvBraçoDeFerro"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvBracoDeFerro" left="304" top="94" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="NvBracoDeFerro"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvEscalar" left="304" top="114" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="NvEscalar"/>
 
@@ -530,57 +514,57 @@ button.Tab{
 										<dataLink defaultValue="0" field="NvCorrer"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvResistenciaVeneno" left="304" top="354" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="NvResistenciaVeneno"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvResistenciaCansaço" left="304" top="374" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="NvResistenciaCansaço"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvSegurarFôlego" left="304" top="394" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="NvSegurarFôlego"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvResistenciaCansaco" left="304" top="374" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="NvResistenciaCansaco"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvSegurarFolego" left="304" top="394" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="NvSegurarFolego"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvSuporteFrioCalor" left="304" top="414" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="NvSuporteFrioCalor"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvDefender" left="304" top="434" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="NvDefender"/>
 
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvProfissão" left="304" top="454" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="NvProfissão"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvDecifrarCódigo" left="304" top="474" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="NvDecifrarCódigo"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvProfissao" left="304" top="454" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="NvProfissao"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvDecifrarCodigo" left="304" top="474" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="NvDecifrarCodigo"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvIdentificarCriatura" left="304" top="494" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="NvIdentificarCriatura"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvLerManuscrito" left="304" top="514" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="NvLerManuscrito"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvPrepararEstratégia" left="304" top="534" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="NvPrepararEstratégia"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvResistênciaMental" left="304" top="554" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="NvResistênciaMental"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvHistória" left="304" top="574" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="NvHistória"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvInvestigação" left="304" top="594" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="NvInvestigação"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvPrepararEstrategia" left="304" top="534" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="NvPrepararEstrategia"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvResistenciaMental" left="304" top="554" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="NvResistenciaMental"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvHistoria" left="304" top="574" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="NvHistoria"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvInvestigacao" left="304" top="594" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="NvInvestigacao"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvPerceberMentira" left="304" top="614" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="NvPerceberMentira"/>
 
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvPercepção" left="304" top="634" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="NvPercepção"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvPercepcao" left="304" top="634" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="NvPercepcao"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvSentirPerigo" left="304" top="654" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="NvSentirPerigo"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvDetectarMágia" left="304" top="674" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="NvDetectarMágia"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvAcertoMágico" left="304" top="694" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="NvAcertoMágico"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvDanoMágico" left="304" top="714" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="NvDanoMágico"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvSobrevivência" left="304" top="734" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="NvSobrevivência"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvDetectarMagia" left="304" top="674" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="NvDetectarMagia"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvAcertoMagico" left="304" top="694" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="NvAcertoMagico"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvDanoMagico" left="304" top="714" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="NvDanoMagico"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvSobrevivencia" left="304" top="734" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="NvSobrevivencia"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvMedicina" left="304" top="754" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="NvMedicina"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvNatureza" left="304" top="774" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="NvNatureza"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvReligião" left="304" top="794" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="NvReligião"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvReligiao" left="304" top="794" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="NvReligiao"/>
 
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvDiscurso" left="304" top="814" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="NvDiscurso"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvSedução" left="304" top="834" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="NvSedução"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvSeducao" left="304" top="834" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="NvSeducao"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvIntimidar" left="304" top="854" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="NvIntimidar"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="NvAtuar" left="304" top="874" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
@@ -603,8 +587,8 @@ button.Tab{
 										<dataLink defaultValue="0" field="BLevantarPeso"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BEmpurrarObstaculo" left="413" top="74" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="BEmpurrarObstaculo"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BBraçoDeFerro" left="413" top="94" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="BBraçoDeFerro"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BBracoDeFerro" left="413" top="94" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="BBracoDeFerro"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BEscalar" left="413" top="114" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="BEscalar"/>
 
@@ -633,57 +617,57 @@ button.Tab{
 										<dataLink defaultValue="0" field="BCorrer"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BResistenciaVeneno" left="413" top="354" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="BResistenciaVeneno"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BResistenciaCansaço" left="413" top="374" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="BResistenciaCansaço"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BSegurarFôlego" left="413" top="394" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="BSegurarFôlego"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BResistenciaCansaco" left="413" top="374" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="BResistenciaCansaco"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BSegurarFolego" left="413" top="394" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="BSegurarFolego"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BSuporteFrioCalor" left="413" top="414" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="BSuporteFrioCalor"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BDefender" left="413" top="434" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="BDefender"/>
 
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BProfissão" left="413" top="454" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="BProfissão"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BDecifrarCódigo" left="413" top="474" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="BDecifrarCódigo"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BProfissao" left="413" top="454" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="BProfissao"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BDecifrarCodigo" left="413" top="474" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="BDecifrarCodigo"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BIdentificarCriatura" left="413" top="494" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="BIdentificarCriatura"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BLerManuscrito" left="413" top="514" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="BLerManuscrito"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BPrepararEstratégia" left="413" top="534" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="BPrepararEstratégia"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BResistênciaMental" left="413" top="554" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="BResistênciaMental"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BHistória" left="413" top="574" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="BHistória"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BInvestigação" left="413" top="594" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="BInvestigação"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BPrepararEstrategia" left="413" top="534" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="BPrepararEstrategia"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BResistenciaMental" left="413" top="554" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="BResistenciaMental"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BHistoria" left="413" top="574" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="BHistoria"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BInvestigacao" left="413" top="594" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="BInvestigacao"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BPerceberMentira" left="413" top="614" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="BPerceberMentira"/>
 
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BPercepção" left="413" top="634" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="BPercepção"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BPercepcao" left="413" top="634" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="BPercepcao"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BSentirPerigo" left="413" top="654" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="BSentirPerigo"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BDetectarMágia" left="413" top="674" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="BDetectarMágia"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BAcertoMágico" left="413" top="694" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="BAcertoMágico"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BDanoMágico" left="413" top="714" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="BDanoMágico"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BSobrevivência" left="413" top="734" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="BSobrevivência"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BDetectarMagia" left="413" top="674" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="BDetectarMagia"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BAcertoMagico" left="413" top="694" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="BAcertoMagico"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BDanoMagico" left="413" top="714" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="BDanoMagico"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BSobrevivencia" left="413" top="734" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="BSobrevivencia"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BMedicina" left="413" top="754" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="BMedicina"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BNatureza" left="413" top="774" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="BNatureza"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BReligião" left="413" top="794" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="BReligião"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BReligiao" left="413" top="794" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="BReligiao"/>
 
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BDiscurso" left="413" top="814" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="BDiscurso"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BSedução" left="413" top="834" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="BSedução"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BSeducao" left="413" top="834" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="BSeducao"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BIntimidar" left="413" top="854" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="BIntimidar"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="BAtuar" left="413" top="874" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
@@ -705,8 +689,8 @@ button.Tab{
 										<dataLink defaultValue="0" field="ModLevantarPeso"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModEmpurrarObstaculo" left="522" top="74" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ModEmpurrarObstaculo"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModBraçoDeFerro" left="522" top="94" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="ModBraçoDeFerro"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModBracoDeFerro" left="522" top="94" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="ModBracoDeFerro"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModEscalar" left="522" top="114" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ModEscalar"/>
 
@@ -735,57 +719,57 @@ button.Tab{
 										<dataLink defaultValue="0" field="ModCorrer"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModResistenciaVeneno" left="522" top="354" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ModResistenciaVeneno"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModResistenciaCansaço" left="522" top="374" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="ModResistenciaCansaço"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModSegurarFôlego" left="522" top="394" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="ModSegurarFôlego"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModResistenciaCansaco" left="522" top="374" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="ModResistenciaCansaco"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModSegurarFolego" left="522" top="394" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="ModSegurarFolego"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModSuporteFrioCalor" left="522" top="414" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ModSuporteFrioCalor"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModDefender" left="522" top="434" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ModDefender"/>
 
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModProfissão" left="522" top="454" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="ModProfissão"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModDecifrarCódigo" left="522" top="474" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="ModDecifrarCódigo"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModProfissao" left="522" top="454" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="ModProfissao"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModDecifrarCodigo" left="522" top="474" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="ModDecifrarCodigo"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModIdentificarCriatura" left="522" top="494" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ModIdentificarCriatura"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModLerManuscrito" left="522" top="514" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ModLerManuscrito"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModPrepararEstratégia" left="522" top="534" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="ModPrepararEstratégia"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModResistênciaMental" left="522" top="554" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="ModResistênciaMental"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModHistória" left="522" top="574" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="ModHistória"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModInvestigação" left="522" top="594" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="ModInvestigação"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModPrepararEstrategia" left="522" top="534" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="ModPrepararEstrategia"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModResistenciaMental" left="522" top="554" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="ModResistenciaMental"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModHistoria" left="522" top="574" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="ModHistoria"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModInvestigacao" left="522" top="594" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="ModInvestigacao"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModPerceberMentira" left="522" top="614" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ModPerceberMentira"/>
 
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModPercepção" left="522" top="634" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="ModPercepção"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModPercepcao" left="522" top="634" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="ModPercepcao"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModSentirPerigo" left="522" top="654" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ModSentirPerigo"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModDetectarMágia" left="522" top="674" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="ModDetectarMágia"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModAcertoMágico" left="522" top="694" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="ModAcertoMágico"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModDanoMágico" left="522" top="714" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="ModDanoMágico"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModSobrevivência" left="522" top="734" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="ModSobrevivência"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModDetectarMagia" left="522" top="674" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="ModDetectarMagia"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModAcertoMagico" left="522" top="694" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="ModAcertoMagico"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModDanoMagico" left="522" top="714" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="ModDanoMagico"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModSobrevivencia" left="522" top="734" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="ModSobrevivencia"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModMedicina" left="522" top="754" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ModMedicina"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModNatureza" left="522" top="774" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ModNatureza"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModReligião" left="522" top="794" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="ModReligião"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModReligiao" left="522" top="794" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="ModReligiao"/>
 
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModDiscurso" left="522" top="814" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ModDiscurso"/>
-										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModSedução" left="522" top="834" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
-										<dataLink defaultValue="0" field="ModSedução"/>
+										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModSeducao" left="522" top="834" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
+										<dataLink defaultValue="0" field="ModSeducao"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModIntimidar" left="522" top="854" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ModIntimidar"/>
 										<edit horzTextAlign="center" width="30" fontSize="14.0" field="ModAtuar" left="522" top="874" fontColor="white" fontStyle="bold" type="number" min="0" max="99"/>
@@ -811,7 +795,7 @@ button.Tab{
 										</layout>
 									</template>
 									
-									<!-- APARÊNCIA PERSONAGEM  -->
+									<!-- APAReNCIA PERSONAGEM  -->
 									    <label fontSize="18.0" fontColor="#ffffff" text="APARENCIA" left="110" top="80" />
 										<DivisorD texto="" largura="1000" topo="60"/>
 										<image field="imagemPJ" style="autofit" editable="true" width="289" height="500" top="105" left="10.5" />
@@ -890,7 +874,7 @@ button.Tab{
 
 
 									     <!-- INVENTARIO -->
-									<DivisorD texto="I N V E N T Á R I O" largura="190" topo="10"/>
+									<DivisorD texto="I N V E N T a R I O" largura="190" topo="10"/>
 									<richEdit align="client" field="background" backgroundColor="#272727" defaultFontColor="white" margins="{left=20, right=10, bottom=100}"/>
 										
 										
@@ -905,7 +889,7 @@ button.Tab{
 										<rectangle width="300" height="1530" color="#202020" />
 										<rectangle width="320" height="1530" color="#202020" xradius="20" yradius="20" cornerType="bevel" />
 										
-										<!-- APARÊNCIA NO INVENTARIO -->
+										<!-- APAReNCIA NO INVENTARIO -->
 										<DivisorD texto="" largura="0" topo="60"/>
 										<image field="imagemPJ" style="autofit" editable="true" width="289" height="500" top="105" left="10.5" />
 											<dataLink field="imagemPJ" defaultValue="/Frames/avatar.jpg" />
@@ -919,7 +903,7 @@ button.Tab{
 							
 							<layout name="layMagias" align="client" visible="false">
 							<AsTabs />
-								 <!-- ESPAÇOS DE MAGIA -->
+								 <!-- ESPAcOS DE MAGIA -->
 								<DivisorD texto="L I S T A   D E   M A G I A S" largura="245" topo="10"/>
 								<rectangle align="top" height="30" xradius="5" yradius="5" cornerType="round" color="#212121" margins="{left=20, right=20}">
 									
@@ -934,15 +918,15 @@ button.Tab{
 								<flowLayout align="top" autoHeight="true" horzAlign="center">
 									<flowPart minWidth="300" maxWidth="650" height="1600">
 									<AsTabs />
-									<!-- HISTÓRIA -->
-									<DivisorD texto="H I S T Ó R I A" largura="150" topo="10"/>
+									<!-- HISToRIA -->
+									<DivisorD texto="H I S T o R I A" largura="150" topo="10"/>
 									<richEdit align="client" field="background2" backgroundColor="#272727" defaultFontColor="white" margins="{left=20, right=10, bottom=100}"/>
 									
 									</flowPart>
 									<flowPart minWidth="100" maxWidth="350" height="1600">
 										<rectangle width="300" height="1530" color="#202020" />
 										<rectangle width="320" height="1530" color="#202020" xradius="20" yradius="20" cornerType="bevel" />
-										<!-- APARÊNCIA DIARIO -->
+										<!-- APAReNCIA DIARIO -->
 										<DivisorD texto="" largura="0" topo="60"/>
 										<image field="imagemPJ" style="autofit" editable="true" width="289" height="500" top="105" left="10.5" />
 											<dataLink field="imagemPJ" defaultValue="/Frames/avatar.jpg" />
@@ -955,7 +939,7 @@ button.Tab{
 							
 							<layout name="layNote" align="client" visible="false">
 							<AsTabs />
-								<DivisorD texto="A N O T A Ç Õ E S" largura="190" topo="10"/>
+								<DivisorD texto="A N O T A c Õ E S" largura="190" topo="10"/>
 								<richEdit align="client" field="anotacao1" backgroundColor="#272727" defaultFontColor="white" margins="{left=20, right=20, bottom=40}"/>
 							</layout>
 						</rectangle>
