@@ -6661,12 +6661,12 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
             					
             				-- calcular MOD CONSTITUIcAO			
             				sheet.ConM = math.floor (sheet.ConV + sheet.ConA + sheet.ConB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
+            						sheet.ModCorrer = math.floor (sheet.NvCorrer + sheet.BCorrer + sheet.ConM);
+            						sheet.ModResistenciaVeneno = math.floor (sheet.NvResistenciaVeneno + sheet.BResistenciaVeneno + sheet.ConM);
+            						sheet.ModResistenciaCansaco = math.floor (sheet.NvResistenciaCansaco + sheet.BResistenciaCansaco + sheet.ConM);
+            						sheet.ModSegurarFolego = math.floor (sheet.NvSegurarFolego + sheet.BSegurarFolego + sheet.ConM);
+            						sheet.ModSuporteFrioCalor = math.floor (sheet.NvSuporteFrioCalor + sheet.BSuporteFrioCalor + sheet.ConM);
+            						sheet.ModDefender = math.floor (sheet.NvDefender + sheet.BDefender + sheet.ConM);
             
             				-- calcular MOD INTELIGENCIA			
             				sheet.IntM = math.floor (sheet.IntV + sheet.IntA + sheet.IntB);
