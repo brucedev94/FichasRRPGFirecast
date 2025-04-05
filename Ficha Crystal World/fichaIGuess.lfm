@@ -4,12 +4,20 @@
 
 <!-- CALCULOS INICIO-->
 
-			 <dataLink fields="{'ForV', 'DesV', 'ConV', 'IntV', 'SabV', 'CarV','ForA', 'DesA', 'ConA', 'IntA', 
+<dataLink fields="{'ForV', 'DesV', 'ConV', 'IntV', 'SabV', 'CarV','ForA', 'DesA', 'ConA', 'IntA', 
 'SabA', 'CarA', 'ForB', 'DesB', 'ConB', 'IntB', 'SabB', 'CarB', 'ForM', 'DesM', 'ConM', 'IntM', 'SabM', 'CarM', 'NvDanoCurtoAlcance', 'NvDanoLongoAlcance', 'NvQuebrarObjetos', 
 'NvLevantarPeso',  'NvEmpurrarObstaculo', 'NvBraçoDeFerro', 'NvEscalar', 'NvIniciativa', 'NvEsquivar', 'NvDesarmarArmadilha', 'NvAcrobacias', 'NvRoubo', 'NvArremessarObjetos', 'NvFurtividade', 'NvMontaria', 
 'NvAcertoDistância', 'NvAcertoCurtoAlcance', 'NvCorrer', 'NvResistenciaVeneno', 'NvResistenciaCansaço', 'NvSegurarFôlego', 'NvSuporteFrioCalor', 'NvDefender', 'NvProfissão', 'NvDecifrarCódigo', 
 'NvIdentificarCriatura', 'NvLerManuscrito', 'NvPrepararEstratégia', 'NvResistênciaMental', 'NvHistória', 'NvInvestigação', 'NvPerceberMentira', 'NvPercepção', 'NvSentirPerigo', 'NvDetectarMágia', 
-'NvAcertoMágico', 'NvDanoMágico', 'NvSobrevivência', 'NvMedicina', 'NvNatureza', 'NvReligião', 'NvDiscurso', 'NvSedução', 'NvIntimidar', 'NvAtuar', 'NvPersuadir', 'NvMentir' }"> 
+'NvAcertoMágico', 'NvDanoMágico', 'NvSobrevivência', 'NvMedicina', 'NvNatureza', 'NvReligião', 'NvDiscurso', 'NvSedução', 'NvIntimidar', 'NvAtuar', 'NvPersuadir', 'NvMentir', 'BDanoCurtoAlcance', 
+'BDanoLongoAlcance', 'BQuebrarObjetos', 'BLevantarPeso', 'BEmpurrarObstaculo', 'BBraçoDeFerro', 'BEscalar', 'BIniciativa', 'BEsquivar', 'BDesarmarArmadilha', 'BAcrobacias', 'BRoubo', 'BArremessarObjetos', 'BFurtividade', 'BMontaria', 
+'BAcertoDistância', 'BAcertoCurtoAlcance', 'BCorrer', 'BResistenciaVeneno', 'BResistenciaCansaço', 'BSegurarFôlego', 'BSuporteFrioCalor', 'BDefender', 'BProfissão', 'BDecifrarCódigo', 'BIdentificarCriatura', 'BLerManuscrito', 
+'BPrepararEstratégia', 'BResistênciaMental', 'BHistória', 'BInvestigação', 'BPerceberMentira', 'BPercepção', 'BSentirPerigo', 'BDetectarMágia', 'BAcertoMágico', 'BDanoMágico', 'BSobrevivência', 'BMedicina', 'BNatureza', 'BReligião', 
+'BDiscurso', 'BSedução', 'BIntimidar', 'BAtuar', 'BPersuadir', 'BMentir', 'ModDanoCurtoAlcance', 'ModDanoLongoAlcance', 'ModQuebrarObjetos', 'ModLevantarPeso', 'ModEmpurrarObstaculo', 'ModBraçoDeFerro', 'ModEscalar', 'ModIniciativa', 
+'ModEsquivar', 'ModDesarmarArmadilha', 'ModAcrobacias', 'ModRoubo', 'ModArremessarObjetos', 'ModFurtividade', 'ModMontaria', 'ModAcertoDistância', 'ModAcertoCurtoAlcance', 'ModCorrer', 'ModResistenciaVeneno', 'ModResistenciaCansaço', 
+'ModSegurarFôlego', 'ModSuporteFrioCalor', 'ModDefender', 'ModProfissão', 'ModDecifrarCódigo', 'ModIdentificarCriatura', 'ModLerManuscrito', 'ModPrepararEstratégia', 'ModResistênciaMental', 'ModHistória', 'ModInvestigação', 
+'ModPerceberMentira', 'ModPercepção', 'ModSentirPerigo', 'ModDetectarMágia', 'ModAcertoMágico', 'ModDanoMágico', 'ModSobrevivência', 'ModMedicina', 'ModNatureza', 'ModReligião', 'ModDiscurso', 'ModSedução', 
+'ModIntimidar', 'ModAtuar', 'ModPersuadir', 'ModMentir', }"> 
 
 			<event name="onChange">
 			NivelPersonagem = 0;
