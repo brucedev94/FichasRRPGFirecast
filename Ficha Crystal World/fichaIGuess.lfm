@@ -28,7 +28,7 @@
 						sheet.ModDanoCurtoAlcance = math.floor (sheet.NvDanoCurtoAlcance + sheet.BDanoCurtoAlcance + sheet.ForM);
 						sheet.ModDanoLongoAlcance = math.floor (sheet.NvDanoLongoAlcance + sheet.BDanoLongoAlcance + sheet.ForM);
 						sheet.ModQuebrarObjetos = math.floor (sheet.NvQuebrarObjetos + sheet.BQuebrarObjetos + sheet.ForM);
-						sheet.ModNvLevantarPeso = math.floor (sheet.NvNvLevantarPeso + sheet.BNvLevantarPeso + sheet.ForM);
+						sheet.ModLevantarPeso = math.floor (sheet.NvLevantarPeso + sheet.BLevantarPeso + sheet.ForM);
 						sheet.ModEmpurrarObstaculo = math.floor (sheet.NvEmpurrarObstaculoe + sheet.BEmpurrarObstaculo + sheet.ForM);
 						sheet.ModBracoDeFerro = math.floor (sheet.NvBracoDeFerro + sheet.BBracoDeFerro + sheet.ForM);
 						sheet.ModEscalar = math.floor (sheet.NvEscalar + sheet.BEscalar + sheet.ForM);
