@@ -16,6 +16,8 @@
 			if (NivelPersonagem ~= nil) then
 				local NivelPersonagem = tonumber(sheet.NivelPersonagem);
 				-- testando.....
+				
+				-- teste 3
 
 				-- calcular MOD FORÇA		Nv - B - Mod  // V - A - B - M
 				sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
