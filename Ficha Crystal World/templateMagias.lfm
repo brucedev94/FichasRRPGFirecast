@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form name="templateMagias" height="270" width="455.5" margins="{top=3, bottom=3, right=3, left=3}">  
+<style>
+comboBox{
+	fontFamily: Cambria;
+	transparent: true;
+	fontColor: #cdcdcd;
+}
+edit{
+	fontFamily: Cambria;
+	transparent: true;
+	fontColor: #cdcdcd;
+}
+label, button{
+	fontFamily: Cambria;
+	fontColor: white;
+	fontStyle: bold;
+}
+</style>
+
+
+
+<dataLink fields="{'elemMagia'}"> 
+	<event name="onChange">
+		if sheet ~= nil then
+			local node = NDB.getRoot(sheet);
+			local objetos = NDB.getChildNodes(node.magias);
+
+			for i=1, #objetos, 1 do 
+				if objetos[i].elemMagia == 'Water' then
+					objetos[i].imagemMagia = '/Frames/bgWater.png';
+				elseif objetos[i].elemMagia == 'Earth' then
+					objetos[i].imagemMagia = '/Frames/bgEarth.png';
+				elseif objetos[i].elemMagia == 'Air' then
+					objetos[i].imagemMagia = '/Frames/bgAir.png';
+				elseif objetos[i].elemMagia == 'Fire' then
+					objetos[i].imagemMagia = '/Frames/bgFire.png';
+				elseif objetos[i].elemMagia == 'Void' then
+					objetos[i].imagemMagia = '/Frames/bgVoid.png';
+				elseif objetos[i].elemMagia == 'Universal' then
+					objetos[i].imagemMagia = '0';
+				end;
+			end;
+
+		end
+	</event>
+</dataLink>
+		
+    <rectangle align="client" xradius="5" yradius="5" cornerType="round" color="#202020">
+		
+
+		<image 	left="0"  top="0"   width="455" height="270" field="imagemestilo" editable="true" style="autoFit" animate="true"/>
+		<dataLink field="imagemestilo" defaultValue="http://blob.firecast.com.br/blobs/EVNGWURA_3118040/em-formacao_318-617309__1_.png"/>
+		
+		<layout height="30" top="5" left="166" width="282.5">
+						<button text="🞭" width='30' onClick="NDB.deleteNode(sheet);" align="right" margins="{left=2}"/>
+			<edit field="nomeMagia" align="client" fontStyle="bold"/>
+			
+		</layout>
+
+		
+			
+
+		<button text="Descrição" top="235" left="10" width="430.5" height="30" name="labDesc">
+			<event name="onClick">
+			local pop = self:findControlByName("popMagia");
+			if pop ~= nil then
+			pop:setNodeObject(self.sheet);
+			pop:showPopupEx("bottom", self.labDesc);
+			else
+			showMessage("Ops, bug... Nao encontrei o popup para exibir");
+			end;
+			</event>
+		</button>
+		
+
+		<popup name="popMagia" width="900" height="700" backOpacity="0" drawContainer="false" autoScopeNode="true">
+			<rectangle align="client" color="#0e0e0e" xradius= "10" yradius="10" cornerType="bevel">
+				<image field="imagemMagia" align="client" style="autofit" margins="{right=20, left=20}" opacity="0.1"/>
+			
+				
+				<label fontColor="white" top="10" left="10" width="580" field="nomeMagia" margins="{bottom=5}" fontStyle="bold" fontFamily="Constantia" fontSize="26" height="30"/>
+				<horzLine top="45" left="10" width="580" strokeColor="#424242" />			
+				<layout  top="50" left="10" width="580" height="30">
+					<label text="" width="45" align="left" />
+					<edit align="client" field="raiseMagia"/>
+					<dataLink defaultValue="" field="raiseMagia"/>
+				</layout>
+				<textEditor margins="{top=90, right=10, left=10, bottom=10}" name="MinhaDescMag" field="descriMagia" align="client" transparent="true" fontFamily="Cambria" fontColor="#cdcdcd"/>       
+				<dataLink defaultValue="Descrição." field="descriMagia" />
+				<richEdit  width="900" height="900" field="SkilsNOTAS" backgroundColor="#696969" defaultFontColor="white" margins="{left=10, right=10, bottom=40}"/>
+			</rectangle>
+		</popup>
+	</rectangle>
+</form>
