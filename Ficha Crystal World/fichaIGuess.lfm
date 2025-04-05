@@ -225,12 +225,12 @@ button.Tab{
 									<Divisor  texto="P E R S O N A G E M" largura="190" topo="10" />
 
 										<!-- RETANGULOS DO ModF -->
-										<rectangle width="35" left="532" top="345" height="20" color="#ffffff" xradius="5" yradius="5" cornerType="round"/>						
-								        <rectangle width="35" left="532" top="385" height="20" color="#ffffff" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="35" left="532" top="425" height="20" color="#ffffff" xradius="5" yradius="5" cornerType="round"/>									
-										<rectangle width="35" left="532" top="465" height="20" color="#ffffff" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="35" left="532" top="505" height="20" color="#ffffff" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="35" left="532" top="545" height="20" color="#ffffff" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="35" left="532" top="345" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>						
+								        <rectangle width="35" left="532" top="385" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="35" left="532" top="425" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>									
+										<rectangle width="35" left="532" top="465" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="35" left="532" top="505" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="35" left="532" top="545" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
 
 										<!-- RETANGULOS DO ModC -->
 										<rectangle width="35" left="420" top="345" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>						
