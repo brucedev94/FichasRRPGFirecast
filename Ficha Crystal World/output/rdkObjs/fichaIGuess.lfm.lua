@@ -254,7 +254,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label1:setAlign("left");
     obj.label1:setText("P E R S O N A G E M");
     obj.label1:setWidth(190);
-    obj.label1:setFontColor("#ffffff");
+    obj.label1:setFontColor("#669ffa");
     obj.label1:setFontSize(20);
     obj.label1:setFontFamily("Constantia");
     obj.label1:setName("label1");
@@ -273,7 +273,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle5:setLeft(532);
     obj.rectangle5:setTop(345);
     obj.rectangle5:setHeight(20);
-    obj.rectangle5:setColor("#ffffff");
+    obj.rectangle5:setColor("#669ffa");
     obj.rectangle5:setXradius(5);
     obj.rectangle5:setYradius(5);
     obj.rectangle5:setCornerType("round");
@@ -285,7 +285,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle6:setLeft(532);
     obj.rectangle6:setTop(385);
     obj.rectangle6:setHeight(20);
-    obj.rectangle6:setColor("#ffffff");
+    obj.rectangle6:setColor("#669ffa");
     obj.rectangle6:setXradius(5);
     obj.rectangle6:setYradius(5);
     obj.rectangle6:setCornerType("round");
@@ -297,7 +297,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle7:setLeft(532);
     obj.rectangle7:setTop(425);
     obj.rectangle7:setHeight(20);
-    obj.rectangle7:setColor("#ffffff");
+    obj.rectangle7:setColor("#669ffa");
     obj.rectangle7:setXradius(5);
     obj.rectangle7:setYradius(5);
     obj.rectangle7:setCornerType("round");
@@ -309,7 +309,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle8:setLeft(532);
     obj.rectangle8:setTop(465);
     obj.rectangle8:setHeight(20);
-    obj.rectangle8:setColor("#ffffff");
+    obj.rectangle8:setColor("#669ffa");
     obj.rectangle8:setXradius(5);
     obj.rectangle8:setYradius(5);
     obj.rectangle8:setCornerType("round");
@@ -321,7 +321,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle9:setLeft(532);
     obj.rectangle9:setTop(505);
     obj.rectangle9:setHeight(20);
-    obj.rectangle9:setColor("#ffffff");
+    obj.rectangle9:setColor("#669ffa");
     obj.rectangle9:setXradius(5);
     obj.rectangle9:setYradius(5);
     obj.rectangle9:setCornerType("round");
@@ -333,7 +333,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle10:setLeft(532);
     obj.rectangle10:setTop(545);
     obj.rectangle10:setHeight(20);
-    obj.rectangle10:setColor("#ffffff");
+    obj.rectangle10:setColor("#669ffa");
     obj.rectangle10:setXradius(5);
     obj.rectangle10:setYradius(5);
     obj.rectangle10:setCornerType("round");
@@ -877,7 +877,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label12:setAlign("left");
     obj.label12:setText("A T R I B U T O S");
     obj.label12:setWidth(160);
-    obj.label12:setFontColor("#ffffff");
+    obj.label12:setFontColor("#669ffa");
     obj.label12:setFontSize(20);
     obj.label12:setFontFamily("Constantia");
     obj.label12:setName("label12");
@@ -995,7 +995,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label21 = GUI.fromHandle(_obj_newObject("label"));
     obj.label21:setParent(obj.layout6);
     obj.label21:setFontSize(16.0);
-    obj.label21:setText("BoNUS");
+    obj.label21:setText("BONUS");
     obj.label21:setLeft(392);
     obj.label21:setTop(10);
     obj.label21:setName("label21");
@@ -1033,6 +1033,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit6:setHorzTextAlign("center");
     obj.edit6:setWidth(50);
     obj.edit6:setFontSize(14.0);
+    obj.edit6:setFontColor("#ffffff");
     obj.edit6:setField("ForV");
     obj.edit6:setLeft(155);
     obj.edit6:setTop(29);
@@ -1041,7 +1042,6 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit6:setMin(0);
     obj.edit6:setMax(99);
     obj.edit6:setName("edit6");
-    obj.edit6:setFontColor("#cdcdcd");
     obj.edit6:setFontFamily("Cambria");
     obj.edit6:setTransparent(true);
 
@@ -1056,6 +1056,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit7:setHorzTextAlign("center");
     obj.edit7:setWidth(50);
     obj.edit7:setFontSize(14.0);
+    obj.edit7:setFontColor("#ffffff");
     obj.edit7:setField("DesV");
     obj.edit7:setLeft(155);
     obj.edit7:setTop(69);
@@ -1064,7 +1065,6 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit7:setMin(0);
     obj.edit7:setMax(99);
     obj.edit7:setName("edit7");
-    obj.edit7:setFontColor("#cdcdcd");
     obj.edit7:setFontFamily("Cambria");
     obj.edit7:setTransparent(true);
 
@@ -1079,6 +1079,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit8:setHorzTextAlign("center");
     obj.edit8:setWidth(50);
     obj.edit8:setFontSize(14.0);
+    obj.edit8:setFontColor("#ffffff");
     obj.edit8:setField("ConV");
     obj.edit8:setLeft(155);
     obj.edit8:setTop(109);
@@ -1087,7 +1088,6 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit8:setMin(0);
     obj.edit8:setMax(99);
     obj.edit8:setName("edit8");
-    obj.edit8:setFontColor("#cdcdcd");
     obj.edit8:setFontFamily("Cambria");
     obj.edit8:setTransparent(true);
 
@@ -1102,6 +1102,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit9:setHorzTextAlign("center");
     obj.edit9:setWidth(50);
     obj.edit9:setFontSize(14.0);
+    obj.edit9:setFontColor("#ffffff");
     obj.edit9:setField("IntV");
     obj.edit9:setLeft(155);
     obj.edit9:setTop(149);
@@ -1110,7 +1111,6 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit9:setMin(0);
     obj.edit9:setMax(99);
     obj.edit9:setName("edit9");
-    obj.edit9:setFontColor("#cdcdcd");
     obj.edit9:setFontFamily("Cambria");
     obj.edit9:setTransparent(true);
 
@@ -1125,6 +1125,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit10:setHorzTextAlign("center");
     obj.edit10:setWidth(50);
     obj.edit10:setFontSize(14.0);
+    obj.edit10:setFontColor("#ffffff");
     obj.edit10:setField("SabV");
     obj.edit10:setLeft(155);
     obj.edit10:setTop(189);
@@ -1133,7 +1134,6 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit10:setMin(0);
     obj.edit10:setMax(99);
     obj.edit10:setName("edit10");
-    obj.edit10:setFontColor("#cdcdcd");
     obj.edit10:setFontFamily("Cambria");
     obj.edit10:setTransparent(true);
 
@@ -1148,6 +1148,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit11:setHorzTextAlign("center");
     obj.edit11:setWidth(50);
     obj.edit11:setFontSize(14.0);
+    obj.edit11:setFontColor("#ffffff");
     obj.edit11:setField("CarV");
     obj.edit11:setLeft(155);
     obj.edit11:setTop(229);
@@ -1156,7 +1157,6 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit11:setMin(0);
     obj.edit11:setMax(99);
     obj.edit11:setName("edit11");
-    obj.edit11:setFontColor("#cdcdcd");
     obj.edit11:setFontFamily("Cambria");
     obj.edit11:setTransparent(true);
 
@@ -1171,6 +1171,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit12:setHorzTextAlign("center");
     obj.edit12:setWidth(50);
     obj.edit12:setFontSize(14.0);
+    obj.edit12:setFontColor("#ffffff");
     obj.edit12:setField("ForA");
     obj.edit12:setLeft(264);
     obj.edit12:setTop(29);
@@ -1179,7 +1180,6 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit12:setMin(0);
     obj.edit12:setMax(99);
     obj.edit12:setName("edit12");
-    obj.edit12:setFontColor("#cdcdcd");
     obj.edit12:setFontFamily("Cambria");
     obj.edit12:setTransparent(true);
 
@@ -1194,6 +1194,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit13:setHorzTextAlign("center");
     obj.edit13:setWidth(50);
     obj.edit13:setFontSize(14.0);
+    obj.edit13:setFontColor("#ffffff");
     obj.edit13:setField("DesA");
     obj.edit13:setLeft(264);
     obj.edit13:setTop(69);
@@ -1202,7 +1203,6 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit13:setMin(0);
     obj.edit13:setMax(99);
     obj.edit13:setName("edit13");
-    obj.edit13:setFontColor("#cdcdcd");
     obj.edit13:setFontFamily("Cambria");
     obj.edit13:setTransparent(true);
 
@@ -1217,6 +1217,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit14:setHorzTextAlign("center");
     obj.edit14:setWidth(50);
     obj.edit14:setFontSize(14.0);
+    obj.edit14:setFontColor("#ffffff");
     obj.edit14:setField("ConA");
     obj.edit14:setLeft(264);
     obj.edit14:setTop(109);
@@ -1225,7 +1226,6 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit14:setMin(0);
     obj.edit14:setMax(99);
     obj.edit14:setName("edit14");
-    obj.edit14:setFontColor("#cdcdcd");
     obj.edit14:setFontFamily("Cambria");
     obj.edit14:setTransparent(true);
 
@@ -1240,6 +1240,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit15:setHorzTextAlign("center");
     obj.edit15:setWidth(50);
     obj.edit15:setFontSize(14.0);
+    obj.edit15:setFontColor("#ffffff");
     obj.edit15:setField("IntA");
     obj.edit15:setLeft(264);
     obj.edit15:setTop(149);
@@ -1248,7 +1249,6 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit15:setMin(0);
     obj.edit15:setMax(99);
     obj.edit15:setName("edit15");
-    obj.edit15:setFontColor("#cdcdcd");
     obj.edit15:setFontFamily("Cambria");
     obj.edit15:setTransparent(true);
 
@@ -1263,6 +1263,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit16:setHorzTextAlign("center");
     obj.edit16:setWidth(50);
     obj.edit16:setFontSize(14.0);
+    obj.edit16:setFontColor("#ffffff");
     obj.edit16:setField("SabA");
     obj.edit16:setLeft(264);
     obj.edit16:setTop(189);
@@ -1271,7 +1272,6 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit16:setMin(0);
     obj.edit16:setMax(99);
     obj.edit16:setName("edit16");
-    obj.edit16:setFontColor("#cdcdcd");
     obj.edit16:setFontFamily("Cambria");
     obj.edit16:setTransparent(true);
 
@@ -1286,6 +1286,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit17:setHorzTextAlign("center");
     obj.edit17:setWidth(50);
     obj.edit17:setFontSize(14.0);
+    obj.edit17:setFontColor("#ffffff");
     obj.edit17:setField("CarA");
     obj.edit17:setLeft(264);
     obj.edit17:setTop(229);
@@ -1294,7 +1295,6 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit17:setMin(0);
     obj.edit17:setMax(99);
     obj.edit17:setName("edit17");
-    obj.edit17:setFontColor("#cdcdcd");
     obj.edit17:setFontFamily("Cambria");
     obj.edit17:setTransparent(true);
 
@@ -1309,6 +1309,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit18:setHorzTextAlign("center");
     obj.edit18:setWidth(50);
     obj.edit18:setFontSize(14.0);
+    obj.edit18:setFontColor("#ffffff");
     obj.edit18:setField("ForB");
     obj.edit18:setLeft(373);
     obj.edit18:setTop(29);
@@ -1317,7 +1318,6 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit18:setMin(0);
     obj.edit18:setMax(99);
     obj.edit18:setName("edit18");
-    obj.edit18:setFontColor("#cdcdcd");
     obj.edit18:setFontFamily("Cambria");
     obj.edit18:setTransparent(true);
 
@@ -1332,6 +1332,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit19:setHorzTextAlign("center");
     obj.edit19:setWidth(50);
     obj.edit19:setFontSize(14.0);
+    obj.edit19:setFontColor("#ffffff");
     obj.edit19:setField("DesB");
     obj.edit19:setLeft(373);
     obj.edit19:setTop(69);
@@ -1340,7 +1341,6 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit19:setMin(0);
     obj.edit19:setMax(99);
     obj.edit19:setName("edit19");
-    obj.edit19:setFontColor("#cdcdcd");
     obj.edit19:setFontFamily("Cambria");
     obj.edit19:setTransparent(true);
 
@@ -1355,6 +1355,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit20:setHorzTextAlign("center");
     obj.edit20:setWidth(50);
     obj.edit20:setFontSize(14.0);
+    obj.edit20:setFontColor("#ffffff");
     obj.edit20:setField("ConB");
     obj.edit20:setLeft(373);
     obj.edit20:setTop(109);
@@ -1363,7 +1364,6 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit20:setMin(0);
     obj.edit20:setMax(99);
     obj.edit20:setName("edit20");
-    obj.edit20:setFontColor("#cdcdcd");
     obj.edit20:setFontFamily("Cambria");
     obj.edit20:setTransparent(true);
 
@@ -1378,6 +1378,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit21:setHorzTextAlign("center");
     obj.edit21:setWidth(50);
     obj.edit21:setFontSize(14.0);
+    obj.edit21:setFontColor("#ffffff");
     obj.edit21:setField("IntB");
     obj.edit21:setLeft(373);
     obj.edit21:setTop(149);
@@ -1386,7 +1387,6 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit21:setMin(0);
     obj.edit21:setMax(99);
     obj.edit21:setName("edit21");
-    obj.edit21:setFontColor("#cdcdcd");
     obj.edit21:setFontFamily("Cambria");
     obj.edit21:setTransparent(true);
 
@@ -1401,6 +1401,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit22:setHorzTextAlign("center");
     obj.edit22:setWidth(50);
     obj.edit22:setFontSize(14.0);
+    obj.edit22:setFontColor("#ffffff");
     obj.edit22:setField("SabB");
     obj.edit22:setLeft(373);
     obj.edit22:setTop(189);
@@ -1409,7 +1410,6 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit22:setMin(0);
     obj.edit22:setMax(99);
     obj.edit22:setName("edit22");
-    obj.edit22:setFontColor("#cdcdcd");
     obj.edit22:setFontFamily("Cambria");
     obj.edit22:setTransparent(true);
 
@@ -1424,6 +1424,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit23:setHorzTextAlign("center");
     obj.edit23:setWidth(50);
     obj.edit23:setFontSize(14.0);
+    obj.edit23:setFontColor("#ffffff");
     obj.edit23:setField("CarB");
     obj.edit23:setLeft(373);
     obj.edit23:setTop(229);
@@ -1432,7 +1433,6 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit23:setMin(0);
     obj.edit23:setMax(99);
     obj.edit23:setName("edit23");
-    obj.edit23:setFontColor("#cdcdcd");
     obj.edit23:setFontFamily("Cambria");
     obj.edit23:setTransparent(true);
 
@@ -1447,7 +1447,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit24:setHorzTextAlign("center");
     obj.edit24:setWidth(50);
     obj.edit24:setFontSize(14.0);
-    obj.edit24:setFontColor("#000000");
+    obj.edit24:setFontColor("#ffffff");
     obj.edit24:setField("ForM");
     obj.edit24:setLeft(484);
     obj.edit24:setTop(29);
@@ -1470,7 +1470,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit25:setHorzTextAlign("center");
     obj.edit25:setWidth(50);
     obj.edit25:setFontSize(14.0);
-    obj.edit25:setFontColor("#000000");
+    obj.edit25:setFontColor("#ffffff");
     obj.edit25:setField("DesM");
     obj.edit25:setLeft(484);
     obj.edit25:setTop(69);
@@ -1493,7 +1493,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit26:setHorzTextAlign("center");
     obj.edit26:setWidth(50);
     obj.edit26:setFontSize(14.0);
-    obj.edit26:setFontColor("#000000");
+    obj.edit26:setFontColor("#ffffff");
     obj.edit26:setField("ConM");
     obj.edit26:setLeft(484);
     obj.edit26:setTop(109);
@@ -1516,7 +1516,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit27:setHorzTextAlign("center");
     obj.edit27:setWidth(50);
     obj.edit27:setFontSize(14.0);
-    obj.edit27:setFontColor("#000000");
+    obj.edit27:setFontColor("#ffffff");
     obj.edit27:setField("IntM");
     obj.edit27:setLeft(484);
     obj.edit27:setTop(149);
@@ -1539,7 +1539,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit28:setHorzTextAlign("center");
     obj.edit28:setWidth(50);
     obj.edit28:setFontSize(14.0);
-    obj.edit28:setFontColor("#000000");
+    obj.edit28:setFontColor("#ffffff");
     obj.edit28:setField("SabM");
     obj.edit28:setLeft(484);
     obj.edit28:setTop(189);
@@ -1562,7 +1562,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit29:setHorzTextAlign("center");
     obj.edit29:setWidth(50);
     obj.edit29:setFontSize(14.0);
-    obj.edit29:setFontColor("#000000");
+    obj.edit29:setFontColor("#ffffff");
     obj.edit29:setField("CarM");
     obj.edit29:setLeft(484);
     obj.edit29:setTop(229);
@@ -1611,7 +1611,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label23:setAlign("left");
     obj.label23:setText("P E R Í C I A");
     obj.label23:setWidth(130);
-    obj.label23:setFontColor("#ffffff");
+    obj.label23:setFontColor("#669ffa");
     obj.label23:setFontSize(20);
     obj.label23:setFontFamily("Constantia");
     obj.label23:setName("label23");
@@ -1632,9 +1632,9 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
 
     obj.scrollBox2 = GUI.fromHandle(_obj_newObject("scrollBox"));
     obj.scrollBox2:setParent(obj.layout10);
-    obj.scrollBox2:setWidth(640);
+    obj.scrollBox2:setWidth(630);
     obj.scrollBox2:setHeight(820);
-    obj.scrollBox2:setLeft(10);
+    obj.scrollBox2:setLeft(20);
     obj.scrollBox2:setTop(0);
     obj.scrollBox2:setName("scrollBox2");
 
@@ -1642,7 +1642,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle34:setParent(obj.scrollBox2);
     obj.rectangle34:setWidth(600);
     obj.rectangle34:setHeight(20);
-    obj.rectangle34:setColor("#4F4F4F");
+    obj.rectangle34:setColor("#669ffa");
     obj.rectangle34:setXradius(5);
     obj.rectangle34:setYradius(5);
     obj.rectangle34:setCornerType("round");
@@ -1653,7 +1653,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle35:setWidth(600);
     obj.rectangle35:setTop(40);
     obj.rectangle35:setHeight(20);
-    obj.rectangle35:setColor("#4F4F4F");
+    obj.rectangle35:setColor("#669ffa");
     obj.rectangle35:setXradius(5);
     obj.rectangle35:setYradius(5);
     obj.rectangle35:setCornerType("round");
@@ -1664,7 +1664,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle36:setWidth(600);
     obj.rectangle36:setTop(80);
     obj.rectangle36:setHeight(20);
-    obj.rectangle36:setColor("#4F4F4F");
+    obj.rectangle36:setColor("#669ffa");
     obj.rectangle36:setXradius(5);
     obj.rectangle36:setYradius(5);
     obj.rectangle36:setCornerType("round");
@@ -1675,7 +1675,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle37:setWidth(600);
     obj.rectangle37:setTop(120);
     obj.rectangle37:setHeight(20);
-    obj.rectangle37:setColor("#4F4F4F");
+    obj.rectangle37:setColor("#669ffa");
     obj.rectangle37:setXradius(5);
     obj.rectangle37:setYradius(5);
     obj.rectangle37:setCornerType("round");
@@ -1686,7 +1686,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle38:setWidth(600);
     obj.rectangle38:setTop(160);
     obj.rectangle38:setHeight(20);
-    obj.rectangle38:setColor("#4F4F4F");
+    obj.rectangle38:setColor("#669ffa");
     obj.rectangle38:setXradius(5);
     obj.rectangle38:setYradius(5);
     obj.rectangle38:setCornerType("round");
@@ -1697,7 +1697,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle39:setWidth(600);
     obj.rectangle39:setTop(200);
     obj.rectangle39:setHeight(20);
-    obj.rectangle39:setColor("#4F4F4F");
+    obj.rectangle39:setColor("#669ffa");
     obj.rectangle39:setXradius(5);
     obj.rectangle39:setYradius(5);
     obj.rectangle39:setCornerType("round");
@@ -1708,7 +1708,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle40:setWidth(600);
     obj.rectangle40:setTop(240);
     obj.rectangle40:setHeight(20);
-    obj.rectangle40:setColor("#4F4F4F");
+    obj.rectangle40:setColor("#669ffa");
     obj.rectangle40:setXradius(5);
     obj.rectangle40:setYradius(5);
     obj.rectangle40:setCornerType("round");
@@ -1719,7 +1719,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle41:setWidth(600);
     obj.rectangle41:setTop(280);
     obj.rectangle41:setHeight(20);
-    obj.rectangle41:setColor("#4F4F4F");
+    obj.rectangle41:setColor("#669ffa");
     obj.rectangle41:setXradius(5);
     obj.rectangle41:setYradius(5);
     obj.rectangle41:setCornerType("round");
@@ -1730,7 +1730,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle42:setWidth(600);
     obj.rectangle42:setTop(320);
     obj.rectangle42:setHeight(20);
-    obj.rectangle42:setColor("#4F4F4F");
+    obj.rectangle42:setColor("#669ffa");
     obj.rectangle42:setXradius(5);
     obj.rectangle42:setYradius(5);
     obj.rectangle42:setCornerType("round");
@@ -1741,7 +1741,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle43:setWidth(600);
     obj.rectangle43:setTop(360);
     obj.rectangle43:setHeight(20);
-    obj.rectangle43:setColor("#4F4F4F");
+    obj.rectangle43:setColor("#669ffa");
     obj.rectangle43:setXradius(5);
     obj.rectangle43:setYradius(5);
     obj.rectangle43:setCornerType("round");
@@ -1752,7 +1752,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle44:setWidth(600);
     obj.rectangle44:setTop(400);
     obj.rectangle44:setHeight(20);
-    obj.rectangle44:setColor("#4F4F4F");
+    obj.rectangle44:setColor("#669ffa");
     obj.rectangle44:setXradius(5);
     obj.rectangle44:setYradius(5);
     obj.rectangle44:setCornerType("round");
@@ -1763,7 +1763,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle45:setWidth(600);
     obj.rectangle45:setTop(440);
     obj.rectangle45:setHeight(20);
-    obj.rectangle45:setColor("#4F4F4F");
+    obj.rectangle45:setColor("#669ffa");
     obj.rectangle45:setXradius(5);
     obj.rectangle45:setYradius(5);
     obj.rectangle45:setCornerType("round");
@@ -1774,7 +1774,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle46:setWidth(600);
     obj.rectangle46:setTop(480);
     obj.rectangle46:setHeight(20);
-    obj.rectangle46:setColor("#4F4F4F");
+    obj.rectangle46:setColor("#669ffa");
     obj.rectangle46:setXradius(5);
     obj.rectangle46:setYradius(5);
     obj.rectangle46:setCornerType("round");
@@ -1785,7 +1785,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle47:setWidth(600);
     obj.rectangle47:setTop(520);
     obj.rectangle47:setHeight(20);
-    obj.rectangle47:setColor("#4F4F4F");
+    obj.rectangle47:setColor("#669ffa");
     obj.rectangle47:setXradius(5);
     obj.rectangle47:setYradius(5);
     obj.rectangle47:setCornerType("round");
@@ -1796,7 +1796,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle48:setWidth(600);
     obj.rectangle48:setTop(560);
     obj.rectangle48:setHeight(20);
-    obj.rectangle48:setColor("#4F4F4F");
+    obj.rectangle48:setColor("#669ffa");
     obj.rectangle48:setXradius(5);
     obj.rectangle48:setYradius(5);
     obj.rectangle48:setCornerType("round");
@@ -1807,7 +1807,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle49:setWidth(600);
     obj.rectangle49:setTop(600);
     obj.rectangle49:setHeight(20);
-    obj.rectangle49:setColor("#4F4F4F");
+    obj.rectangle49:setColor("#669ffa");
     obj.rectangle49:setXradius(5);
     obj.rectangle49:setYradius(5);
     obj.rectangle49:setCornerType("round");
@@ -1818,7 +1818,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle50:setWidth(600);
     obj.rectangle50:setTop(640);
     obj.rectangle50:setHeight(20);
-    obj.rectangle50:setColor("#4F4F4F");
+    obj.rectangle50:setColor("#669ffa");
     obj.rectangle50:setXradius(5);
     obj.rectangle50:setYradius(5);
     obj.rectangle50:setCornerType("round");
@@ -1829,7 +1829,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle51:setWidth(600);
     obj.rectangle51:setTop(680);
     obj.rectangle51:setHeight(20);
-    obj.rectangle51:setColor("#4F4F4F");
+    obj.rectangle51:setColor("#669ffa");
     obj.rectangle51:setXradius(5);
     obj.rectangle51:setYradius(5);
     obj.rectangle51:setCornerType("round");
@@ -1840,7 +1840,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle52:setWidth(600);
     obj.rectangle52:setTop(720);
     obj.rectangle52:setHeight(20);
-    obj.rectangle52:setColor("#4F4F4F");
+    obj.rectangle52:setColor("#669ffa");
     obj.rectangle52:setXradius(5);
     obj.rectangle52:setYradius(5);
     obj.rectangle52:setCornerType("round");
@@ -1851,7 +1851,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle53:setWidth(600);
     obj.rectangle53:setTop(760);
     obj.rectangle53:setHeight(20);
-    obj.rectangle53:setColor("#4F4F4F");
+    obj.rectangle53:setColor("#669ffa");
     obj.rectangle53:setXradius(5);
     obj.rectangle53:setYradius(5);
     obj.rectangle53:setCornerType("round");
@@ -1862,7 +1862,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle54:setWidth(600);
     obj.rectangle54:setTop(800);
     obj.rectangle54:setHeight(20);
-    obj.rectangle54:setColor("#4F4F4F");
+    obj.rectangle54:setColor("#669ffa");
     obj.rectangle54:setXradius(5);
     obj.rectangle54:setYradius(5);
     obj.rectangle54:setCornerType("round");
@@ -1873,7 +1873,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle55:setWidth(600);
     obj.rectangle55:setTop(840);
     obj.rectangle55:setHeight(20);
-    obj.rectangle55:setColor("#4F4F4F");
+    obj.rectangle55:setColor("#669ffa");
     obj.rectangle55:setXradius(5);
     obj.rectangle55:setYradius(5);
     obj.rectangle55:setCornerType("round");
@@ -1884,7 +1884,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle56:setWidth(600);
     obj.rectangle56:setTop(880);
     obj.rectangle56:setHeight(20);
-    obj.rectangle56:setColor("#4F4F4F");
+    obj.rectangle56:setColor("#669ffa");
     obj.rectangle56:setXradius(5);
     obj.rectangle56:setYradius(5);
     obj.rectangle56:setCornerType("round");
@@ -1895,7 +1895,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle57:setWidth(600);
     obj.rectangle57:setTop(920);
     obj.rectangle57:setHeight(20);
-    obj.rectangle57:setColor("#4F4F4F");
+    obj.rectangle57:setColor("#669ffa");
     obj.rectangle57:setXradius(5);
     obj.rectangle57:setYradius(5);
     obj.rectangle57:setCornerType("round");
@@ -1906,7 +1906,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle58:setWidth(600);
     obj.rectangle58:setTop(960);
     obj.rectangle58:setHeight(20);
-    obj.rectangle58:setColor("#4F4F4F");
+    obj.rectangle58:setColor("#669ffa");
     obj.rectangle58:setXradius(5);
     obj.rectangle58:setYradius(5);
     obj.rectangle58:setCornerType("round");
@@ -5770,7 +5770,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label73 = GUI.fromHandle(_obj_newObject("label"));
     obj.label73:setParent(obj.flowPart5);
     obj.label73:setFontSize(18.0);
-    obj.label73:setFontColor("#ffffff");
+    obj.label73:setFontColor("#669ffa");
     obj.label73:setText("APARENCIA");
     obj.label73:setLeft(110);
     obj.label73:setTop(80);
@@ -5832,7 +5832,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label75:setAlign("left");
     obj.label75:setText("A F I N I D A D E S");
     obj.label75:setWidth(215);
-    obj.label75:setFontColor("#ffffff");
+    obj.label75:setFontColor("#669ffa");
     obj.label75:setFontSize(20);
     obj.label75:setFontFamily("Constantia");
     obj.label75:setName("label75");
@@ -6670,27 +6670,27 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
             
             				-- calcular MOD INTELIGENCIA			
             				sheet.IntM = math.floor (sheet.IntV + sheet.IntA + sheet.IntB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
+            						sheet.ModProfissao = math.floor (sheet.NvProfissao + sheet.BProfissao + sheet.IntM);
+            						sheet.ModDecifrarCodigo = math.floor (sheet.NvDecifrarCodigo + sheet.BDecifrarCodigo + sheet.IntM);
+            						sheet.ModIdentificarCriatura = math.floor (sheet.NvIdentificarCriatura + sheet.BIdentificarCriatura + sheet.IntM);
+            						sheet.ModLerManuscrito = math.floor (sheet.NvLerManuscrito + sheet.BLerManuscrito + sheet.IntM);
+            						sheet.ModPrepararEstrategia = math.floor (sheet.NvPrepararEstrategia + sheet.BPrepararEstrategia + sheet.IntM);
+            						sheet.ModResistenciaMental = math.floor (sheet.NvResistenciaMental + sheet.BResistenciaMental + sheet.IntM);
+            						sheet.ModHistoria = math.floor (sheet.NvHistoria + sheet.BHistoria + sheet.IntM);
+            						sheet.ModInvestigacao = math.floor (sheet.NvInvestigacao + sheet.BInvestigacao + sheet.IntM);
+            						sheet.ModPerceberMentira = math.floor (sheet.NvPerceberMentira + sheet.BPerceberMentira + sheet.IntM);
             
             				-- calcular SABEDORIA
             				sheet.SabM = math.floor (sheet.SabV + sheet.SabA + sheet.SabB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
-            						sheet.ForM = math.floor (sheet.ForV + sheet.ForA + sheet.ForB);
+            						sheet.ModPercepcao = math.floor (sheet.NvPercepcao + sheet.BPercepcao + sheet.SabM);
+            						sheet.ModSentirPerigo = math.floor (sheet.NvSentirPerigo + sheet.BSentirPerigo + sheet.SabM);
+            						sheet.ModDetectarMagia = math.floor (sheet.NvDetectarMagia + sheet.BDetectarMagia + sheet.SabM);
+            						sheet.ModAcertoMagico = math.floor (sheet.NvAcertoMagico + sheet.BAcertoMagico + sheet.SabM);
+            						sheet.ModDanoMagico = math.floor (sheet.NvDanoMagico + sheet.BDanoMagico + sheet.SabM);
+            						sheet.ModSobrevivencia = math.floor (sheet.NvSobrevivencia + sheet.BSobrevivencia + sheet.SabM);
+            						sheet.ModMedicina = math.floor (sheet.NvMedicina + sheet.BMedicina + sheet.SabM);
+            						sheet.ModNatureza = math.floor (sheet.NvNatureza + sheet.BNatureza + sheet.SabM);
+            						sheet.ModReligiao = math.floor (sheet.NvReligiao + sheet.BReligiao + sheet.SabM);
             
             				-- calcular MOD CARISMA	
             				sheet.CarM = math.floor (sheet.CarV + sheet.CarA + sheet.CarB);

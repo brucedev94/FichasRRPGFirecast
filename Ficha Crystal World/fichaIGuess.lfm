@@ -206,7 +206,7 @@ button.Tab{
 								<flowPart minWidth="300" maxWidth="650" height="1600">
 								<template name="Divisor">
 									<layout align="top" height="30" margins="{top=$(topo), left=20, bottom=15}">
-										<label align="left" text="$(texto)" width="$(largura)" fontColor="#ffffff" fontSize="20" fontFamily="Constantia" />
+										<label align="left" text="$(texto)" width="$(largura)" fontColor="#669ffa" fontSize="20" fontFamily="Constantia" />
 										<horzLine align="client" margins="{right=9, top=14}" strokeColor="#424242" />
 									</layout>
 								</template>
@@ -225,12 +225,12 @@ button.Tab{
 									<Divisor  texto="P E R S O N A G E M" largura="190" topo="10" />
 
 										<!-- RETANGULOS DO ModF -->
-										<rectangle width="35" left="532" top="345" height="20" color="#ffffff" xradius="5" yradius="5" cornerType="round"/>						
-								        <rectangle width="35" left="532" top="385" height="20" color="#ffffff" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="35" left="532" top="425" height="20" color="#ffffff" xradius="5" yradius="5" cornerType="round"/>									
-										<rectangle width="35" left="532" top="465" height="20" color="#ffffff" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="35" left="532" top="505" height="20" color="#ffffff" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="35" left="532" top="545" height="20" color="#ffffff" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="35" left="532" top="345" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>						
+								        <rectangle width="35" left="532" top="385" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="35" left="532" top="425" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>									
+										<rectangle width="35" left="532" top="465" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="35" left="532" top="505" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="35" left="532" top="545" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
 
 										<!-- RETANGULOS DO ModC -->
 										<rectangle width="35" left="420" top="345" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>						
@@ -308,7 +308,6 @@ button.Tab{
 									<layout align="top" height="253" margins="{left=20, right=20}">
 										<image align="client" src="imagens atributos" style="proportional"/>
 										
-										
 										<label fontSize="16.0" fontColor="#ffffff" text="FORcA" left="0" top="38" />
 										<label fontSize="16.0" fontColor="#ffffff" text="DESTREZA" left="0" top="78" />
 										<label fontSize="16.0" fontColor="#ffffff" text="CONSTITUIcaO" left="0" top="118" />
@@ -318,68 +317,66 @@ button.Tab{
 
 										<label fontSize="16.0" text="VALOR" left="180" top="10" />
 										<label fontSize="16.0" text="ADD" left="295" top="10" />
-										<label fontSize="16.0" text="BoNUS" left="392" top="10" />
+										<label fontSize="16.0" text="BONUS" left="392" top="10" />
 										<label fontSize="16.0" text="MOD" left="511" top="10" />
-
 															<!-- caixas -->	
 											<layout align="top" height="300" margins="{left=20, right=20}">
 										    <image align="client" src="" style="proportional"/>
 
-
 										<!-- ATRIBUTOS VALOR -->
-										<edit horzTextAlign="center" width="50" fontSize="14.0" field="ForV" left="155" top="29" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="ForV" left="155" top="29" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ForV"/>
-										<edit horzTextAlign="center" width="50" fontSize="14.0" field="DesV" left="155" top="69" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="DesV" left="155" top="69" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="DesV"/>
-										<edit horzTextAlign="center" width="50" fontSize="14.0" field="ConV" left="155" top="109" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="ConV" left="155" top="109" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ConV"/>
-										<edit horzTextAlign="center" width="50" fontSize="14.0" field="IntV" left="155" top="149" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="IntV" left="155" top="149" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="IntV"/>
-										<edit horzTextAlign="center" width="50" fontSize="14.0" field="SabV" left="155" top="189" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="SabV" left="155" top="189" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="SabV"/>
-										<edit horzTextAlign="center" width="50" fontSize="14.0" field="CarV" left="155" top="229" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="CarV" left="155" top="229" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="CarV"/>
 
 										<!-- ATRIBUTOS ADD -->
-										<edit horzTextAlign="center" width="50" fontSize="14.0" field="ForA" left="264" top="29" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="ForA" left="264" top="29" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ForA"/>
-										<edit horzTextAlign="center" width="50" fontSize="14.0" field="DesA" left="264" top="69" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="DesA" left="264" top="69" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="DesA"/>
-										<edit horzTextAlign="center" width="50" fontSize="14.0" field="ConA" left="264" top="109" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="ConA" left="264" top="109" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ConA"/>
-										<edit horzTextAlign="center" width="50" fontSize="14.0" field="IntA" left="264" top="149" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="IntA" left="264" top="149" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="IntA"/>
-										<edit horzTextAlign="center" width="50" fontSize="14.0" field="SabA" left="264" top="189" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="SabA" left="264" top="189" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="SabA"/>
-										<edit horzTextAlign="center" width="50" fontSize="14.0" field="CarA" left="264" top="229" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="CarA" left="264" top="229" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="CarA"/>
 
 										<!-- ATRIBUTOS BONUS -->
-										<edit horzTextAlign="center" width="50" fontSize="14.0" field="ForB" left="373" top="29" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="ForB" left="373" top="29" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ForB"/>
-										<edit horzTextAlign="center" width="50" fontSize="14.0" field="DesB" left="373" top="69" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="DesB" left="373" top="69" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="DesB"/>
-										<edit horzTextAlign="center" width="50" fontSize="14.0" field="ConB" left="373" top="109" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="ConB" left="373" top="109" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ConB"/>
-										<edit horzTextAlign="center" width="50" fontSize="14.0" field="IntB" left="373" top="149" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="IntB" left="373" top="149" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="IntB"/>
-										<edit horzTextAlign="center" width="50" fontSize="14.0" field="SabB" left="373" top="189" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="SabB" left="373" top="189" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="SabB"/>
-										<edit horzTextAlign="center" width="50" fontSize="14.0" field="CarB" left="373" top="229" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="CarB" left="373" top="229" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="CarB"/>
 
 										<!-- ATRIBUTOS Mod -->
-										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#000000" field="ForM" left="484" top="29" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="ForM" left="484" top="29" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ForM"/>
-										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#000000" field="DesM" left="484" top="69" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="DesM" left="484" top="69" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="DesM"/>
-										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#000000" field="ConM" left="484" top="109" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="ConM" left="484" top="109" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ConM"/>
-										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#000000" field="IntM" left="484" top="149" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="IntM" left="484" top="149" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="IntM"/>
-										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#000000" field="SabM" left="484" top="189" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="SabM" left="484" top="189" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="SabM"/>
-										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#000000" field="CarM" left="484" top="229" fontStyle="bold" type="number" min="0" max="99"/>
+										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="CarM" left="484" top="229" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="CarM"/>
 										
 											</layout>							
@@ -398,34 +395,34 @@ button.Tab{
 
 										 <!-- PERICIAS -->
 										 --aqui
-										<scrollBox width="640" height="820" left="10" top="0" >
+										<scrollBox width="630" height="820" left="20" top="0" >
 
 										<!-- GRADES DAS PERICIAS, COR SIM COR NaO -->
-										<rectangle width="600" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round" />
-										<rectangle width="600" top="40" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="80" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="120" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="160" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="200" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="240" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="280" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="320" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="360" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="400" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="440" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="480" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="520" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="560" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="600" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="640" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="680" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="720" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="760" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="800" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="840" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="880" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="920" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="600" top="960" height="20" color="#4F4F4F" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round" />
+										<rectangle width="600" top="40" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="80" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="120" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="160" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="200" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="240" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="280" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="320" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="360" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="400" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="440" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="480" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="520" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="560" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="600" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="640" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="680" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="720" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="760" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="800" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="840" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="880" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="920" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="600" top="960" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
 
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Dano Curto alcance" left="0" top="0" />
 										<label fontSize="20.0" width="400" fontColor="#ffffff" text="Dano Longo alcance" left="0" top="20" />
@@ -808,7 +805,7 @@ button.Tab{
 									</template>
 									
 									<!-- APAReNCIA PERSONAGEM  -->
-									    <label fontSize="18.0" fontColor="#ffffff" text="APARENCIA" left="110" top="80" />
+									    <label fontSize="18.0" fontColor="#669ffa" text="APARENCIA" left="110" top="80" />
 										<DivisorD texto="" largura="1000" topo="60"/>
 										<image field="imagemPJ" style="autofit" editable="true" width="289" height="500" top="105" left="10.5" />
 											<dataLink field="imagemPJ" defaultValue="/Frames/avatar.jpg" />
