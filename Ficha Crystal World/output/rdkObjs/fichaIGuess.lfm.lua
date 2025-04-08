@@ -31,12 +31,6 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj:setTitle("Crystal World New Adventure");
     obj:setName("frmOurFichaAlemDoVeuHiperion");
 
-    obj.layout1 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout1:setParent(obj);
-    obj.layout1:setAlign("client");
-    obj.layout1:setFrameStyle("/Frames/frameFundo.xml");
-    obj.layout1:setName("layout1");
-
     obj.dataLink1 = GUI.fromHandle(_obj_newObject("dataLink"));
     obj.dataLink1:setParent(obj);
     obj.dataLink1:setFields({'ForV', 'DesV', 'ConV', 'IntV', 'SabV', 'CarV','ForA', 'DesA', 'ConA', 'IntA',
@@ -195,11 +189,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
 
     obj.button1 = GUI.fromHandle(_obj_newObject("button"));
     obj.button1:setParent(obj.rectangle4);
-    obj.button1:setText("P E R S O N A G E M");
+    obj.button1:setText("P E R S O N A G M");
     obj.button1:setName("button1");
     obj.button1:setAlign("left");
     obj.button1:setMargins({right=2});
-    obj.button1:setWidth(122);
+    obj.button1:setWidth(100);
     obj.button1:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button1, "fontStyle", "bold");
     obj.button1:setFontSize(10);
@@ -210,7 +204,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.button2:setName("button2");
     obj.button2:setAlign("left");
     obj.button2:setMargins({right=2});
-    obj.button2:setWidth(122);
+    obj.button2:setWidth(100);
     obj.button2:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button2, "fontStyle", "bold");
     obj.button2:setFontSize(10);
@@ -221,7 +215,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.button3:setName("button3");
     obj.button3:setAlign("left");
     obj.button3:setMargins({right=2});
-    obj.button3:setWidth(122);
+    obj.button3:setWidth(100);
     obj.button3:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button3, "fontStyle", "bold");
     obj.button3:setFontSize(10);
@@ -232,7 +226,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.button4:setName("button4");
     obj.button4:setAlign("left");
     obj.button4:setMargins({right=2});
-    obj.button4:setWidth(122);
+    obj.button4:setWidth(100);
     obj.button4:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button4, "fontStyle", "bold");
     obj.button4:setFontSize(10);
@@ -243,31 +237,31 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.button5:setName("button5");
     obj.button5:setAlign("left");
     obj.button5:setMargins({right=2});
-    obj.button5:setWidth(122);
+    obj.button5:setWidth(100);
     obj.button5:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button5, "fontStyle", "bold");
     obj.button5:setFontSize(10);
 
-    obj.layout2 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout2:setParent(obj.flowPart2);
-    obj.layout2:setAlign("top");
-    obj.layout2:setHeight(30);
-    obj.layout2:setMargins({top=10, left=20, bottom=15});
-    obj.layout2:setName("layout2");
+    obj.layout1 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout1:setParent(obj.flowPart2);
+    obj.layout1:setAlign("top");
+    obj.layout1:setHeight(30);
+    obj.layout1:setMargins({top=10, left=20, bottom=15});
+    obj.layout1:setName("layout1");
 
     obj.label1 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label1:setParent(obj.layout2);
+    obj.label1:setParent(obj.layout1);
     obj.label1:setAlign("left");
     obj.label1:setText("P E R S O N A G E M");
     obj.label1:setWidth(190);
-    obj.label1:setFontColor("#669ffa");
+    obj.label1:setFontColor("#FF7F50");
     obj.label1:setFontSize(20);
     obj.label1:setFontFamily("Constantia");
     obj.label1:setName("label1");
     lfm_setPropAsString(obj.label1, "fontStyle", "bold");
 
     obj.horzLine1 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine1:setParent(obj.layout2);
+    obj.horzLine1:setParent(obj.layout1);
     obj.horzLine1:setAlign("client");
     obj.horzLine1:setMargins({right=9, top=14});
     obj.horzLine1:setStrokeColor("#424242");
@@ -279,7 +273,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle5:setLeft(532);
     obj.rectangle5:setTop(345);
     obj.rectangle5:setHeight(20);
-    obj.rectangle5:setColor("#669ffa");
+    obj.rectangle5:setColor("#D2691E");
     obj.rectangle5:setXradius(5);
     obj.rectangle5:setYradius(5);
     obj.rectangle5:setCornerType("round");
@@ -291,7 +285,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle6:setLeft(532);
     obj.rectangle6:setTop(385);
     obj.rectangle6:setHeight(20);
-    obj.rectangle6:setColor("#669ffa");
+    obj.rectangle6:setColor("#D2691E");
     obj.rectangle6:setXradius(5);
     obj.rectangle6:setYradius(5);
     obj.rectangle6:setCornerType("round");
@@ -303,7 +297,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle7:setLeft(532);
     obj.rectangle7:setTop(425);
     obj.rectangle7:setHeight(20);
-    obj.rectangle7:setColor("#669ffa");
+    obj.rectangle7:setColor("#D2691E");
     obj.rectangle7:setXradius(5);
     obj.rectangle7:setYradius(5);
     obj.rectangle7:setCornerType("round");
@@ -315,7 +309,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle8:setLeft(532);
     obj.rectangle8:setTop(465);
     obj.rectangle8:setHeight(20);
-    obj.rectangle8:setColor("#669ffa");
+    obj.rectangle8:setColor("#D2691E");
     obj.rectangle8:setXradius(5);
     obj.rectangle8:setYradius(5);
     obj.rectangle8:setCornerType("round");
@@ -327,7 +321,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle9:setLeft(532);
     obj.rectangle9:setTop(505);
     obj.rectangle9:setHeight(20);
-    obj.rectangle9:setColor("#669ffa");
+    obj.rectangle9:setColor("#D2691E");
     obj.rectangle9:setXradius(5);
     obj.rectangle9:setYradius(5);
     obj.rectangle9:setCornerType("round");
@@ -337,9 +331,9 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle10:setParent(obj.flowPart2);
     obj.rectangle10:setWidth(35);
     obj.rectangle10:setLeft(532);
-    obj.rectangle10:setTop(304);
+    obj.rectangle10:setTop(545);
     obj.rectangle10:setHeight(20);
-    obj.rectangle10:setColor("#669ffa");
+    obj.rectangle10:setColor("#D2691E");
     obj.rectangle10:setXradius(5);
     obj.rectangle10:setYradius(5);
     obj.rectangle10:setCornerType("round");
@@ -409,7 +403,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle16:setParent(obj.flowPart2);
     obj.rectangle16:setWidth(35);
     obj.rectangle16:setLeft(420);
-    obj.rectangle16:setTop(304);
+    obj.rectangle16:setTop(545);
     obj.rectangle16:setHeight(20);
     obj.rectangle16:setColor("#363636");
     obj.rectangle16:setXradius(5);
@@ -481,7 +475,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle22:setParent(obj.flowPart2);
     obj.rectangle22:setWidth(35);
     obj.rectangle22:setLeft(313);
-    obj.rectangle22:setTop(304);
+    obj.rectangle22:setTop(545);
     obj.rectangle22:setHeight(20);
     obj.rectangle22:setColor("#363636");
     obj.rectangle22:setXradius(5);
@@ -553,7 +547,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle28:setParent(obj.flowPart2);
     obj.rectangle28:setWidth(35);
     obj.rectangle28:setLeft(203);
-    obj.rectangle28:setTop(304);
+    obj.rectangle28:setTop(545);
     obj.rectangle28:setHeight(20);
     obj.rectangle28:setColor("#363636");
     obj.rectangle28:setXradius(5);
@@ -570,19 +564,19 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.flowPart3 = GUI.fromHandle(_obj_newObject("flowPart"));
     obj.flowPart3:setParent(obj.flowLayout3);
     obj.flowPart3:setMaxWidth(1300);
-    obj.flowPart3:setMinWidth(250);
-    obj.flowPart3:setHeight(80);
+    obj.flowPart3:setMinWidth(350);
+    obj.flowPart3:setHeight(120);
     obj.flowPart3:setName("flowPart3");
 
-    obj.layout3 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout3:setParent(obj.flowPart3);
-    obj.layout3:setAlign("top");
-    obj.layout3:setHeight(20);
-    obj.layout3:setMargins({left=25});
-    obj.layout3:setName("layout3");
+    obj.layout2 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout2:setParent(obj.flowPart3);
+    obj.layout2:setAlign("top");
+    obj.layout2:setHeight(20);
+    obj.layout2:setMargins({left=25});
+    obj.layout2:setName("layout2");
 
     obj.label2 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label2:setParent(obj.layout3);
+    obj.label2:setParent(obj.layout2);
     obj.label2:setAlign("left");
     obj.label2:setText("Nome:");
     obj.label2:setWidth(83);
@@ -592,7 +586,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label2:setFontFamily("Cambria");
 
     obj.edit1 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit1:setParent(obj.layout3);
+    obj.edit1:setParent(obj.layout2);
     obj.edit1:setField("nomeChar");
     obj.edit1:setAlign("client");
     obj.edit1:setMargins({right=10});
@@ -602,20 +596,20 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit1:setTransparent(true);
 
     obj.dataLink2 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink2:setParent(obj.layout3);
+    obj.dataLink2:setParent(obj.layout2);
     obj.dataLink2:setField("nomeChar");
-    obj.dataLink2:setDefaultValue("—");
+    obj.dataLink2:setDefaultValue("Escreva aqui");
     obj.dataLink2:setName("dataLink2");
 
-    obj.layout4 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout4:setParent(obj.flowPart3);
-    obj.layout4:setAlign("top");
-    obj.layout4:setHeight(20);
-    obj.layout4:setMargins({left=25});
-    obj.layout4:setName("layout4");
+    obj.layout3 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout3:setParent(obj.flowPart3);
+    obj.layout3:setAlign("top");
+    obj.layout3:setHeight(20);
+    obj.layout3:setMargins({left=25});
+    obj.layout3:setName("layout3");
 
     obj.label3 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label3:setParent(obj.layout4);
+    obj.label3:setParent(obj.layout3);
     obj.label3:setAlign("left");
     obj.label3:setText("Rank:");
     obj.label3:setWidth(83);
@@ -625,7 +619,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label3:setFontFamily("Cambria");
 
     obj.edit2 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit2:setParent(obj.layout4);
+    obj.edit2:setParent(obj.layout3);
     obj.edit2:setField("DivindadeChar");
     obj.edit2:setAlign("client");
     obj.edit2:setMargins({right=10});
@@ -635,20 +629,20 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit2:setTransparent(true);
 
     obj.dataLink3 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink3:setParent(obj.layout4);
+    obj.dataLink3:setParent(obj.layout3);
     obj.dataLink3:setField("DivindadeChar");
-    obj.dataLink3:setDefaultValue("—");
+    obj.dataLink3:setDefaultValue("Escreva aqui");
     obj.dataLink3:setName("dataLink3");
 
-    obj.layout5 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout5:setParent(obj.flowPart3);
-    obj.layout5:setAlign("top");
-    obj.layout5:setHeight(20);
-    obj.layout5:setMargins({left=25});
-    obj.layout5:setName("layout5");
+    obj.layout4 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout4:setParent(obj.flowPart3);
+    obj.layout4:setAlign("top");
+    obj.layout4:setHeight(20);
+    obj.layout4:setMargins({left=25});
+    obj.layout4:setName("layout4");
 
     obj.label4 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label4:setParent(obj.layout5);
+    obj.label4:setParent(obj.layout4);
     obj.label4:setAlign("left");
     obj.label4:setText("Idade:");
     obj.label4:setWidth(83);
@@ -658,7 +652,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label4:setFontFamily("Cambria");
 
     obj.edit3 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit3:setParent(obj.layout5);
+    obj.edit3:setParent(obj.layout4);
     obj.edit3:setField("IdadeChar");
     obj.edit3:setAlign("client");
     obj.edit3:setMargins({right=10});
@@ -668,9 +662,9 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit3:setTransparent(true);
 
     obj.dataLink4 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink4:setParent(obj.layout5);
+    obj.dataLink4:setParent(obj.layout4);
     obj.dataLink4:setField("IdadeChar");
-    obj.dataLink4:setDefaultValue("—");
+    obj.dataLink4:setDefaultValue("Escreva aqui");
     obj.dataLink4:setName("dataLink4");
 
     obj.label5 = GUI.fromHandle(_obj_newObject("label"));
@@ -849,47 +843,54 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.dataLink8:setDefaultValue("0");
     obj.dataLink8:setName("dataLink8");
 
-    obj.layout6 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout6:setParent(obj.flowPart2);
-    obj.layout6:setAlign("top");
-    obj.layout6:setHeight(30);
-    obj.layout6:setMargins({top=40, left=20, bottom=15});
-    obj.layout6:setName("layout6");
+    obj.flowPart4 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart4:setParent(obj.flowLayout3);
+    obj.flowPart4:setMaxWidth(150);
+    obj.flowPart4:setMinWidth(150);
+    obj.flowPart4:setHeight(120);
+    obj.flowPart4:setName("flowPart4");
+
+    obj.layout5 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout5:setParent(obj.flowPart2);
+    obj.layout5:setAlign("top");
+    obj.layout5:setHeight(30);
+    obj.layout5:setMargins({top=40, left=20, bottom=15});
+    obj.layout5:setName("layout5");
 
     obj.label9 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label9:setParent(obj.layout6);
+    obj.label9:setParent(obj.layout5);
     obj.label9:setAlign("left");
     obj.label9:setText("A T R I B U T O S");
     obj.label9:setWidth(160);
-    obj.label9:setFontColor("#669ffa");
+    obj.label9:setFontColor("#FF7F50");
     obj.label9:setFontSize(20);
     obj.label9:setFontFamily("Constantia");
     obj.label9:setName("label9");
     lfm_setPropAsString(obj.label9, "fontStyle", "bold");
 
     obj.horzLine2 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine2:setParent(obj.layout6);
+    obj.horzLine2:setParent(obj.layout5);
     obj.horzLine2:setAlign("client");
     obj.horzLine2:setMargins({right=9, top=14});
     obj.horzLine2:setStrokeColor("#424242");
     obj.horzLine2:setName("horzLine2");
 
-    obj.layout7 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout7:setParent(obj.flowPart2);
-    obj.layout7:setAlign("top");
-    obj.layout7:setHeight(253);
-    obj.layout7:setMargins({left=20, right=20});
-    obj.layout7:setName("layout7");
+    obj.layout6 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout6:setParent(obj.flowPart2);
+    obj.layout6:setAlign("top");
+    obj.layout6:setHeight(253);
+    obj.layout6:setMargins({left=20, right=20});
+    obj.layout6:setName("layout6");
 
     obj.image2 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image2:setParent(obj.layout7);
+    obj.image2:setParent(obj.layout6);
     obj.image2:setAlign("client");
     obj.image2:setSRC("imagens atributos");
     obj.image2:setStyle("proportional");
     obj.image2:setName("image2");
 
     obj.label10 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label10:setParent(obj.layout7);
+    obj.label10:setParent(obj.layout6);
     obj.label10:setFontSize(16.0);
     obj.label10:setFontColor("#ffffff");
     obj.label10:setText("FORÇA");
@@ -900,7 +901,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label10:setFontFamily("Cambria");
 
     obj.label11 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label11:setParent(obj.layout7);
+    obj.label11:setParent(obj.layout6);
     obj.label11:setFontSize(16.0);
     obj.label11:setFontColor("#ffffff");
     obj.label11:setText("DESTREZA");
@@ -911,7 +912,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label11:setFontFamily("Cambria");
 
     obj.label12 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label12:setParent(obj.layout7);
+    obj.label12:setParent(obj.layout6);
     obj.label12:setFontSize(16.0);
     obj.label12:setFontColor("#ffffff");
     obj.label12:setText("CONSTITUIÇÃO");
@@ -922,7 +923,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label12:setFontFamily("Cambria");
 
     obj.label13 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label13:setParent(obj.layout7);
+    obj.label13:setParent(obj.layout6);
     obj.label13:setFontSize(16.0);
     obj.label13:setFontColor("#ffffff");
     obj.label13:setText("INTELIGÊNCIA");
@@ -933,7 +934,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label13:setFontFamily("Cambria");
 
     obj.label14 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label14:setParent(obj.layout7);
+    obj.label14:setParent(obj.layout6);
     obj.label14:setFontSize(16.0);
     obj.label14:setFontColor("#ffffff");
     obj.label14:setText("SABEDORIA");
@@ -944,7 +945,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label14:setFontFamily("Cambria");
 
     obj.label15 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label15:setParent(obj.layout7);
+    obj.label15:setParent(obj.layout6);
     obj.label15:setFontSize(16.0);
     obj.label15:setFontColor("#ffffff");
     obj.label15:setText("CARISMA");
@@ -955,7 +956,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label15:setFontFamily("Cambria");
 
     obj.label16 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label16:setParent(obj.layout7);
+    obj.label16:setParent(obj.layout6);
     obj.label16:setFontSize(16.0);
     obj.label16:setText("VALOR");
     obj.label16:setLeft(180);
@@ -966,7 +967,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label16:setFontFamily("Cambria");
 
     obj.label17 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label17:setParent(obj.layout7);
+    obj.label17:setParent(obj.layout6);
     obj.label17:setFontSize(16.0);
     obj.label17:setText("ADD");
     obj.label17:setLeft(295);
@@ -977,7 +978,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label17:setFontFamily("Cambria");
 
     obj.label18 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label18:setParent(obj.layout7);
+    obj.label18:setParent(obj.layout6);
     obj.label18:setFontSize(16.0);
     obj.label18:setText("BÔNUS");
     obj.label18:setLeft(392);
@@ -988,7 +989,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.label18:setFontFamily("Cambria");
 
     obj.label19 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label19:setParent(obj.layout7);
+    obj.label19:setParent(obj.layout6);
     obj.label19:setFontSize(16.0);
     obj.label19:setText("MOD");
     obj.label19:setLeft(511);
@@ -998,22 +999,22 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     lfm_setPropAsString(obj.label19, "fontStyle", "bold");
     obj.label19:setFontFamily("Cambria");
 
-    obj.layout8 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout8:setParent(obj.layout7);
-    obj.layout8:setAlign("top");
-    obj.layout8:setHeight(300);
-    obj.layout8:setMargins({left=20, right=20});
-    obj.layout8:setName("layout8");
+    obj.layout7 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout7:setParent(obj.layout6);
+    obj.layout7:setAlign("top");
+    obj.layout7:setHeight(300);
+    obj.layout7:setMargins({left=20, right=20});
+    obj.layout7:setName("layout7");
 
     obj.image3 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image3:setParent(obj.layout8);
+    obj.image3:setParent(obj.layout7);
     obj.image3:setAlign("client");
     obj.image3:setSRC("");
     obj.image3:setStyle("proportional");
     obj.image3:setName("image3");
 
     obj.edit8 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit8:setParent(obj.layout8);
+    obj.edit8:setParent(obj.layout7);
     obj.edit8:setHorzTextAlign("center");
     obj.edit8:setWidth(50);
     obj.edit8:setFontSize(14.0);
@@ -1030,13 +1031,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit8:setTransparent(true);
 
     obj.dataLink9 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink9:setParent(obj.layout8);
+    obj.dataLink9:setParent(obj.layout7);
     obj.dataLink9:setDefaultValue("0");
     obj.dataLink9:setField("ForV");
     obj.dataLink9:setName("dataLink9");
 
     obj.edit9 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit9:setParent(obj.layout8);
+    obj.edit9:setParent(obj.layout7);
     obj.edit9:setHorzTextAlign("center");
     obj.edit9:setWidth(50);
     obj.edit9:setFontSize(14.0);
@@ -1053,13 +1054,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit9:setTransparent(true);
 
     obj.dataLink10 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink10:setParent(obj.layout8);
+    obj.dataLink10:setParent(obj.layout7);
     obj.dataLink10:setDefaultValue("0");
     obj.dataLink10:setField("DesV");
     obj.dataLink10:setName("dataLink10");
 
     obj.edit10 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit10:setParent(obj.layout8);
+    obj.edit10:setParent(obj.layout7);
     obj.edit10:setHorzTextAlign("center");
     obj.edit10:setWidth(50);
     obj.edit10:setFontSize(14.0);
@@ -1076,13 +1077,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit10:setTransparent(true);
 
     obj.dataLink11 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink11:setParent(obj.layout8);
+    obj.dataLink11:setParent(obj.layout7);
     obj.dataLink11:setDefaultValue("0");
     obj.dataLink11:setField("ConV");
     obj.dataLink11:setName("dataLink11");
 
     obj.edit11 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit11:setParent(obj.layout8);
+    obj.edit11:setParent(obj.layout7);
     obj.edit11:setHorzTextAlign("center");
     obj.edit11:setWidth(50);
     obj.edit11:setFontSize(14.0);
@@ -1099,13 +1100,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit11:setTransparent(true);
 
     obj.dataLink12 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink12:setParent(obj.layout8);
+    obj.dataLink12:setParent(obj.layout7);
     obj.dataLink12:setDefaultValue("0");
     obj.dataLink12:setField("IntV");
     obj.dataLink12:setName("dataLink12");
 
     obj.edit12 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit12:setParent(obj.layout8);
+    obj.edit12:setParent(obj.layout7);
     obj.edit12:setHorzTextAlign("center");
     obj.edit12:setWidth(50);
     obj.edit12:setFontSize(14.0);
@@ -1122,13 +1123,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit12:setTransparent(true);
 
     obj.dataLink13 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink13:setParent(obj.layout8);
+    obj.dataLink13:setParent(obj.layout7);
     obj.dataLink13:setDefaultValue("0");
     obj.dataLink13:setField("SabV");
     obj.dataLink13:setName("dataLink13");
 
     obj.edit13 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit13:setParent(obj.layout8);
+    obj.edit13:setParent(obj.layout7);
     obj.edit13:setHorzTextAlign("center");
     obj.edit13:setWidth(50);
     obj.edit13:setFontSize(14.0);
@@ -1145,13 +1146,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit13:setTransparent(true);
 
     obj.dataLink14 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink14:setParent(obj.layout8);
+    obj.dataLink14:setParent(obj.layout7);
     obj.dataLink14:setDefaultValue("0");
     obj.dataLink14:setField("CarV");
     obj.dataLink14:setName("dataLink14");
 
     obj.edit14 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit14:setParent(obj.layout8);
+    obj.edit14:setParent(obj.layout7);
     obj.edit14:setHorzTextAlign("center");
     obj.edit14:setWidth(50);
     obj.edit14:setFontSize(14.0);
@@ -1168,13 +1169,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit14:setTransparent(true);
 
     obj.dataLink15 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink15:setParent(obj.layout8);
+    obj.dataLink15:setParent(obj.layout7);
     obj.dataLink15:setDefaultValue("0");
     obj.dataLink15:setField("ForA");
     obj.dataLink15:setName("dataLink15");
 
     obj.edit15 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit15:setParent(obj.layout8);
+    obj.edit15:setParent(obj.layout7);
     obj.edit15:setHorzTextAlign("center");
     obj.edit15:setWidth(50);
     obj.edit15:setFontSize(14.0);
@@ -1191,13 +1192,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit15:setTransparent(true);
 
     obj.dataLink16 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink16:setParent(obj.layout8);
+    obj.dataLink16:setParent(obj.layout7);
     obj.dataLink16:setDefaultValue("0");
     obj.dataLink16:setField("DesA");
     obj.dataLink16:setName("dataLink16");
 
     obj.edit16 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit16:setParent(obj.layout8);
+    obj.edit16:setParent(obj.layout7);
     obj.edit16:setHorzTextAlign("center");
     obj.edit16:setWidth(50);
     obj.edit16:setFontSize(14.0);
@@ -1214,13 +1215,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit16:setTransparent(true);
 
     obj.dataLink17 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink17:setParent(obj.layout8);
+    obj.dataLink17:setParent(obj.layout7);
     obj.dataLink17:setDefaultValue("0");
     obj.dataLink17:setField("ConA");
     obj.dataLink17:setName("dataLink17");
 
     obj.edit17 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit17:setParent(obj.layout8);
+    obj.edit17:setParent(obj.layout7);
     obj.edit17:setHorzTextAlign("center");
     obj.edit17:setWidth(50);
     obj.edit17:setFontSize(14.0);
@@ -1237,13 +1238,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit17:setTransparent(true);
 
     obj.dataLink18 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink18:setParent(obj.layout8);
+    obj.dataLink18:setParent(obj.layout7);
     obj.dataLink18:setDefaultValue("0");
     obj.dataLink18:setField("IntA");
     obj.dataLink18:setName("dataLink18");
 
     obj.edit18 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit18:setParent(obj.layout8);
+    obj.edit18:setParent(obj.layout7);
     obj.edit18:setHorzTextAlign("center");
     obj.edit18:setWidth(50);
     obj.edit18:setFontSize(14.0);
@@ -1260,13 +1261,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit18:setTransparent(true);
 
     obj.dataLink19 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink19:setParent(obj.layout8);
+    obj.dataLink19:setParent(obj.layout7);
     obj.dataLink19:setDefaultValue("0");
     obj.dataLink19:setField("SabA");
     obj.dataLink19:setName("dataLink19");
 
     obj.edit19 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit19:setParent(obj.layout8);
+    obj.edit19:setParent(obj.layout7);
     obj.edit19:setHorzTextAlign("center");
     obj.edit19:setWidth(50);
     obj.edit19:setFontSize(14.0);
@@ -1283,13 +1284,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit19:setTransparent(true);
 
     obj.dataLink20 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink20:setParent(obj.layout8);
+    obj.dataLink20:setParent(obj.layout7);
     obj.dataLink20:setDefaultValue("0");
     obj.dataLink20:setField("CarA");
     obj.dataLink20:setName("dataLink20");
 
     obj.edit20 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit20:setParent(obj.layout8);
+    obj.edit20:setParent(obj.layout7);
     obj.edit20:setHorzTextAlign("center");
     obj.edit20:setWidth(50);
     obj.edit20:setFontSize(14.0);
@@ -1306,13 +1307,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit20:setTransparent(true);
 
     obj.dataLink21 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink21:setParent(obj.layout8);
+    obj.dataLink21:setParent(obj.layout7);
     obj.dataLink21:setDefaultValue("0");
     obj.dataLink21:setField("ForB");
     obj.dataLink21:setName("dataLink21");
 
     obj.edit21 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit21:setParent(obj.layout8);
+    obj.edit21:setParent(obj.layout7);
     obj.edit21:setHorzTextAlign("center");
     obj.edit21:setWidth(50);
     obj.edit21:setFontSize(14.0);
@@ -1329,13 +1330,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit21:setTransparent(true);
 
     obj.dataLink22 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink22:setParent(obj.layout8);
+    obj.dataLink22:setParent(obj.layout7);
     obj.dataLink22:setDefaultValue("0");
     obj.dataLink22:setField("DesB");
     obj.dataLink22:setName("dataLink22");
 
     obj.edit22 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit22:setParent(obj.layout8);
+    obj.edit22:setParent(obj.layout7);
     obj.edit22:setHorzTextAlign("center");
     obj.edit22:setWidth(50);
     obj.edit22:setFontSize(14.0);
@@ -1352,13 +1353,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit22:setTransparent(true);
 
     obj.dataLink23 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink23:setParent(obj.layout8);
+    obj.dataLink23:setParent(obj.layout7);
     obj.dataLink23:setDefaultValue("0");
     obj.dataLink23:setField("ConB");
     obj.dataLink23:setName("dataLink23");
 
     obj.edit23 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit23:setParent(obj.layout8);
+    obj.edit23:setParent(obj.layout7);
     obj.edit23:setHorzTextAlign("center");
     obj.edit23:setWidth(50);
     obj.edit23:setFontSize(14.0);
@@ -1375,13 +1376,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit23:setTransparent(true);
 
     obj.dataLink24 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink24:setParent(obj.layout8);
+    obj.dataLink24:setParent(obj.layout7);
     obj.dataLink24:setDefaultValue("0");
     obj.dataLink24:setField("IntB");
     obj.dataLink24:setName("dataLink24");
 
     obj.edit24 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit24:setParent(obj.layout8);
+    obj.edit24:setParent(obj.layout7);
     obj.edit24:setHorzTextAlign("center");
     obj.edit24:setWidth(50);
     obj.edit24:setFontSize(14.0);
@@ -1398,13 +1399,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit24:setTransparent(true);
 
     obj.dataLink25 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink25:setParent(obj.layout8);
+    obj.dataLink25:setParent(obj.layout7);
     obj.dataLink25:setDefaultValue("0");
     obj.dataLink25:setField("SabB");
     obj.dataLink25:setName("dataLink25");
 
     obj.edit25 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit25:setParent(obj.layout8);
+    obj.edit25:setParent(obj.layout7);
     obj.edit25:setHorzTextAlign("center");
     obj.edit25:setWidth(50);
     obj.edit25:setFontSize(14.0);
@@ -1421,13 +1422,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit25:setTransparent(true);
 
     obj.dataLink26 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink26:setParent(obj.layout8);
+    obj.dataLink26:setParent(obj.layout7);
     obj.dataLink26:setDefaultValue("0");
     obj.dataLink26:setField("CarB");
     obj.dataLink26:setName("dataLink26");
 
     obj.edit26 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit26:setParent(obj.layout8);
+    obj.edit26:setParent(obj.layout7);
     obj.edit26:setHorzTextAlign("center");
     obj.edit26:setWidth(50);
     obj.edit26:setFontSize(14.0);
@@ -1444,13 +1445,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit26:setTransparent(true);
 
     obj.dataLink27 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink27:setParent(obj.layout8);
+    obj.dataLink27:setParent(obj.layout7);
     obj.dataLink27:setDefaultValue("0");
     obj.dataLink27:setField("ForM");
     obj.dataLink27:setName("dataLink27");
 
     obj.edit27 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit27:setParent(obj.layout8);
+    obj.edit27:setParent(obj.layout7);
     obj.edit27:setHorzTextAlign("center");
     obj.edit27:setWidth(50);
     obj.edit27:setFontSize(14.0);
@@ -1467,13 +1468,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit27:setTransparent(true);
 
     obj.dataLink28 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink28:setParent(obj.layout8);
+    obj.dataLink28:setParent(obj.layout7);
     obj.dataLink28:setDefaultValue("0");
     obj.dataLink28:setField("DesM");
     obj.dataLink28:setName("dataLink28");
 
     obj.edit28 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit28:setParent(obj.layout8);
+    obj.edit28:setParent(obj.layout7);
     obj.edit28:setHorzTextAlign("center");
     obj.edit28:setWidth(50);
     obj.edit28:setFontSize(14.0);
@@ -1490,13 +1491,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit28:setTransparent(true);
 
     obj.dataLink29 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink29:setParent(obj.layout8);
+    obj.dataLink29:setParent(obj.layout7);
     obj.dataLink29:setDefaultValue("0");
     obj.dataLink29:setField("ConM");
     obj.dataLink29:setName("dataLink29");
 
     obj.edit29 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit29:setParent(obj.layout8);
+    obj.edit29:setParent(obj.layout7);
     obj.edit29:setHorzTextAlign("center");
     obj.edit29:setWidth(50);
     obj.edit29:setFontSize(14.0);
@@ -1513,13 +1514,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit29:setTransparent(true);
 
     obj.dataLink30 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink30:setParent(obj.layout8);
+    obj.dataLink30:setParent(obj.layout7);
     obj.dataLink30:setDefaultValue("0");
     obj.dataLink30:setField("IntM");
     obj.dataLink30:setName("dataLink30");
 
     obj.edit30 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit30:setParent(obj.layout8);
+    obj.edit30:setParent(obj.layout7);
     obj.edit30:setHorzTextAlign("center");
     obj.edit30:setWidth(50);
     obj.edit30:setFontSize(14.0);
@@ -1536,13 +1537,13 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit30:setTransparent(true);
 
     obj.dataLink31 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink31:setParent(obj.layout8);
+    obj.dataLink31:setParent(obj.layout7);
     obj.dataLink31:setDefaultValue("0");
     obj.dataLink31:setField("SabM");
     obj.dataLink31:setName("dataLink31");
 
     obj.edit31 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit31:setParent(obj.layout8);
+    obj.edit31:setParent(obj.layout7);
     obj.edit31:setHorzTextAlign("center");
     obj.edit31:setWidth(50);
     obj.edit31:setFontSize(14.0);
@@ -1559,63 +1560,63 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit31:setTransparent(true);
 
     obj.dataLink32 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink32:setParent(obj.layout8);
+    obj.dataLink32:setParent(obj.layout7);
     obj.dataLink32:setDefaultValue("0");
     obj.dataLink32:setField("CarM");
     obj.dataLink32:setName("dataLink32");
 
-    obj.layout9 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout9:setParent(obj.flowPart2);
-    obj.layout9:setAlign("top");
-    obj.layout9:setHeight(40);
-    obj.layout9:setMargins({top=10});
-    obj.layout9:setName("layout9");
+    obj.layout8 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout8:setParent(obj.flowPart2);
+    obj.layout8:setAlign("top");
+    obj.layout8:setHeight(40);
+    obj.layout8:setMargins({top=10});
+    obj.layout8:setName("layout8");
 
     obj.flowLayout4 = GUI.fromHandle(_obj_newObject("flowLayout"));
-    obj.flowLayout4:setParent(obj.layout9);
+    obj.flowLayout4:setParent(obj.layout8);
     obj.flowLayout4:setAlign("top");
     obj.flowLayout4:setHorzAlign("center");
     obj.flowLayout4:setHeight(40);
     obj.flowLayout4:setName("flowLayout4");
 
-    obj.flowPart4 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart4:setParent(obj.flowLayout4);
-    obj.flowPart4:setWidth(160);
-    obj.flowPart4:setName("flowPart4");
+    obj.flowPart5 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart5:setParent(obj.flowLayout4);
+    obj.flowPart5:setWidth(160);
+    obj.flowPart5:setName("flowPart5");
 
-    obj.layout10 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout10:setParent(obj.flowPart2);
-    obj.layout10:setAlign("top");
-    obj.layout10:setHeight(30);
-    obj.layout10:setMargins({top=40, left=20, bottom=15});
-    obj.layout10:setName("layout10");
+    obj.layout9 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout9:setParent(obj.flowPart2);
+    obj.layout9:setAlign("top");
+    obj.layout9:setHeight(30);
+    obj.layout9:setMargins({top=40, left=20, bottom=15});
+    obj.layout9:setName("layout9");
 
     obj.label20 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label20:setParent(obj.layout10);
+    obj.label20:setParent(obj.layout9);
     obj.label20:setAlign("left");
     obj.label20:setText("P E R Í C I A");
     obj.label20:setWidth(130);
-    obj.label20:setFontColor("#669ffa");
+    obj.label20:setFontColor("#FF7F50");
     obj.label20:setFontSize(20);
     obj.label20:setFontFamily("Constantia");
     obj.label20:setName("label20");
     lfm_setPropAsString(obj.label20, "fontStyle", "bold");
 
     obj.horzLine3 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine3:setParent(obj.layout10);
+    obj.horzLine3:setParent(obj.layout9);
     obj.horzLine3:setAlign("client");
     obj.horzLine3:setMargins({right=9, top=14});
     obj.horzLine3:setStrokeColor("#424242");
     obj.horzLine3:setName("horzLine3");
 
-    obj.layout11 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout11:setParent(obj.flowPart2);
-    obj.layout11:setAlign("top");
-    obj.layout11:setHeight(1500);
-    obj.layout11:setName("layout11");
+    obj.layout10 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout10:setParent(obj.flowPart2);
+    obj.layout10:setAlign("top");
+    obj.layout10:setHeight(1500);
+    obj.layout10:setName("layout10");
 
     obj.scrollBox2 = GUI.fromHandle(_obj_newObject("scrollBox"));
-    obj.scrollBox2:setParent(obj.layout11);
+    obj.scrollBox2:setParent(obj.layout10);
     obj.scrollBox2:setWidth(630);
     obj.scrollBox2:setHeight(820);
     obj.scrollBox2:setLeft(20);
@@ -5727,22 +5728,22 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.dataLink173:setField("ModMentir");
     obj.dataLink173:setName("dataLink173");
 
-    obj.flowPart5 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart5:setParent(obj.flowLayout2);
-    obj.flowPart5:setMinWidth(100);
-    obj.flowPart5:setMaxWidth(350);
-    obj.flowPart5:setHeight(1600);
-    obj.flowPart5:setName("flowPart5");
+    obj.flowPart6 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart6:setParent(obj.flowLayout2);
+    obj.flowPart6:setMinWidth(100);
+    obj.flowPart6:setMaxWidth(350);
+    obj.flowPart6:setHeight(1600);
+    obj.flowPart6:setName("flowPart6");
 
     obj.rectangle58 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle58:setParent(obj.flowPart5);
+    obj.rectangle58:setParent(obj.flowPart6);
     obj.rectangle58:setWidth(300);
     obj.rectangle58:setHeight(1530);
     obj.rectangle58:setColor("#202020");
     obj.rectangle58:setName("rectangle58");
 
     obj.rectangle59 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle59:setParent(obj.flowPart5);
+    obj.rectangle59:setParent(obj.flowPart6);
     obj.rectangle59:setWidth(320);
     obj.rectangle59:setHeight(1530);
     obj.rectangle59:setColor("#202020");
@@ -5752,9 +5753,9 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle59:setName("rectangle59");
 
     obj.label70 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label70:setParent(obj.flowPart5);
+    obj.label70:setParent(obj.flowPart6);
     obj.label70:setFontSize(18.0);
-    obj.label70:setFontColor("#669ffa");
+    obj.label70:setFontColor("#FF7F50");
     obj.label70:setText("APARENCIA");
     obj.label70:setLeft(110);
     obj.label70:setTop(80);
@@ -5762,15 +5763,15 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     lfm_setPropAsString(obj.label70, "fontStyle", "bold");
     obj.label70:setFontFamily("Cambria");
 
-    obj.layout12 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout12:setParent(obj.flowPart5);
-    obj.layout12:setAlign("top");
-    obj.layout12:setHeight(30);
-    obj.layout12:setMargins({top=60, left=20, bottom=15});
-    obj.layout12:setName("layout12");
+    obj.layout11 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout11:setParent(obj.flowPart6);
+    obj.layout11:setAlign("top");
+    obj.layout11:setHeight(30);
+    obj.layout11:setMargins({top=60, left=20, bottom=15});
+    obj.layout11:setName("layout11");
 
     obj.label71 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label71:setParent(obj.layout12);
+    obj.label71:setParent(obj.layout11);
     obj.label71:setAlign("left");
     obj.label71:setText("");
     obj.label71:setWidth(1000);
@@ -5781,14 +5782,14 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     lfm_setPropAsString(obj.label71, "fontStyle", "bold");
 
     obj.horzLine4 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine4:setParent(obj.layout12);
+    obj.horzLine4:setParent(obj.layout11);
     obj.horzLine4:setAlign("client");
     obj.horzLine4:setMargins({right=20, top=14});
     obj.horzLine4:setStrokeColor("#424242");
     obj.horzLine4:setName("horzLine4");
 
     obj.image4 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image4:setParent(obj.flowPart5);
+    obj.image4:setParent(obj.flowPart6);
     obj.image4:setField("imagemPJ");
     obj.image4:setStyle("autoFit");
     obj.image4:setEditable(true);
@@ -5799,38 +5800,38 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.image4:setName("image4");
 
     obj.dataLink174 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink174:setParent(obj.flowPart5);
+    obj.dataLink174:setParent(obj.flowPart6);
     obj.dataLink174:setField("imagemPJ");
     obj.dataLink174:setDefaultValue("/Frames/avatar.jpg");
     obj.dataLink174:setName("dataLink174");
 
-    obj.layout13 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout13:setParent(obj.flowPart5);
-    obj.layout13:setAlign("top");
-    obj.layout13:setHeight(30);
-    obj.layout13:setMargins({top=593, left=20, bottom=15});
-    obj.layout13:setName("layout13");
+    obj.layout12 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout12:setParent(obj.flowPart6);
+    obj.layout12:setAlign("top");
+    obj.layout12:setHeight(30);
+    obj.layout12:setMargins({top=593, left=20, bottom=15});
+    obj.layout12:setName("layout12");
 
     obj.label72 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label72:setParent(obj.layout13);
+    obj.label72:setParent(obj.layout12);
     obj.label72:setAlign("left");
     obj.label72:setText("A F I N I D A D E S");
     obj.label72:setWidth(215);
-    obj.label72:setFontColor("#669ffa");
+    obj.label72:setFontColor("#FF7F50");
     obj.label72:setFontSize(20);
     obj.label72:setFontFamily("Constantia");
     obj.label72:setName("label72");
     lfm_setPropAsString(obj.label72, "fontStyle", "bold");
 
     obj.horzLine5 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine5:setParent(obj.layout13);
+    obj.horzLine5:setParent(obj.layout12);
     obj.horzLine5:setAlign("client");
     obj.horzLine5:setMargins({right=9, top=14});
     obj.horzLine5:setStrokeColor("#424242");
     obj.horzLine5:setName("horzLine5");
 
     obj.rectangle60 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle60:setParent(obj.flowPart5);
+    obj.rectangle60:setParent(obj.flowPart6);
     obj.rectangle60:setAlign("top");
     obj.rectangle60:setHeight(30);
     obj.rectangle60:setXradius(5);
@@ -5869,7 +5870,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.button6:setName("button6");
 
     obj.rclDesVantagens = GUI.fromHandle(_obj_newObject("recordList"));
-    obj.rclDesVantagens:setParent(obj.flowPart5);
+    obj.rclDesVantagens:setParent(obj.flowPart6);
     obj.rclDesVantagens:setName("rclDesVantagens");
     obj.rclDesVantagens:setField("desvantagens");
     obj.rclDesVantagens:setTemplateForm("templateDesVantagens");
@@ -5877,15 +5878,15 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rclDesVantagens:setAutoHeight(true);
     obj.rclDesVantagens:setMargins({left=20, right=10});
 
-    obj.layout14 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout14:setParent(obj.flowPart5);
-    obj.layout14:setAlign("top");
-    obj.layout14:setHeight(30);
-    obj.layout14:setMargins({top=60, left=20, bottom=15});
-    obj.layout14:setName("layout14");
+    obj.layout13 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout13:setParent(obj.flowPart6);
+    obj.layout13:setAlign("top");
+    obj.layout13:setHeight(30);
+    obj.layout13:setMargins({top=60, left=20, bottom=15});
+    obj.layout13:setName("layout13");
 
     obj.label75 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label75:setParent(obj.layout14);
+    obj.label75:setParent(obj.layout13);
     obj.label75:setAlign("left");
     obj.label75:setText("");
     obj.label75:setWidth(360);
@@ -5896,14 +5897,14 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     lfm_setPropAsString(obj.label75, "fontStyle", "bold");
 
     obj.horzLine6 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine6:setParent(obj.layout14);
+    obj.horzLine6:setParent(obj.layout13);
     obj.horzLine6:setAlign("client");
     obj.horzLine6:setMargins({right=20, top=14});
     obj.horzLine6:setStrokeColor("#424242");
     obj.horzLine6:setName("horzLine6");
 
     obj.btnImagemFundo = GUI.fromHandle(_obj_newObject("button"));
-    obj.btnImagemFundo:setParent(obj.flowPart5);
+    obj.btnImagemFundo:setParent(obj.flowPart6);
     obj.btnImagemFundo:setName("btnImagemFundo");
     obj.btnImagemFundo:setLeft(270);
     obj.btnImagemFundo:setTop(20);
@@ -5912,7 +5913,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.btnImagemFundo:setWidth(30);
 
     obj.popImagemFundo = GUI.fromHandle(_obj_newObject("popup"));
-    obj.popImagemFundo:setParent(obj.flowPart5);
+    obj.popImagemFundo:setParent(obj.flowPart6);
     obj.popImagemFundo:setName("popImagemFundo");
     obj.popImagemFundo:setWidth(260);
     obj.popImagemFundo:setHeight(100);
@@ -5958,7 +5959,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.edit173:setFontFamily("Cambria");
 
     obj.image5 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image5:setParent(obj.flowPart5);
+    obj.image5:setParent(obj.flowPart6);
     obj.image5:setURL("");
     obj.image5:setHeight(135);
     obj.image5:setStyle("proportional");
@@ -5966,21 +5967,21 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.image5:setMargins({bottom=80});
     obj.image5:setName("image5");
 
+    obj.layout14 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout14:setParent(obj.flowPart6);
+    obj.layout14:setAlign("top");
+    obj.layout14:setHeight(430);
+    obj.layout14:setMargins({left=20, right=20});
+    obj.layout14:setName("layout14");
+
     obj.layout15 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout15:setParent(obj.flowPart5);
+    obj.layout15:setParent(obj.layout14);
     obj.layout15:setAlign("top");
-    obj.layout15:setHeight(430);
-    obj.layout15:setMargins({left=20, right=20});
+    obj.layout15:setHeight(400);
     obj.layout15:setName("layout15");
 
-    obj.layout16 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout16:setParent(obj.layout15);
-    obj.layout16:setAlign("top");
-    obj.layout16:setHeight(400);
-    obj.layout16:setName("layout16");
-
     obj.image6 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image6:setParent(obj.flowPart5);
+    obj.image6:setParent(obj.flowPart6);
     obj.image6:setURL("seu logo aqui");
     obj.image6:setHeight(135);
     obj.image6:setStyle("proportional");
@@ -6022,11 +6023,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
 
     obj.button7 = GUI.fromHandle(_obj_newObject("button"));
     obj.button7:setParent(obj.rectangle62);
-    obj.button7:setText("P E R S O N A G E M");
+    obj.button7:setText("P E R S O N A G M");
     obj.button7:setName("button7");
     obj.button7:setAlign("left");
     obj.button7:setMargins({right=2});
-    obj.button7:setWidth(122);
+    obj.button7:setWidth(100);
     obj.button7:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button7, "fontStyle", "bold");
     obj.button7:setFontSize(10);
@@ -6037,7 +6038,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.button8:setName("button8");
     obj.button8:setAlign("left");
     obj.button8:setMargins({right=2});
-    obj.button8:setWidth(122);
+    obj.button8:setWidth(100);
     obj.button8:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button8, "fontStyle", "bold");
     obj.button8:setFontSize(10);
@@ -6048,7 +6049,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.button9:setName("button9");
     obj.button9:setAlign("left");
     obj.button9:setMargins({right=2});
-    obj.button9:setWidth(122);
+    obj.button9:setWidth(100);
     obj.button9:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button9, "fontStyle", "bold");
     obj.button9:setFontSize(10);
@@ -6059,7 +6060,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.button10:setName("button10");
     obj.button10:setAlign("left");
     obj.button10:setMargins({right=2});
-    obj.button10:setWidth(122);
+    obj.button10:setWidth(100);
     obj.button10:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button10, "fontStyle", "bold");
     obj.button10:setFontSize(10);
@@ -6070,22 +6071,22 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.button11:setName("button11");
     obj.button11:setAlign("left");
     obj.button11:setMargins({right=2});
-    obj.button11:setWidth(122);
+    obj.button11:setWidth(100);
     obj.button11:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button11, "fontStyle", "bold");
     obj.button11:setFontSize(10);
 
-    obj.layout17 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout17:setParent(obj.fpEsquerdaMec);
-    obj.layout17:setAlign("top");
-    obj.layout17:setHeight(30);
-    obj.layout17:setMargins({top=10, left=20, bottom=15});
-    obj.layout17:setName("layout17");
+    obj.layout16 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout16:setParent(obj.fpEsquerdaMec);
+    obj.layout16:setAlign("top");
+    obj.layout16:setHeight(30);
+    obj.layout16:setMargins({top=10, left=20, bottom=15});
+    obj.layout16:setName("layout16");
 
     obj.label77 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label77:setParent(obj.layout17);
+    obj.label77:setParent(obj.layout16);
     obj.label77:setAlign("left");
-    obj.label77:setText("I N V E N T a R I O");
+    obj.label77:setText("I N V E N T Á R I O");
     obj.label77:setWidth(190);
     obj.label77:setFontSize(20);
     obj.label77:setFontFamily("Constantia");
@@ -6094,7 +6095,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     lfm_setPropAsString(obj.label77, "fontStyle", "bold");
 
     obj.horzLine8 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine8:setParent(obj.layout17);
+    obj.horzLine8:setParent(obj.layout16);
     obj.horzLine8:setAlign("client");
     obj.horzLine8:setMargins({right=20, top=14});
     obj.horzLine8:setStrokeColor("#424242");
@@ -6133,15 +6134,15 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle64:setCornerType("bevel");
     obj.rectangle64:setName("rectangle64");
 
-    obj.layout18 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout18:setParent(obj.fpDireitaMec);
-    obj.layout18:setAlign("top");
-    obj.layout18:setHeight(30);
-    obj.layout18:setMargins({top=60, left=20, bottom=15});
-    obj.layout18:setName("layout18");
+    obj.layout17 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout17:setParent(obj.fpDireitaMec);
+    obj.layout17:setAlign("top");
+    obj.layout17:setHeight(30);
+    obj.layout17:setMargins({top=60, left=20, bottom=15});
+    obj.layout17:setName("layout17");
 
     obj.label78 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label78:setParent(obj.layout18);
+    obj.label78:setParent(obj.layout17);
     obj.label78:setAlign("left");
     obj.label78:setText("");
     obj.label78:setWidth(0);
@@ -6152,7 +6153,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     lfm_setPropAsString(obj.label78, "fontStyle", "bold");
 
     obj.horzLine9 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine9:setParent(obj.layout18);
+    obj.horzLine9:setParent(obj.layout17);
     obj.horzLine9:setAlign("client");
     obj.horzLine9:setMargins({right=20, top=14});
     obj.horzLine9:setStrokeColor("#424242");
@@ -6203,11 +6204,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
 
     obj.button12 = GUI.fromHandle(_obj_newObject("button"));
     obj.button12:setParent(obj.rectangle65);
-    obj.button12:setText("P E R S O N A G E M");
+    obj.button12:setText("P E R S O N A G M");
     obj.button12:setName("button12");
     obj.button12:setAlign("left");
     obj.button12:setMargins({right=2});
-    obj.button12:setWidth(122);
+    obj.button12:setWidth(100);
     obj.button12:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button12, "fontStyle", "bold");
     obj.button12:setFontSize(10);
@@ -6218,7 +6219,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.button13:setName("button13");
     obj.button13:setAlign("left");
     obj.button13:setMargins({right=2});
-    obj.button13:setWidth(122);
+    obj.button13:setWidth(100);
     obj.button13:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button13, "fontStyle", "bold");
     obj.button13:setFontSize(10);
@@ -6229,7 +6230,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.button14:setName("button14");
     obj.button14:setAlign("left");
     obj.button14:setMargins({right=2});
-    obj.button14:setWidth(122);
+    obj.button14:setWidth(100);
     obj.button14:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button14, "fontStyle", "bold");
     obj.button14:setFontSize(10);
@@ -6240,7 +6241,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.button15:setName("button15");
     obj.button15:setAlign("left");
     obj.button15:setMargins({right=2});
-    obj.button15:setWidth(122);
+    obj.button15:setWidth(100);
     obj.button15:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button15, "fontStyle", "bold");
     obj.button15:setFontSize(10);
@@ -6251,20 +6252,20 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.button16:setName("button16");
     obj.button16:setAlign("left");
     obj.button16:setMargins({right=2});
-    obj.button16:setWidth(122);
+    obj.button16:setWidth(100);
     obj.button16:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button16, "fontStyle", "bold");
     obj.button16:setFontSize(10);
 
-    obj.layout19 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout19:setParent(obj.layMagias);
-    obj.layout19:setAlign("top");
-    obj.layout19:setHeight(30);
-    obj.layout19:setMargins({top=10, left=20, bottom=15});
-    obj.layout19:setName("layout19");
+    obj.layout18 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout18:setParent(obj.layMagias);
+    obj.layout18:setAlign("top");
+    obj.layout18:setHeight(30);
+    obj.layout18:setMargins({top=10, left=20, bottom=15});
+    obj.layout18:setName("layout18");
 
     obj.label79 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label79:setParent(obj.layout19);
+    obj.label79:setParent(obj.layout18);
     obj.label79:setAlign("left");
     obj.label79:setText("L I S T A   D E   M A G I A S");
     obj.label79:setWidth(245);
@@ -6275,7 +6276,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     lfm_setPropAsString(obj.label79, "fontStyle", "bold");
 
     obj.horzLine10 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine10:setParent(obj.layout19);
+    obj.horzLine10:setParent(obj.layout18);
     obj.horzLine10:setAlign("client");
     obj.horzLine10:setMargins({right=20, top=14});
     obj.horzLine10:setStrokeColor("#424242");
@@ -6299,6 +6300,15 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.button17:setWidth(30);
     obj.button17:setName("button17");
 
+    obj.rclMagias = GUI.fromHandle(_obj_newObject("recordList"));
+    obj.rclMagias:setParent(obj.layMagias);
+    obj.rclMagias:setAlign("client");
+    obj.rclMagias:setLayout("horizontalTiles");
+    obj.rclMagias:setName("rclMagias");
+    obj.rclMagias:setField("magias");
+    obj.rclMagias:setTemplateForm("templateMagias");
+    obj.rclMagias:setMargins({left = 15, right = 15, top = 5, bottom = 15});
+
     obj.layBG = GUI.fromHandle(_obj_newObject("layout"));
     obj.layBG:setParent(obj.rectangle3);
     obj.layBG:setName("layBG");
@@ -6312,15 +6322,15 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.flowLayout6:setHorzAlign("center");
     obj.flowLayout6:setName("flowLayout6");
 
-    obj.flowPart6 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart6:setParent(obj.flowLayout6);
-    obj.flowPart6:setMinWidth(300);
-    obj.flowPart6:setMaxWidth(650);
-    obj.flowPart6:setHeight(1600);
-    obj.flowPart6:setName("flowPart6");
+    obj.flowPart7 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart7:setParent(obj.flowLayout6);
+    obj.flowPart7:setMinWidth(300);
+    obj.flowPart7:setMaxWidth(650);
+    obj.flowPart7:setHeight(1600);
+    obj.flowPart7:setName("flowPart7");
 
     obj.rectangle67 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle67:setParent(obj.flowPart6);
+    obj.rectangle67:setParent(obj.flowPart7);
     obj.rectangle67:setMargins({left=20, right=10, top=20});
     obj.rectangle67:setAlign("top");
     obj.rectangle67:setHeight(30);
@@ -6332,11 +6342,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
 
     obj.button18 = GUI.fromHandle(_obj_newObject("button"));
     obj.button18:setParent(obj.rectangle67);
-    obj.button18:setText("P E R S O N A G E M");
+    obj.button18:setText("P E R S O N A G M");
     obj.button18:setName("button18");
     obj.button18:setAlign("left");
     obj.button18:setMargins({right=2});
-    obj.button18:setWidth(122);
+    obj.button18:setWidth(100);
     obj.button18:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button18, "fontStyle", "bold");
     obj.button18:setFontSize(10);
@@ -6347,7 +6357,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.button19:setName("button19");
     obj.button19:setAlign("left");
     obj.button19:setMargins({right=2});
-    obj.button19:setWidth(122);
+    obj.button19:setWidth(100);
     obj.button19:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button19, "fontStyle", "bold");
     obj.button19:setFontSize(10);
@@ -6358,7 +6368,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.button20:setName("button20");
     obj.button20:setAlign("left");
     obj.button20:setMargins({right=2});
-    obj.button20:setWidth(122);
+    obj.button20:setWidth(100);
     obj.button20:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button20, "fontStyle", "bold");
     obj.button20:setFontSize(10);
@@ -6369,7 +6379,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.button21:setName("button21");
     obj.button21:setAlign("left");
     obj.button21:setMargins({right=2});
-    obj.button21:setWidth(122);
+    obj.button21:setWidth(100);
     obj.button21:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button21, "fontStyle", "bold");
     obj.button21:setFontSize(10);
@@ -6380,22 +6390,22 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.button22:setName("button22");
     obj.button22:setAlign("left");
     obj.button22:setMargins({right=2});
-    obj.button22:setWidth(122);
+    obj.button22:setWidth(100);
     obj.button22:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button22, "fontStyle", "bold");
     obj.button22:setFontSize(10);
 
-    obj.layout20 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout20:setParent(obj.flowPart6);
-    obj.layout20:setAlign("top");
-    obj.layout20:setHeight(30);
-    obj.layout20:setMargins({top=10, left=20, bottom=15});
-    obj.layout20:setName("layout20");
+    obj.layout19 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout19:setParent(obj.flowPart7);
+    obj.layout19:setAlign("top");
+    obj.layout19:setHeight(30);
+    obj.layout19:setMargins({top=10, left=20, bottom=15});
+    obj.layout19:setName("layout19");
 
     obj.label80 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label80:setParent(obj.layout20);
+    obj.label80:setParent(obj.layout19);
     obj.label80:setAlign("left");
-    obj.label80:setText("H I S T o R I A");
+    obj.label80:setText("H I S T Ó R I A");
     obj.label80:setWidth(150);
     obj.label80:setFontSize(20);
     obj.label80:setFontFamily("Constantia");
@@ -6404,14 +6414,14 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     lfm_setPropAsString(obj.label80, "fontStyle", "bold");
 
     obj.horzLine11 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine11:setParent(obj.layout20);
+    obj.horzLine11:setParent(obj.layout19);
     obj.horzLine11:setAlign("client");
     obj.horzLine11:setMargins({right=20, top=14});
     obj.horzLine11:setStrokeColor("#424242");
     obj.horzLine11:setName("horzLine11");
 
     obj.richEdit2 = GUI.fromHandle(_obj_newObject("richEdit"));
-    obj.richEdit2:setParent(obj.flowPart6);
+    obj.richEdit2:setParent(obj.flowPart7);
     obj.richEdit2:setAlign("client");
     obj.richEdit2:setField("background2");
     obj.richEdit2.backgroundColor = "#272727";
@@ -6419,22 +6429,22 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.richEdit2:setMargins({left=20, right=10, bottom=100});
     obj.richEdit2:setName("richEdit2");
 
-    obj.flowPart7 = GUI.fromHandle(_obj_newObject("flowPart"));
-    obj.flowPart7:setParent(obj.flowLayout6);
-    obj.flowPart7:setMinWidth(100);
-    obj.flowPart7:setMaxWidth(350);
-    obj.flowPart7:setHeight(1600);
-    obj.flowPart7:setName("flowPart7");
+    obj.flowPart8 = GUI.fromHandle(_obj_newObject("flowPart"));
+    obj.flowPart8:setParent(obj.flowLayout6);
+    obj.flowPart8:setMinWidth(100);
+    obj.flowPart8:setMaxWidth(350);
+    obj.flowPart8:setHeight(1600);
+    obj.flowPart8:setName("flowPart8");
 
     obj.rectangle68 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle68:setParent(obj.flowPart7);
+    obj.rectangle68:setParent(obj.flowPart8);
     obj.rectangle68:setWidth(300);
     obj.rectangle68:setHeight(1530);
     obj.rectangle68:setColor("#202020");
     obj.rectangle68:setName("rectangle68");
 
     obj.rectangle69 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle69:setParent(obj.flowPart7);
+    obj.rectangle69:setParent(obj.flowPart8);
     obj.rectangle69:setWidth(320);
     obj.rectangle69:setHeight(1530);
     obj.rectangle69:setColor("#202020");
@@ -6443,15 +6453,15 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.rectangle69:setCornerType("bevel");
     obj.rectangle69:setName("rectangle69");
 
-    obj.layout21 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout21:setParent(obj.flowPart7);
-    obj.layout21:setAlign("top");
-    obj.layout21:setHeight(30);
-    obj.layout21:setMargins({top=60, left=20, bottom=15});
-    obj.layout21:setName("layout21");
+    obj.layout20 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout20:setParent(obj.flowPart8);
+    obj.layout20:setAlign("top");
+    obj.layout20:setHeight(30);
+    obj.layout20:setMargins({top=60, left=20, bottom=15});
+    obj.layout20:setName("layout20");
 
     obj.label81 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label81:setParent(obj.layout21);
+    obj.label81:setParent(obj.layout20);
     obj.label81:setAlign("left");
     obj.label81:setText("");
     obj.label81:setWidth(0);
@@ -6462,14 +6472,14 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     lfm_setPropAsString(obj.label81, "fontStyle", "bold");
 
     obj.horzLine12 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine12:setParent(obj.layout21);
+    obj.horzLine12:setParent(obj.layout20);
     obj.horzLine12:setAlign("client");
     obj.horzLine12:setMargins({right=20, top=14});
     obj.horzLine12:setStrokeColor("#424242");
     obj.horzLine12:setName("horzLine12");
 
     obj.image8 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image8:setParent(obj.flowPart7);
+    obj.image8:setParent(obj.flowPart8);
     obj.image8:setField("imagemPJ");
     obj.image8:setStyle("autoFit");
     obj.image8:setEditable(true);
@@ -6480,21 +6490,21 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.image8:setName("image8");
 
     obj.dataLink176 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink176:setParent(obj.flowPart7);
+    obj.dataLink176:setParent(obj.flowPart8);
     obj.dataLink176:setField("imagemPJ");
     obj.dataLink176:setDefaultValue("/Frames/avatar.jpg");
     obj.dataLink176:setName("dataLink176");
 
-    obj.layout22 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout22:setParent(obj.flowPart7);
-    obj.layout22:setAlign("top");
-    obj.layout22:setFrameStyle("/Frames/frameFundo.xml");
-    obj.layout22:setMargins({left=10, right=20});
-    obj.layout22:setHeight(500);
-    obj.layout22:setName("layout22");
+    obj.layout21 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout21:setParent(obj.flowPart8);
+    obj.layout21:setAlign("top");
+    obj.layout21:setFrameStyle("/Frames/frameFundo.xml");
+    obj.layout21:setMargins({left=10, right=20});
+    obj.layout21:setHeight(500);
+    obj.layout21:setName("layout21");
 
     obj.image9 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image9:setParent(obj.flowPart7);
+    obj.image9:setParent(obj.flowPart8);
     obj.image9:setURL("");
     obj.image9:setHeight(135);
     obj.image9:setStyle("proportional");
@@ -6521,11 +6531,11 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
 
     obj.button23 = GUI.fromHandle(_obj_newObject("button"));
     obj.button23:setParent(obj.rectangle70);
-    obj.button23:setText("P E R S O N A G E M");
+    obj.button23:setText("P E R S O N A G M");
     obj.button23:setName("button23");
     obj.button23:setAlign("left");
     obj.button23:setMargins({right=2});
-    obj.button23:setWidth(122);
+    obj.button23:setWidth(100);
     obj.button23:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button23, "fontStyle", "bold");
     obj.button23:setFontSize(10);
@@ -6536,7 +6546,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.button24:setName("button24");
     obj.button24:setAlign("left");
     obj.button24:setMargins({right=2});
-    obj.button24:setWidth(122);
+    obj.button24:setWidth(100);
     obj.button24:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button24, "fontStyle", "bold");
     obj.button24:setFontSize(10);
@@ -6547,7 +6557,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.button25:setName("button25");
     obj.button25:setAlign("left");
     obj.button25:setMargins({right=2});
-    obj.button25:setWidth(122);
+    obj.button25:setWidth(100);
     obj.button25:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button25, "fontStyle", "bold");
     obj.button25:setFontSize(10);
@@ -6558,7 +6568,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.button26:setName("button26");
     obj.button26:setAlign("left");
     obj.button26:setMargins({right=2});
-    obj.button26:setWidth(122);
+    obj.button26:setWidth(100);
     obj.button26:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button26, "fontStyle", "bold");
     obj.button26:setFontSize(10);
@@ -6569,22 +6579,22 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.button27:setName("button27");
     obj.button27:setAlign("left");
     obj.button27:setMargins({right=2});
-    obj.button27:setWidth(122);
+    obj.button27:setWidth(100);
     obj.button27:setFontFamily("Constantia");
     lfm_setPropAsString(obj.button27, "fontStyle", "bold");
     obj.button27:setFontSize(10);
 
-    obj.layout23 = GUI.fromHandle(_obj_newObject("layout"));
-    obj.layout23:setParent(obj.layNote);
-    obj.layout23:setAlign("top");
-    obj.layout23:setHeight(30);
-    obj.layout23:setMargins({top=10, left=20, bottom=15});
-    obj.layout23:setName("layout23");
+    obj.layout22 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout22:setParent(obj.layNote);
+    obj.layout22:setAlign("top");
+    obj.layout22:setHeight(30);
+    obj.layout22:setMargins({top=10, left=20, bottom=15});
+    obj.layout22:setName("layout22");
 
     obj.label82 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label82:setParent(obj.layout23);
+    obj.label82:setParent(obj.layout22);
     obj.label82:setAlign("left");
-    obj.label82:setText("A N O T A c Õ E S");
+    obj.label82:setText("A N O T A Ç Õ E S");
     obj.label82:setWidth(190);
     obj.label82:setFontSize(20);
     obj.label82:setFontFamily("Constantia");
@@ -6593,7 +6603,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     lfm_setPropAsString(obj.label82, "fontStyle", "bold");
 
     obj.horzLine13 = GUI.fromHandle(_obj_newObject("horzLine"));
-    obj.horzLine13:setParent(obj.layout23);
+    obj.horzLine13:setParent(obj.layout22);
     obj.horzLine13:setAlign("client");
     obj.horzLine13:setMargins({right=20, top=14});
     obj.horzLine13:setStrokeColor("#424242");
@@ -6607,6 +6617,12 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
     obj.richEdit3.defaultFontColor = "white";
     obj.richEdit3:setMargins({left=20, right=20, bottom=40});
     obj.richEdit3:setName("richEdit3");
+
+    obj.layout23 = GUI.fromHandle(_obj_newObject("layout"));
+    obj.layout23:setParent(obj);
+    obj.layout23:setAlign("client");
+    obj.layout23:setFrameStyle("/Frames/frameFundo.xml");
+    obj.layout23:setName("layout23");
 
     obj._e_event0 = obj.dataLink1:addEventListener("onChange",
         function (field, oldValue, newValue)
@@ -6792,57 +6808,121 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
             self.rclMagias:append();
         end);
 
-    obj._e_event23 = obj.button18:addEventListener("onClick",
+    obj._e_event23 = obj.rclMagias:addEventListener("onSelect",
+        function ()
+            self.rclMagias:sort();
+        end);
+
+    obj._e_event24 = obj.rclMagias:addEventListener("onItemAdded",
+        function (node, form)
+            self.rclMagias:sort();
+        end);
+
+    obj._e_event25 = obj.rclMagias:addEventListener("onItemRemoved",
+        function (node, form)
+            self.rclMagias:sort();
+        end);
+
+    obj._e_event26 = obj.rclMagias:addEventListener("onCompare",
+        function (nodeA, nodeB)
+            if(nodeA.elemMagia == nodeB.elemMagia) then
+            										
+            											if (nodeA.lvlMagia or 0) > (nodeB.lvlMagia or 0) then
+            													return 1;
+            											elseif (nodeA.lvlMagia or 0) < (nodeB.lvlMagia or 0) then
+            													return -1;
+            											else   
+            													return Utils.compareStringPtBr(nodeA.nomeMagia, nodeB.nomeMagia);
+            											end;
+            										
+            										elseif(nodeA.elemMagia == "Water" and 
+            										(nodeB.elemMagia == "Air" or nodeB.elemMagia == "Fire" or nodeB.elemMagia == "Earth" or nodeB.elemMagia == "Void" or nodeB.elemMagia == "Universal")) then
+            											return -1;
+            										elseif(nodeA.elemMagia == "Air" and 
+            										(nodeB.elemMagia == "Fire" or nodeB.elemMagia == "Earth" or nodeB.elemMagia == "Void" or nodeB.elemMagia == "Universal")) then
+            											return -1;
+            										elseif(nodeA.elemMagia == "Fire" and 
+            										(nodeB.elemMagia == "Earth" or nodeB.elemMagia == "Void" or nodeB.elemMagia == "Universal")) then
+            											return -1;
+            										elseif(nodeA.elemMagia == "Earth" and 
+            										(nodeB.elemMagia == "Void" or nodeB.elemMagia == "Universal")) then
+            											return -1;
+            										elseif(nodeA.elemMagia == "Void" and 
+            										(nodeB.elemMagia == "Universal")) then
+            											return -1;
+            										elseif(nodeA.elemMagia == "Universal" and 
+            										(nodeB.elemMagia == "Water" or nodeB.elemMagia == "Air" or nodeB.elemMagia == "Fire" or nodeB.elemMagia == "Earth" or nodeB.elemMagia == "Void")) then
+            											return 1;
+            										elseif(nodeA.elemMagia == "Void" and 
+            										(nodeB.elemMagia == "Water" or nodeB.elemMagia == "Air" or nodeB.elemMagia == "Fire" or nodeB.elemMagia == "Earth")) then
+            											return 1;
+            										elseif(nodeA.elemMagia == "Earth" and 
+            										(nodeB.elemMagia == "Water" or nodeB.elemMagia == "Air" or nodeB.elemMagia == "Fire")) then
+            											return 1;
+            										elseif(nodeA.elemMagia == "Fire" and 
+            										(nodeB.elemMagia == "Water" or nodeB.elemMagia == "Air")) then
+            											return 1;
+            										elseif(nodeA.elemMagia == "Air" and 
+            										(nodeB.elemMagia == "Water")) then
+            											return 1;
+            										end;
+        end);
+
+    obj._e_event27 = obj.button18:addEventListener("onClick",
         function (event)
             TrocarAba('F');
         end);
 
-    obj._e_event24 = obj.button19:addEventListener("onClick",
+    obj._e_event28 = obj.button19:addEventListener("onClick",
         function (event)
             TrocarAba('M');
         end);
 
-    obj._e_event25 = obj.button20:addEventListener("onClick",
+    obj._e_event29 = obj.button20:addEventListener("onClick",
         function (event)
             TrocarAba('S');
         end);
 
-    obj._e_event26 = obj.button21:addEventListener("onClick",
+    obj._e_event30 = obj.button21:addEventListener("onClick",
         function (event)
             TrocarAba('H');
         end);
 
-    obj._e_event27 = obj.button22:addEventListener("onClick",
+    obj._e_event31 = obj.button22:addEventListener("onClick",
         function (event)
             TrocarAba('A');
         end);
 
-    obj._e_event28 = obj.button23:addEventListener("onClick",
+    obj._e_event32 = obj.button23:addEventListener("onClick",
         function (event)
             TrocarAba('F');
         end);
 
-    obj._e_event29 = obj.button24:addEventListener("onClick",
+    obj._e_event33 = obj.button24:addEventListener("onClick",
         function (event)
             TrocarAba('M');
         end);
 
-    obj._e_event30 = obj.button25:addEventListener("onClick",
+    obj._e_event34 = obj.button25:addEventListener("onClick",
         function (event)
             TrocarAba('S');
         end);
 
-    obj._e_event31 = obj.button26:addEventListener("onClick",
+    obj._e_event35 = obj.button26:addEventListener("onClick",
         function (event)
             TrocarAba('H');
         end);
 
-    obj._e_event32 = obj.button27:addEventListener("onClick",
+    obj._e_event36 = obj.button27:addEventListener("onClick",
         function (event)
             TrocarAba('A');
         end);
 
     function obj:_releaseEvents()
+        __o_rrpgObjs.removeEventListenerById(self._e_event36);
+        __o_rrpgObjs.removeEventListenerById(self._e_event35);
+        __o_rrpgObjs.removeEventListenerById(self._e_event34);
+        __o_rrpgObjs.removeEventListenerById(self._e_event33);
         __o_rrpgObjs.removeEventListenerById(self._e_event32);
         __o_rrpgObjs.removeEventListenerById(self._e_event31);
         __o_rrpgObjs.removeEventListenerById(self._e_event30);
@@ -7188,8 +7268,8 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
         if self.rectangle48 ~= nil then self.rectangle48:destroy(); self.rectangle48 = nil; end;
         if self.image5 ~= nil then self.image5:destroy(); self.image5 = nil; end;
         if self.rectangle67 ~= nil then self.rectangle67:destroy(); self.rectangle67 = nil; end;
-        if self.layout11 ~= nil then self.layout11:destroy(); self.layout11 = nil; end;
         if self.label37 ~= nil then self.label37:destroy(); self.label37 = nil; end;
+        if self.layout11 ~= nil then self.layout11:destroy(); self.layout11 = nil; end;
         if self.edit88 ~= nil then self.edit88:destroy(); self.edit88 = nil; end;
         if self.edit30 ~= nil then self.edit30:destroy(); self.edit30 = nil; end;
         if self.layout3 ~= nil then self.layout3:destroy(); self.layout3 = nil; end;
@@ -7260,6 +7340,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
         if self.edit167 ~= nil then self.edit167:destroy(); self.edit167 = nil; end;
         if self.edit96 ~= nil then self.edit96:destroy(); self.edit96 = nil; end;
         if self.edit71 ~= nil then self.edit71:destroy(); self.edit71 = nil; end;
+        if self.flowPart8 ~= nil then self.flowPart8:destroy(); self.flowPart8 = nil; end;
         if self.rectangle70 ~= nil then self.rectangle70:destroy(); self.rectangle70 = nil; end;
         if self.dataLink133 ~= nil then self.dataLink133:destroy(); self.dataLink133 = nil; end;
         if self.dataLink123 ~= nil then self.dataLink123:destroy(); self.dataLink123 = nil; end;
@@ -7332,6 +7413,7 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
         if self.dataLink70 ~= nil then self.dataLink70:destroy(); self.dataLink70 = nil; end;
         if self.label80 ~= nil then self.label80:destroy(); self.label80 = nil; end;
         if self.edit84 ~= nil then self.edit84:destroy(); self.edit84 = nil; end;
+        if self.rclMagias ~= nil then self.rclMagias:destroy(); self.rclMagias = nil; end;
         if self.label16 ~= nil then self.label16:destroy(); self.label16 = nil; end;
         if self.label24 ~= nil then self.label24:destroy(); self.label24 = nil; end;
         if self.edit16 ~= nil then self.edit16:destroy(); self.edit16 = nil; end;
@@ -7374,9 +7456,9 @@ local function constructNew_frmOurFichaAlemDoVeuHiperion()
         if self.edit168 ~= nil then self.edit168:destroy(); self.edit168 = nil; end;
         if self.edit93 ~= nil then self.edit93:destroy(); self.edit93 = nil; end;
         if self.dataLink18 ~= nil then self.dataLink18:destroy(); self.dataLink18 = nil; end;
+        if self.flowPart5 ~= nil then self.flowPart5:destroy(); self.flowPart5 = nil; end;
         if self.edit40 ~= nil then self.edit40:destroy(); self.edit40 = nil; end;
         if self.edit72 ~= nil then self.edit72:destroy(); self.edit72 = nil; end;
-        if self.flowPart5 ~= nil then self.flowPart5:destroy(); self.flowPart5 = nil; end;
         if self.dataLink136 ~= nil then self.dataLink136:destroy(); self.dataLink136 = nil; end;
         if self.dataLink124 ~= nil then self.dataLink124:destroy(); self.dataLink124 = nil; end;
         if self.edit165 ~= nil then self.edit165:destroy(); self.edit165 = nil; end;

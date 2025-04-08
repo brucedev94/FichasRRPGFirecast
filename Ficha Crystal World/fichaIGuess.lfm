@@ -2,12 +2,7 @@
 
 <form formType="sheetTemplate" dataType="Alem_do_veu_Hiperion" title="Crystal World New Adventure" name="frmOurFichaAlemDoVeuHiperion">
 
-
-
-
-		
-	<layout align="client" frameStyle="/Frames/frameFundo.xml" />
-			<!-- CALCULOS INICIO-->
+<!-- CALCULOS INICIO-->
 
 			<dataLink fields="{'ForV', 'DesV', 'ConV', 'IntV', 'SabV', 'CarV','ForA', 'DesA', 'ConA', 'IntA',
 			'SabA', 'CarA', 'ForB', 'DesB', 'ConB', 'IntB', 'SabB', 'CarB', 'ForM', 'DesM', 'ConM', 'IntM', 'SabM', 'CarM', 'NvDanoCurtoAlcance', 'NvDanoLongoAlcance', 'NvQuebrarObjetos', 
@@ -101,7 +96,14 @@
 			</dataLink>
 
 
-<!-- CALCULOS FIM-->
+
+<!-- CALCULOS FIM fim -->
+
+
+
+
+
+
 
 
 <style>
@@ -152,7 +154,7 @@ edit{
 button.Tab{
 	align: left;
 	margins: {right=2};
-	width: 122;
+	width: 100;
 	fontFamily: Constantia;
 	fontStyle: bold;
 	fontSize: 10;
@@ -211,13 +213,13 @@ button.Tab{
 								<flowPart minWidth="300" maxWidth="650" height="1600">
 								<template name="Divisor">
 									<layout align="top" height="30" margins="{top=$(topo), left=20, bottom=15}">
-										<label align="left" text="$(texto)" width="$(largura)" fontColor="#669ffa" fontSize="20" fontFamily="Constantia" />
+										<label align="left" text="$(texto)" width="$(largura)" fontColor="#FF7F50" fontSize="20" fontFamily="Constantia" />
 										<horzLine align="client" margins="{right=9, top=14}" strokeColor="#424242" />
 									</layout>
 								</template>
 								<template name="AsTabs">	
 									<rectangle margins="{left=20, right=10, top=20}" align="top" height="30" xradius="5" yradius="5" cornerType="round" color="#212121">
-										<button class="Tab" text="P E R S O N A G E M" onClick="TrocarAba('F');"/>
+										<button class="Tab" text="P E R S O N A G M" onClick="TrocarAba('F');"/>
 										<button class="Tab" text="I N V E N T Á R I O" onClick="TrocarAba('M');"/>
 										<button class="Tab" text="S K I L L S" onClick="TrocarAba('S');"/>
 										<button class="Tab" text="D I Á R I O" onClick="TrocarAba('H');"/>
@@ -225,18 +227,21 @@ button.Tab{
 									</rectangle>
 								</template>
 
+															 
+								
+
 								<AsTabs />								
-									<!-- CABEcALHO -->
+									<!-- CABEÇALHO -->
 									<Divisor  texto="P E R S O N A G E M" largura="190" topo="10" />
-									
 
 										<!-- RETANGULOS DO ModF -->
-										<rectangle width="35" left="532" top="345" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>						
-								        <rectangle width="35" left="532" top="385" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="35" left="532" top="425" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>									
-										<rectangle width="35" left="532" top="465" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="35" left="532" top="505" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="35" left="532" top="304" height="20" color="#669ffa" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="35" left="532" top="345" height="20" color="#D2691E" xradius="5" yradius="5" cornerType="round"/>						
+								        <rectangle width="35" left="532" top="385" height="20" color="#D2691E" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="35" left="532" top="425" height="20" color="#D2691E" xradius="5" yradius="5" cornerType="round"/>									
+										<rectangle width="35" left="532" top="465" height="20" color="#D2691E" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="35" left="532" top="505" height="20" color="#D2691E" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="35" left="532" top="545" height="20" color="#D2691E" xradius="5" yradius="5" cornerType="round"/>
+										
 
 										<!-- RETANGULOS DO ModC -->
 										<rectangle width="35" left="420" top="345" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>						
@@ -244,7 +249,8 @@ button.Tab{
 										<rectangle width="35" left="420" top="425" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>									
 										<rectangle width="35" left="420" top="465" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
 										<rectangle width="35" left="420" top="505" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="35" left="420" top="304" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="35" left="420" top="545" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										
 
 										<!-- RETANGULOS DO ModP -->
 										<rectangle width="35" left="313" top="345" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>						
@@ -252,7 +258,8 @@ button.Tab{
 										<rectangle width="35" left="313" top="425" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>									
 										<rectangle width="35" left="313" top="465" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
 										<rectangle width="35" left="313" top="505" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="35" left="313" top="304" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="35" left="313" top="545" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										
 
 
 									    <!-- RETANGULOS DO ModR -->
@@ -261,27 +268,32 @@ button.Tab{
 										<rectangle width="35" left="203" top="425" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>									
 										<rectangle width="35" left="203" top="465" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
 										<rectangle width="35" left="203" top="505" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
-										<rectangle width="35" left="203" top="304" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										<rectangle width="35" left="203" top="545" height="20" color="#363636" xradius="5" yradius="5" cornerType="round"/>
+										
+										
 										
 
 									<flowLayout align="top" autoHeight="true">
-										<flowPart maxWidth="1300" minWidth="250" height="80">
+										<flowPart maxWidth="1300" minWidth="350" height="120">
 											<template name="CampoA">
 												<layout align="top" height="20" margins="{left=25}">
 													<label align="left" text="$(legenda):" width="$(largura)"/>
 													<edit field="$(campo)" align="client" margins="{right=10}" />
-													<dataLink field="$(campo)" defaultValue="—" />
-																									</layout>
+													<dataLink field="$(campo)" defaultValue="Escreva aqui" />
+												</layout>
 											</template>
+
+										
+
 
 											<CampoA legenda="Nome" largura="83" campo="nomeChar" />
 											<CampoA legenda="Rank" largura="83" campo="DivindadeChar" />
 											<CampoA legenda="Idade" largura="83" campo="IdadeChar" />
-											
+
+
 
 											<!-- RETANGULO NIVEL, HP E MANA-->
-											
-											<label fontSize="15.0" left="365" top="0" fontColor="white" text="Nível:" />
+												<label fontSize="15.0" left="365" top="0" fontColor="white" text="Nível:" />
 											<rectangle width="58"  left="436" top="3" height="15" color="#363636" xradius="5" yradius="5" cornerType="round"/>
 											<edit  horzTextAlign="center" width="60" fontSize="13.0" field="NivelPersonagem" fontColor="#FFFFFF" left="435" top="-5" fontStyle="bold" type="number" min="0" max="99"/>
 											<dataLink field="NivelPersonagem" defaultValue="1" />
@@ -303,11 +315,23 @@ button.Tab{
 
 
 
+
+									
+											
+											
+											
+										</flowPart>
+										<flowPart maxWidth="150" minWidth="150" height="120">
+											
+											
+											
+											
 										</flowPart>
 									</flowLayout>
 									
 									<!-- ATRIBUTOS -->
 									<Divisor texto="A T R I B U T O S" largura="160" topo="40" />
+									
 									
 									<layout align="top" height="253" margins="{left=20, right=20}">
 										<image align="client" src="imagens atributos" style="proportional"/>
@@ -327,7 +351,6 @@ button.Tab{
 															<!-- caixas -->	
 											<layout align="top" height="300" margins="{left=20, right=20}">
 										    <image align="client" src="" style="proportional"/>
-
 										<!-- ATRIBUTOS VALOR -->
 										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="ForV" left="155" top="29" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="ForV"/>
@@ -384,25 +407,29 @@ button.Tab{
 										<edit horzTextAlign="center" width="50" fontSize="14.0" fontColor="#ffffff" field="CarM" left="484" top="229" fontStyle="bold" type="number" min="0" max="99"/>
 										<dataLink defaultValue="0" field="CarM"/>
 
+										
+
 
 											
 										
 											</layout>							
 										
 									</layout>
+
+							     
+
 									
 									<layout align="top" height="40" margins="{top=10}">
 										<flowLayout align="top" horzAlign="center" height="40"><flowPart width="160">
+											
 											
 										</flowPart></flowLayout>	
 									</layout>
 									
 									<!-- PERICIAS -->
 									<Divisor texto="P E R Í C I A" largura="130" topo="40"/>
-									<layout align="top" height="1500">
-
-										 <!-- PERICIAS -->
 									
+									<layout align="top" height="1500">
 										<scrollBox width="630" height="820" left="20" top="0" >
 
 								
@@ -799,12 +826,16 @@ button.Tab{
 
 										</scrollBox>
 									<!-- FIM PERICIAS AJUSTADAS -->
+										
+										
+										
 									</layout>
 									
 								</flowPart>
 								<flowPart minWidth="100" maxWidth="350" height="1600">
 									<rectangle width="300" height="1530" color="#202020" />
 									<rectangle width="320" height="1530" color="#202020" xradius="20" yradius="20" cornerType="bevel" />
+									
 									
 									<template name="DivisorD">
 										<layout align="top" height="30" margins="{top=$(topo), left=20, bottom=15}">
@@ -813,10 +844,9 @@ button.Tab{
 										</layout>
 									</template>
 									
-									<!-- APAReNCIA PERSONAGEM  -->
-									    <label fontSize="18.0" fontColor="#669ffa" text="APARENCIA" left="110" top="80" />
+									<!-- APARÊNCIA PERSONAGEM  -->
+									    <label fontSize="18.0" fontColor="#FF7F50" text="APARENCIA" left="110" top="80" />
 										<DivisorD texto="" largura="1000" topo="60"/>
-										
 										<image field="imagemPJ" style="autofit" editable="true" width="289" height="500" top="105" left="10.5" />
 											<dataLink field="imagemPJ" defaultValue="/Frames/avatar.jpg" />
 
@@ -893,7 +923,7 @@ button.Tab{
 
 
 									     <!-- INVENTARIO -->
-									<DivisorD texto="I N V E N T a R I O" largura="190" topo="10"/>
+									<DivisorD texto="I N V E N T Á R I O" largura="190" topo="10"/>
 									<richEdit align="client" field="background" backgroundColor="#272727" defaultFontColor="white" margins="{left=20, right=10, bottom=100}"/>
 										
 										
@@ -908,7 +938,7 @@ button.Tab{
 										<rectangle width="300" height="1530" color="#202020" />
 										<rectangle width="320" height="1530" color="#202020" xradius="20" yradius="20" cornerType="bevel" />
 										
-										<!-- APAReNCIA NO INVENTARIO -->
+										<!-- APARÊNCIA NO INVENTARIO -->
 										<DivisorD texto="" largura="0" topo="60"/>
 										<image field="imagemPJ" style="autofit" editable="true" width="289" height="500" top="105" left="10.5" />
 											<dataLink field="imagemPJ" defaultValue="/Frames/avatar.jpg" />
@@ -922,13 +952,61 @@ button.Tab{
 							
 							<layout name="layMagias" align="client" visible="false">
 							<AsTabs />
-								 <!-- ESPAcOS DE MAGIA -->
+								 <!-- ESPAÇOS DE MAGIA -->
 								<DivisorD texto="L I S T A   D E   M A G I A S" largura="245" topo="10"/>
 								<rectangle align="top" height="30" xradius="5" yradius="5" cornerType="round" color="#212121" margins="{left=20, right=20}">
 									
 									<button align="right" text="🞦" width="30" onClick='self.rclMagias:append();'/>
 								</rectangle>
-							
+								
+								<recordList align="client" layout="horizontalTiles" name="rclMagias" field="magias" templateForm="templateMagias" 
+								onSelect="self.rclMagias:sort();" onItemAdded="self.rclMagias:sort();" onItemRemoved="self.rclMagias:sort();" margins="{left = 15, right = 15, top = 5, bottom = 15}">
+									<event name="onCompare">
+									<![CDATA[               
+										if(nodeA.elemMagia == nodeB.elemMagia) then
+										
+											if (nodeA.lvlMagia or 0) > (nodeB.lvlMagia or 0) then
+													return 1;
+											elseif (nodeA.lvlMagia or 0) < (nodeB.lvlMagia or 0) then
+													return -1;
+											else   
+													return Utils.compareStringPtBr(nodeA.nomeMagia, nodeB.nomeMagia);
+											end;
+										
+										elseif(nodeA.elemMagia == "Water" and 
+										(nodeB.elemMagia == "Air" or nodeB.elemMagia == "Fire" or nodeB.elemMagia == "Earth" or nodeB.elemMagia == "Void" or nodeB.elemMagia == "Universal")) then
+											return -1;
+										elseif(nodeA.elemMagia == "Air" and 
+										(nodeB.elemMagia == "Fire" or nodeB.elemMagia == "Earth" or nodeB.elemMagia == "Void" or nodeB.elemMagia == "Universal")) then
+											return -1;
+										elseif(nodeA.elemMagia == "Fire" and 
+										(nodeB.elemMagia == "Earth" or nodeB.elemMagia == "Void" or nodeB.elemMagia == "Universal")) then
+											return -1;
+										elseif(nodeA.elemMagia == "Earth" and 
+										(nodeB.elemMagia == "Void" or nodeB.elemMagia == "Universal")) then
+											return -1;
+										elseif(nodeA.elemMagia == "Void" and 
+										(nodeB.elemMagia == "Universal")) then
+											return -1;
+										elseif(nodeA.elemMagia == "Universal" and 
+										(nodeB.elemMagia == "Water" or nodeB.elemMagia == "Air" or nodeB.elemMagia == "Fire" or nodeB.elemMagia == "Earth" or nodeB.elemMagia == "Void")) then
+											return 1;
+										elseif(nodeA.elemMagia == "Void" and 
+										(nodeB.elemMagia == "Water" or nodeB.elemMagia == "Air" or nodeB.elemMagia == "Fire" or nodeB.elemMagia == "Earth")) then
+											return 1;
+										elseif(nodeA.elemMagia == "Earth" and 
+										(nodeB.elemMagia == "Water" or nodeB.elemMagia == "Air" or nodeB.elemMagia == "Fire")) then
+											return 1;
+										elseif(nodeA.elemMagia == "Fire" and 
+										(nodeB.elemMagia == "Water" or nodeB.elemMagia == "Air")) then
+											return 1;
+										elseif(nodeA.elemMagia == "Air" and 
+										(nodeB.elemMagia == "Water")) then
+											return 1;
+										end;
+									]]>
+									</event>
+								</recordList>
 								
 							</layout>
 							
@@ -936,15 +1014,15 @@ button.Tab{
 								<flowLayout align="top" autoHeight="true" horzAlign="center">
 									<flowPart minWidth="300" maxWidth="650" height="1600">
 									<AsTabs />
-									<!-- HISToRIA -->
-									<DivisorD texto="H I S T o R I A" largura="150" topo="10"/>
+									<!-- HISTÓRIA -->
+									<DivisorD texto="H I S T Ó R I A" largura="150" topo="10"/>
 									<richEdit align="client" field="background2" backgroundColor="#272727" defaultFontColor="white" margins="{left=20, right=10, bottom=100}"/>
 									
 									</flowPart>
 									<flowPart minWidth="100" maxWidth="350" height="1600">
 										<rectangle width="300" height="1530" color="#202020" />
 										<rectangle width="320" height="1530" color="#202020" xradius="20" yradius="20" cornerType="bevel" />
-										<!-- APAReNCIA DIARIO -->
+										<!-- APARÊNCIA DIARIO -->
 										<DivisorD texto="" largura="0" topo="60"/>
 										<image field="imagemPJ" style="autofit" editable="true" width="289" height="500" top="105" left="10.5" />
 											<dataLink field="imagemPJ" defaultValue="/Frames/avatar.jpg" />
@@ -957,7 +1035,7 @@ button.Tab{
 							
 							<layout name="layNote" align="client" visible="false">
 							<AsTabs />
-								<DivisorD texto="A N O T A c Õ E S" largura="190" topo="10"/>
+								<DivisorD texto="A N O T A Ç Õ E S" largura="190" topo="10"/>
 								<richEdit align="client" field="anotacao1" backgroundColor="#272727" defaultFontColor="white" margins="{left=20, right=20, bottom=40}"/>
 							</layout>
 						</rectangle>
@@ -967,6 +1045,5 @@ button.Tab{
 			
 		</flowLayout>
 	</scrollBox>
-
-
+	<layout align="client" frameStyle="/Frames/frameFundo.xml" />
 </form>
