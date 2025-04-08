@@ -52,6 +52,7 @@
                               zOrder="10" overflowY="stretch" overflowX="stretch">
                                 <anchors left="false" right="true" bottom="true" top="true"/>
                                 <source url="rightLineR.png" left="0" right="12" top="0" bottom="66"/>
-                        </image>                       
+                        </image>        
+          
         </draw>
 </frame>

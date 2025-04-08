@@ -40,7 +40,7 @@ local function constructNew_templateDesVantagens()
     obj.edit1:setFontColor("white");
     obj.edit1:setField("aqq");
     obj.edit1:setAlign("left");
-    obj.edit1:setWidth(430);
+    obj.edit1:setWidth(230);
     obj.edit1:setHeight(25);
     obj.edit1:setMargins({right=2});
     lfm_setPropAsString(obj.edit1, "fontStyle", "bold");
@@ -56,8 +56,8 @@ local function constructNew_templateDesVantagens()
 
     obj.labNome = GUI.fromHandle(_obj_newObject("button"));
     obj.labNome:setParent(obj.layout1);
-    obj.labNome:setText("𝐢");
-    obj.labNome:setWidth(30);
+    obj.labNome:setText("");
+    obj.labNome:setWidth(0);
     obj.labNome:setAlign("left");
     obj.labNome:setName("labNome");
     obj.labNome:setMargins({right=2});
@@ -126,45 +126,6 @@ local function constructNew_templateDesVantagens()
     obj.dataLink2:setDefaultValue("—");
     obj.dataLink2:setName("dataLink2");
 
-    obj.rectangle2 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle2:setParent(obj.layout1);
-    obj.rectangle2:setColor("#212121");
-    obj.rectangle2:setAlign("left");
-    obj.rectangle2:setWidth(90);
-    obj.rectangle2:setMargins({right=2});
-    obj.rectangle2:setName("rectangle2");
-
-    obj.comboBox1 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox1:setParent(obj.rectangle2);
-    obj.comboBox1:setAlign("client");
-    obj.comboBox1:setItems({'Espiritual', 'Física', 'Material', 'Mental', 'Mística', 'Social'});
-    obj.comboBox1:setField("atributoSkill");
-    obj.comboBox1:setValues({'Espiritual', 'Física', 'Material', 'Mental', 'Mística', 'Social'});
-    obj.comboBox1:setMargins({right=2, left=2});
-    obj.comboBox1:setName("comboBox1");
-    obj.comboBox1:setFontFamily("Cambria");
-    obj.comboBox1:setTransparent(true);
-    obj.comboBox1:setFontColor("#cdcdcd");
-
-    obj.edit2 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit2:setParent(obj.layout1);
-    obj.edit2:setAlign("left");
-    obj.edit2:setField("acc");
-    obj.edit2:setHorzTextAlign("center");
-    obj.edit2:setWidth(25);
-    obj.edit2:setType("number");
-    obj.edit2:setMargins({right=2});
-    obj.edit2:setName("edit2");
-    obj.edit2:setFontFamily("Cambria");
-    obj.edit2:setTransparent(true);
-    obj.edit2:setFontColor("#cdcdcd");
-
-    obj.dataLink3 = GUI.fromHandle(_obj_newObject("dataLink"));
-    obj.dataLink3:setParent(obj.layout1);
-    obj.dataLink3:setField("acc");
-    obj.dataLink3:setDefaultValue("0");
-    obj.dataLink3:setName("dataLink3");
-
     obj.button1 = GUI.fromHandle(_obj_newObject("button"));
     obj.button1:setParent(obj.layout1);
     obj.button1:setAlign("right");
@@ -207,16 +168,12 @@ local function constructNew_templateDesVantagens()
         if self.popDesvantagem ~= nil then self.popDesvantagem:destroy(); self.popDesvantagem = nil; end;
         if self.dataLink1 ~= nil then self.dataLink1:destroy(); self.dataLink1 = nil; end;
         if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
-        if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
-        if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
-        if self.rectangle2 ~= nil then self.rectangle2:destroy(); self.rectangle2 = nil; end;
-        if self.edit2 ~= nil then self.edit2:destroy(); self.edit2 = nil; end;
         if self.horzLine1 ~= nil then self.horzLine1:destroy(); self.horzLine1 = nil; end;
-        if self.dataLink3 ~= nil then self.dataLink3:destroy(); self.dataLink3 = nil; end;
         if self.edit1 ~= nil then self.edit1:destroy(); self.edit1 = nil; end;
+        if self.label1 ~= nil then self.label1:destroy(); self.label1 = nil; end;
         if self.labNome ~= nil then self.labNome:destroy(); self.labNome = nil; end;
         if self.MinhaVant ~= nil then self.MinhaVant:destroy(); self.MinhaVant = nil; end;
-        if self.comboBox1 ~= nil then self.comboBox1:destroy(); self.comboBox1 = nil; end;
+        if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
         if self.layout1 ~= nil then self.layout1:destroy(); self.layout1 = nil; end;
         self:_oldLFMDestroy();
     end;

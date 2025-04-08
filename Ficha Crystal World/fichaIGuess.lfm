@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<form formType="sheetTemplate" dataType="Alem_do_veu_Hiperion" title="Alem_do_veu(Hiperion))" name="frmOurFichaAlemDoVeuHiperion">
+<form formType="sheetTemplate" dataType="Alem_do_veu_Hiperion" title="Crystal World New Adventure" name="frmOurFichaAlemDoVeuHiperion">
 
 
 
@@ -22,7 +22,7 @@
 			'ModEsquivar', 'ModDesarmarArmadilha', 'ModAcrobacias', 'ModRoubo', 'ModArremessarObjetos', 'ModFurtividade', 'ModMontaria', 'ModAcertoDistancia', 'ModAcertoCurtoAlcance', 'ModCorrer', 'ModResistenciaVeneno', 'ModResistenciaCansaco',
 			'ModSegurarFolego', 'ModSuporteFrioCalor', 'ModDefender', 'ModProfissao', 'ModDecifrarCodigo', 'ModIdentificarCriatura', 'ModLerManuscrito', 'ModPrepararEstrategia', 'ModResistenciaMental', 'ModHistoria', 'ModInvestigacao',
 			'ModPerceberMentira', 'ModPercepcao', 'ModSentirPerigo', 'ModDetectarMagia', 'ModAcertoMagico', 'ModDanoMagico', 'ModSobrevivencia', 'ModMedicina', 'ModNatureza', 'ModReligiao', 'ModDiscurso', 'ModSeducao',
-			'ModIntimidar', 'ModAtuar', 'ModPersuadir', 'ModMentir',}">
+			'ModIntimidar', 'ModAtuar', 'ModPersuadir', 'ModMentir', }">
 			<event name="onChange">
 
 
@@ -288,17 +288,17 @@ button.Tab{
 
 											<label fontSize="15.0" left="365" top="23" fontColor="white" text="HP:" />
 											<rectangle left="435" top="24" width="60" height="15" xradius="5" yradius="5" cornerType="round" color="#363636">
-											<label field="HpPersonagem" horzTextAlign="center" left="-30" top="0" /><dataLink field="HpPersonagem" defaultValue="0" />
+											<edit field="HpPersonagem" horzTextAlign="center" fontStyle="bold" left="-21" top="-8" min="0" max="99" /><dataLink field="HpPersonagem"  defaultValue="0" />
 											</rectangle>
 											
 											<label fontSize="15.0" left="365" top="43" fontColor="white" text="Mana:" />
 											<rectangle left="435" top="44" width="60" height="15" xradius="5" yradius="5" cornerType="round" color="#363636">
-											<label field="ManaPersonagem" horzTextAlign="center" left="-30" top="-2" /><dataLink field="ManaPersonagem"   defaultValue="0" />
+											<edit field="ManaPersonagem" fontStyle="bold" fontSize="13.0" horzTextAlign="center" left="-21" top="-8" min="0" max="99" /><dataLink field="ManaPersonagem"   defaultValue="0" />
 											</rectangle>
 
 											<label fontSize="15.0" left="365" top="63" fontColor="white" text="Estamina:" />	
 											<rectangle left="435" top="64" width="60" height="15" xradius="5" yradius="5" cornerType="round" color="#363636">
-											<label field="EstaminaPersonagem" horzTextAlign="center" left="-30" top="-4" /><dataLink field="EstaminaPersonagem"   defaultValue="0" />
+											<edit field="EstaminaPersonagem" fontStyle="bold" horzTextAlign="center" left="-21" top="-8" min="0" max="99" /><dataLink field="EstaminaPersonagem"   defaultValue="0" />
 											</rectangle>
 
 
@@ -928,8 +928,7 @@ button.Tab{
 									
 									<button align="right" text="🞦" width="30" onClick='self.rclMagias:append();'/>
 								</rectangle>
-								
-								
+							
 								
 							</layout>
 							
